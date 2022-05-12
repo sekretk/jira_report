@@ -1,0 +1,1976 @@
+[
+  {
+    "day": 1651655974965,
+    "count": 36,
+    "eta": "49.8",
+    "logged": 11.7,
+    "stories": [
+      {
+        "key": "DXTF-22992",
+        "points": 0.1,
+        "log": 0.6,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 6
+      },
+      {
+        "key": "DXTF-22986",
+        "points": 0.1,
+        "log": 0.3,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 3
+      },
+      {
+        "key": "DXTF-28273",
+        "points": 0.5,
+        "log": 0.7,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 1.4
+      },
+      {
+        "key": "DXTF-28343",
+        "points": 2,
+        "log": 2.4,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 1.2
+      },
+      {
+        "key": "DXTF-28631",
+        "points": 0.5,
+        "log": 0.5,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 1
+      },
+      {
+        "key": "DXTF-27420",
+        "points": 3,
+        "log": 2.3,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.77
+      },
+      {
+        "key": "DXTF-28060",
+        "points": 2,
+        "log": 1.5,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.75
+      },
+      {
+        "key": "DXTF-28338",
+        "points": 3,
+        "log": 1,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.33
+      },
+      {
+        "key": "DXTF-21976",
+        "points": 2,
+        "log": 0.5,
+        "status": "In development",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0.25
+      },
+      {
+        "key": "DXTF-28645",
+        "points": 4,
+        "log": 0.9,
+        "status": "Confirmed",
+        "priority": "Critical (6)",
+        "type": "Improvement",
+        "est": 0.23
+      },
+      {
+        "key": "DXTF-28667",
+        "points": 0.5,
+        "log": 0.1,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Change Request",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-28629",
+        "points": 3,
+        "log": 0.6,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-21811",
+        "points": 0.5,
+        "log": 0.1,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-28495",
+        "points": 2,
+        "log": 0.2,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.1
+      },
+      {
+        "key": "DXTF-28583",
+        "points": 2,
+        "log": 0.1,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.05
+      },
+      {
+        "key": "DXTF-28668",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28665",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28641",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28582",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28578",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28423",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28392",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28385",
+        "points": 2,
+        "log": 0,
+        "status": "In development",
+        "priority": "Critical (6)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28367",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28339",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27976",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27973",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27967",
+        "points": 2,
+        "log": 0,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27931",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27672",
+        "points": 0.1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-25812",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-25178",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-24692",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21888",
+        "points": 3,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Change Request",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21587",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21088",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      }
+    ]
+  },
+  {
+    "day": 1651656156908,
+    "count": 36,
+    "eta": "49.8",
+    "logged": 11.7,
+    "stories": [
+      {
+        "key": "DXTF-22992",
+        "points": 0.1,
+        "log": 0.6,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 6
+      },
+      {
+        "key": "DXTF-22986",
+        "points": 0.1,
+        "log": 0.3,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 3
+      },
+      {
+        "key": "DXTF-28273",
+        "points": 0.5,
+        "log": 0.7,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 1.4
+      },
+      {
+        "key": "DXTF-28343",
+        "points": 2,
+        "log": 2.4,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 1.2
+      },
+      {
+        "key": "DXTF-28631",
+        "points": 0.5,
+        "log": 0.5,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 1
+      },
+      {
+        "key": "DXTF-27420",
+        "points": 3,
+        "log": 2.3,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.77
+      },
+      {
+        "key": "DXTF-28060",
+        "points": 2,
+        "log": 1.5,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.75
+      },
+      {
+        "key": "DXTF-28338",
+        "points": 3,
+        "log": 1,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.33
+      },
+      {
+        "key": "DXTF-21976",
+        "points": 2,
+        "log": 0.5,
+        "status": "In development",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0.25
+      },
+      {
+        "key": "DXTF-28645",
+        "points": 4,
+        "log": 0.9,
+        "status": "Confirmed",
+        "priority": "Critical (6)",
+        "type": "Improvement",
+        "est": 0.23
+      },
+      {
+        "key": "DXTF-28667",
+        "points": 0.5,
+        "log": 0.1,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Change Request",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-28629",
+        "points": 3,
+        "log": 0.6,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-21811",
+        "points": 0.5,
+        "log": 0.1,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-28495",
+        "points": 2,
+        "log": 0.2,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.1
+      },
+      {
+        "key": "DXTF-28583",
+        "points": 2,
+        "log": 0.1,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.05
+      },
+      {
+        "key": "DXTF-28668",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28665",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28641",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28582",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28578",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28423",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28392",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28385",
+        "points": 2,
+        "log": 0,
+        "status": "In development",
+        "priority": "Critical (6)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28367",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28339",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27976",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27973",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27967",
+        "points": 2,
+        "log": 0,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27931",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27672",
+        "points": 0.1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-25812",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-25178",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-24692",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21888",
+        "points": 3,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Change Request",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21587",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21088",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      }
+    ]
+  },
+  {
+    "day": 1651733375042,
+    "count": 35,
+    "eta": "49.3",
+    "logged": 12.3,
+    "stories": [
+      {
+        "key": "DXTF-22992",
+        "points": 0.1,
+        "log": 0.6,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 6
+      },
+      {
+        "key": "DXTF-22986",
+        "points": 0.1,
+        "log": 0.3,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 3
+      },
+      {
+        "key": "DXTF-28273",
+        "points": 0.5,
+        "log": 0.7,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 1.4
+      },
+      {
+        "key": "DXTF-28343",
+        "points": 2,
+        "log": 2.4,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 1.2
+      },
+      {
+        "key": "DXTF-27420",
+        "points": 3,
+        "log": 2.3,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.77
+      },
+      {
+        "key": "DXTF-28060",
+        "points": 2,
+        "log": 1.5,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.75
+      },
+      {
+        "key": "DXTF-28629",
+        "points": 3,
+        "log": 1.5,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.5
+      },
+      {
+        "key": "DXTF-28338",
+        "points": 3,
+        "log": 1,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.33
+      },
+      {
+        "key": "DXTF-21976",
+        "points": 2,
+        "log": 0.5,
+        "status": "In development",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0.25
+      },
+      {
+        "key": "DXTF-28645",
+        "points": 4,
+        "log": 0.9,
+        "status": "In development",
+        "priority": "Critical (6)",
+        "type": "Improvement",
+        "est": 0.23
+      },
+      {
+        "key": "DXTF-28667",
+        "points": 0.5,
+        "log": 0.1,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Change Request",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-21811",
+        "points": 0.5,
+        "log": 0.1,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-28385",
+        "points": 2,
+        "log": 0.3,
+        "status": "Waiting for review",
+        "priority": "Critical (6)",
+        "type": "Defect Report",
+        "est": 0.15
+      },
+      {
+        "key": "DXTF-28495",
+        "points": 2,
+        "log": 0.2,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.1
+      },
+      {
+        "key": "DXTF-28583",
+        "points": 2,
+        "log": 0.1,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.05
+      },
+      {
+        "key": "DXTF-28668",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28665",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28641",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28582",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28578",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28423",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28392",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28367",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28339",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27976",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27973",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27967",
+        "points": 2,
+        "log": 0,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27931",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27672",
+        "points": 0.1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-25812",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-25178",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-24692",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21888",
+        "points": 3,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Change Request",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21587",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21088",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      }
+    ]
+  },
+  {
+    "day": 1651819941351,
+    "count": 33,
+    "eta": "46.8",
+    "logged": 9.9,
+    "stories": [
+      {
+        "key": "DXTF-22992",
+        "points": 0.1,
+        "log": 0.6,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 6
+      },
+      {
+        "key": "DXTF-22986",
+        "points": 0.1,
+        "log": 0.3,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 3
+      },
+      {
+        "key": "DXTF-27420",
+        "points": 3,
+        "log": 2.3,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.77
+      },
+      {
+        "key": "DXTF-28060",
+        "points": 2,
+        "log": 1.5,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.75
+      },
+      {
+        "key": "DXTF-28629",
+        "points": 3,
+        "log": 1.5,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.5
+      },
+      {
+        "key": "DXTF-28645",
+        "points": 4,
+        "log": 1.6,
+        "status": "In development",
+        "priority": "Critical (6)",
+        "type": "Improvement",
+        "est": 0.4
+      },
+      {
+        "key": "DXTF-28338",
+        "points": 3,
+        "log": 1,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.33
+      },
+      {
+        "key": "DXTF-21976",
+        "points": 2,
+        "log": 0.5,
+        "status": "In development",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0.25
+      },
+      {
+        "key": "DXTF-28667",
+        "points": 0.5,
+        "log": 0.1,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Change Request",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-21811",
+        "points": 0.5,
+        "log": 0.1,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-28385",
+        "points": 2,
+        "log": 0.3,
+        "status": "Waiting for review",
+        "priority": "Critical (6)",
+        "type": "Defect Report",
+        "est": 0.15
+      },
+      {
+        "key": "DXTF-28495",
+        "points": 2,
+        "log": 0.2,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.1
+      },
+      {
+        "key": "DXTF-28583",
+        "points": 2,
+        "log": 0.1,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.05
+      },
+      {
+        "key": "DXTF-28668",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28665",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28641",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28582",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28578",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28423",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28392",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28367",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28339",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27976",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27973",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27967",
+        "points": 2,
+        "log": 0,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27931",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27672",
+        "points": 0.1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-25812",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-25178",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-24692",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21888",
+        "points": 3,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Change Request",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21587",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21088",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      }
+    ]
+  },
+  {
+    "day": 1652349063239,
+    "count": 37,
+    "eta": "52.2",
+    "logged": 13,
+    "stories": [
+      {
+        "key": "DXTF-22992",
+        "points": 0.1,
+        "log": 0.6,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 6
+      },
+      {
+        "key": "DXTF-28629",
+        "points": 3,
+        "log": 2.9,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.97
+      },
+      {
+        "key": "DXTF-28645",
+        "points": 4,
+        "log": 3.5,
+        "status": "In development",
+        "priority": "Critical (6)",
+        "type": "Improvement",
+        "est": 0.88
+      },
+      {
+        "key": "DXTF-27420",
+        "points": 3,
+        "log": 2.3,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.77
+      },
+      {
+        "key": "DXTF-28060",
+        "points": 2,
+        "log": 1.5,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.75
+      },
+      {
+        "key": "DXTF-28338",
+        "points": 3,
+        "log": 1,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.33
+      },
+      {
+        "key": "DXTF-21976",
+        "points": 2,
+        "log": 0.5,
+        "status": "In development",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0.25
+      },
+      {
+        "key": "DXTF-28648",
+        "points": 2,
+        "log": 0.4,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Change Request",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-21811",
+        "points": 0.5,
+        "log": 0.1,
+        "status": "In development",
+        "priority": "Critical (6)",
+        "type": "Defect Report",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-28495",
+        "points": 2,
+        "log": 0.2,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.1
+      },
+      {
+        "key": "DXTF-28583",
+        "points": 2,
+        "log": 0.1,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.05
+      },
+      {
+        "key": "DXTF-28722",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Critical (6)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28718",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28717",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28715",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28710",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28703",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28668",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28665",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28641",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28582",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28578",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28423",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28392",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28367",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28339",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27976",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27973",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27967",
+        "points": 2,
+        "log": 0,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27931",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27672",
+        "points": 0.1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-25812",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-25178",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-24692",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21888",
+        "points": 3,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Change Request",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21587",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21088",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      }
+    ]
+  },
+  {
+    "day": 1652349413302,
+    "count": 37,
+    "eta": "52.2",
+    "logged": 13,
+    "stories": [
+      {
+        "key": "DXTF-22992",
+        "points": 0.1,
+        "log": 0.6,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 6
+      },
+      {
+        "key": "DXTF-28629",
+        "points": 3,
+        "log": 2.9,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.97
+      },
+      {
+        "key": "DXTF-28645",
+        "points": 4,
+        "log": 3.5,
+        "status": "In development",
+        "priority": "Critical (6)",
+        "type": "Improvement",
+        "est": 0.88
+      },
+      {
+        "key": "DXTF-27420",
+        "points": 3,
+        "log": 2.3,
+        "status": "Waiting for review",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.77
+      },
+      {
+        "key": "DXTF-28060",
+        "points": 2,
+        "log": 1.5,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.75
+      },
+      {
+        "key": "DXTF-28338",
+        "points": 3,
+        "log": 1,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0.33
+      },
+      {
+        "key": "DXTF-21976",
+        "points": 2,
+        "log": 0.5,
+        "status": "In development",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0.25
+      },
+      {
+        "key": "DXTF-28648",
+        "points": 2,
+        "log": 0.4,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Change Request",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-21811",
+        "points": 0.5,
+        "log": 0.1,
+        "status": "In development",
+        "priority": "Critical (6)",
+        "type": "Defect Report",
+        "est": 0.2
+      },
+      {
+        "key": "DXTF-28495",
+        "points": 2,
+        "log": 0.2,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.1
+      },
+      {
+        "key": "DXTF-28583",
+        "points": 2,
+        "log": 0.1,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0.05
+      },
+      {
+        "key": "DXTF-28722",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Critical (6)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28718",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28717",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28715",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28710",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28703",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28668",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28665",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28641",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28582",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28578",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28423",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28392",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28367",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-28339",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27976",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27973",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27967",
+        "points": 2,
+        "log": 0,
+        "status": "In development",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27931",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-27672",
+        "points": 0.1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-25812",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-25178",
+        "points": 0.5,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Normal",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-24692",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21888",
+        "points": 3,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Change Request",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21587",
+        "points": 2,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Improvement",
+        "est": 0
+      },
+      {
+        "key": "DXTF-21088",
+        "points": 1,
+        "log": 0,
+        "status": "Confirmed",
+        "priority": "Urgent (3)",
+        "type": "Defect Report",
+        "est": 0
+      }
+    ]
+  }
+]
