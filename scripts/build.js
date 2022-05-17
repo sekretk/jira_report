@@ -35,7 +35,7 @@ console.log('RUN', command);
     console.log('OUTPUT', result.toString('utf8'));
 }
 
-chdir(path.join(__dirname, '..', 'client'));
+chdir(path.join(__dirname, '..'));
 
 run('npm run grab');
 
