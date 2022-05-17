@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import data from './tickets_history.json'
+import data from '../../tickets_history.json'
 import { Box, MenuItem, Select, Tab, Tabs, Typography } from '@mui/material';
 import { DataGrid, GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
 import {
@@ -156,7 +156,7 @@ function App() {
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Line options={options} data={cData} />;
+        <Line options={options} data={cData} />
       </TabPanel>
 
     </div>
