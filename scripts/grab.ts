@@ -5,7 +5,7 @@ import fetch from 'cross-fetch';
 
 const filterID = 42978;
 
-const token = Buffer.from(`${process.argv[2]}:${process.argv[3]}`).toString('base64').slice(0, -1);
+const token = Buffer.from(`${process.env.LOGIN}:${process.env.PASSWORD}`).toString('base64').slice(0, -1);
 
 const db = 'tickets_history.json';
 

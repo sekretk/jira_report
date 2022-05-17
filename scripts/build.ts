@@ -35,7 +35,7 @@ console.log('RUN', command);
     console.log('OUTPUT', result.toString('utf8'));
 }
 
-run(`npm run grab ${process.env.LOGIN} ${process.env.PASSWORD}`)
+run(`npm run grab`)
 
 run(`cp tickets_history.json report-client/tickets_history.json`)
 
