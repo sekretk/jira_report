@@ -39,7 +39,7 @@ chdir(path.join(__dirname, '..'));
 
 run('npm run grab');
 
-run(`cp tickets_history.json client/tickets_history.json`)
+run(`cp tickets_history.json client/src/tickets_history.json`)
 
 chdir(path.join(__dirname, '..', 'client'));
 
