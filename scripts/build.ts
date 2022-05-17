@@ -35,9 +35,9 @@ console.log('RUN', command);
     console.log('OUTPUT', result.toString('utf8'));
 }
 
-run(`cp tickets_history.json report-client/tickets_history.json`)
+run(`cp tickets_history.json client/tickets_history.json`)
 
-chdir(path.join(__dirname, 'report-client'));
+chdir(path.join(__dirname, 'client'));
 
 run('npm run build');
 
