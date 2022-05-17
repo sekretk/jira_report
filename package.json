@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "grab": "ts-node ./scripts/grab.ts"
+    "grab": "ts-node ./scripts/grab.ts",
+    "build": "ts-node ./scripts/build.ts"
   },
   "repository": {
     "type": "git",
