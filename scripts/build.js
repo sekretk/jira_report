@@ -43,6 +43,8 @@ run(`cp tickets_history.json client/tickets_history.json`)
 
 chdir(path.join(__dirname, '..', 'client'));
 
+run('npm i');
+
 run('npm run build');
 
 run('cp -r build/* /var/www/jira-report.boysthings.top/');
