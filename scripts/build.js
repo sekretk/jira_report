@@ -2,9 +2,9 @@ const { execSync } = require("child_process");
 const { chdir } = require("process");
 const path = require('path');
 const https = require('https')
-const querystring = require("querystring");
+const querystring = require('querystring');
 
-const sendNotification = (message: string) => {
+const sendNotification = (message) => {
 
     const options = {
         hostname: 'api.telegram.org',
@@ -34,6 +34,8 @@ console.log('RUN', command);
     const result = execSync(command);
     console.log('OUTPUT', result.toString('utf8'));
 }
+
+run('npm run grab');
 
 run(`cp tickets_history.json client/tickets_history.json`)
 
