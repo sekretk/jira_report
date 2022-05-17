@@ -35,6 +35,8 @@ console.log('RUN', command);
     console.log('OUTPUT', result.toString('utf8'));
 }
 
+chdir(path.join(__dirname, '..', 'client'));
+
 run('npm run grab');
 
 run(`cp tickets_history.json client/tickets_history.json`)
