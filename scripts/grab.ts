@@ -7,7 +7,7 @@ const filterID = 42978;
 
 const token = Buffer.from(`${process.argv[2]}:${process.argv[3]}`).toString('base64').slice(0, -1);
 
-const db = '../tickets_history.json';
+const db = 'tickets_history.json';
 
 const riskThreshold = 0.3;
 
