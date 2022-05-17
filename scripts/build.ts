@@ -37,7 +37,7 @@ console.log('RUN', command);
 
 run(`cp tickets_history.json client/tickets_history.json`)
 
-chdir(path.join(__dirname, 'client'));
+chdir(path.join(__dirname, '..', 'client'));
 
 run('npm run build');
 
