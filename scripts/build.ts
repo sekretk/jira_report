@@ -4,7 +4,7 @@ const path = require('path');
 const https = require('https')
 const querystring = require("querystring");
 
-const sendNotification = (message) => {
+const sendNotification = (message: string) => {
 
     const options = {
         hostname: 'api.telegram.org',
