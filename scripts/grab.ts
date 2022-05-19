@@ -3,6 +3,7 @@ const https = require('https')
 
 import Big from 'big.js';
 import fetch from 'cross-fetch';
+import { IssuerStatus, DB, Report } from '../shared/dto';
 
 const filterID = 42978;
 
@@ -12,7 +13,6 @@ const db = 'tickets_history.json';
 
 const riskThreshold = 0.3;
 
-type IssuerStatus = 'Reported' | 'Confirmed' | 'Waiting for review' | 'Resolved' | 'In development' | 'Aborted';
 
 type StatusCategory = 'In Progress' | 'Done';
 
@@ -71,25 +71,6 @@ type ResType = {
 	}>;
 };
 
-type DB = {
-	tickets: Map<string, Ticket>,
-	reports: Map<number, Report>
-}
-
-type Report = {
-	logged: number, 
-	eta: number,
-	tickets: Array<string>,
-}
-
-type Ticket = {
-	summary: string,
-	assignee: string,
-	eta: number,
-	logged: number,
-	status: IssuerStatus,
-}
-
 const getToday = (): number => Date.UTC(new Date().getUTCFullYear(), new Date().getUTCMonth(), new Date().getUTCDate());
 
 const readDb = (): DB => {
@@ -115,8 +96,8 @@ const addReport = (db_state: DB, res: ResType) => {
 
 	const report: Report = {
 		tickets: res.issues.map(_ => _.key),
-		eta: res.issues.map(_ => _.fields.customfield_10811).reduce((acc, cur) => acc + cur, 0),
-		logged: res.issues.map(_ => _.fields.progress.total).reduce((acc, cur) => acc + cur, 0),
+		eta: res.issues.map(_ => _.fields.customfield_10811).reduce((acc, cur) => acc.add(cur), Big(0)).toNumber(),
+		logged: res.issues.map(_ => _.fields.progress.total).reduce((acc, cur) => acc.add(cur), Big(0)).div(3600).div(8).round(2).toNumber(),
 	}
 
 	db_state.reports.set(getToday(), report);
@@ -178,8 +159,8 @@ const migration = () => {
 		const day = Date.UTC(new Date(item.day).getUTCFullYear(), new Date(item.day).getUTCMonth(), new Date(item.day).getUTCDate());
 
 		db_state.reports.set(day, {
-			eta: item.stories.map(_ => _.points).reduce((acc, cur) => acc + cur, 0),
-			logged: item.stories.map(_ => _.log).reduce((acc, cur) => acc + cur, 0),
+			eta: item.stories.map(_ => _.points).reduce((acc, cur) => acc.add(cur), Big(0)).toNumber(),
+			logged: item.stories.map(_ => _.log).reduce((acc, cur) => acc.add(cur), Big(0)).toNumber(),
 			tickets: item.stories.map(_ => _.key)
 		});
 

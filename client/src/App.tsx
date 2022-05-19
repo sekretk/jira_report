@@ -15,6 +15,7 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import React from 'react';
+import { Report, Ticket } from '../../shared/dto';
 
 ChartJS.register(
   CategoryScale,
@@ -26,17 +27,28 @@ ChartJS.register(
   Legend
 );
 
-function onlyUnique(value: any, index: any, self: string | any[]) {
-  return self.indexOf(value) === index;
-}
-
-type Story = (typeof data)[number]['stories'][number];
-
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
   value: number;
 }
+
+type DaysReport = {key: number} & Report;
+type KeyTicketTicket = {key: string} & Ticket;
+
+const reports: Array<DaysReport> = (data.reports as Array<[number, Report]>)
+    .sort(([key1], [key2]) => key2 > key1 ? -1 : 1)
+    .map(([key, value]) => ({
+  ...value, 
+  key  
+}));
+
+const tickets: Map<string, Ticket> = new Map(data.tickets as Array<[string, Ticket]>);
+
+const allTickets: Array<KeyTicketTicket> = (data.tickets as Array<[string, Ticket]>).map(([key, value]) => ({
+  ...value, 
+  key  
+}));
 
 function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
@@ -51,66 +63,73 @@ function TabPanel(props: TabPanelProps) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          {children}
         </Box>
       )}
     </div>
   );
 }
 
+const charData = reports.map(report => ({
+  day: new Date(report.key).toLocaleDateString(),
+  count: report.tickets.length,
+  eta: report.eta,
+  live_est: report.eta - report.logged,
+  logged: report.logged
+}));
+
+const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'top' as const,
+    },
+    title: {
+      display: true,
+      text: 'Estimation',
+    },
+  },
+};
+
+console.log(charData.map(_ => _.day))
+
+const cData = {
+  labels: charData.map(_ => _.day),
+  datasets: [
+    {
+      label: 'Count',
+      data: charData.map(_ => _.count),
+      borderColor: 'rgb(255, 0, 0)',
+      backgroundColor: 'rgba(255, 0, 0, 0.5)',
+    },
+    {
+      label: 'ETA',
+      data: charData.map(_ => Number(_.eta)),
+      borderColor: 'rgb(0, 255, 0)',
+      backgroundColor: 'rgba(0, 255, 0, 0.5)',
+    },
+    {
+      label: 'LiveETA',
+      data: charData.map(_ => Number(_.live_est)),
+      borderColor: 'rgb(0, 0, 255)',
+      backgroundColor: 'rgba(0, 0, 255, 0.5)',
+    },
+    {
+      label: 'Logged',
+      data: charData.map(_ => _.logged),
+      borderColor: 'rgb(50, 200, 200)',
+      backgroundColor: 'rgba(50, 200, 200, 0.5)',
+    },
+  ],
+};
+
 function App() {
 
-  const stories = data.reverse().reduce((acc, cur) => {
+  const [from, setFrom] = useState<number>(reports[0].key);
 
-    const sKeys = acc.map(_ => _.key);
+  const [to, setTo] = useState<number>(reports[reports.length - 1].key);
 
-    return [...acc, ...cur.stories.filter(oS => !sKeys.includes(oS.key))];
-  }, new Array<Story>());
-
-  const charData = data.reverse().map(({ count, eta, day, logged }) => ({ count, eta, day, logged }));
-
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'top' as const,
-      },
-      title: {
-        display: true,
-        text: 'Chart.js Line Chart',
-      },
-    },
-  };
-
-  const cData = {
-    labels: charData.map(_ => new Date(_.day).toLocaleDateString()),
-    datasets: [
-      {
-        label: 'Count',
-        data: charData.map(_ => _.count),
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      },
-      {
-        label: 'ETA',
-        data: charData.map(_ => Number(_.eta)),
-        borderColor: 'rgb(53, 162, 235)',
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
-      },
-      {
-        label: 'Logged',
-        data: charData.map(_ => _.logged),
-        borderColor: 'rgb(23, 12, 2)',
-        backgroundColor: 'rgba(2, 122, 34, 0.5)',
-      },
-    ],
-  };
-
-  const allDates = data.map(_ => new Date(_.day).toLocaleDateString()).filter(onlyUnique);
-
-  const [from, setFrom] = useState<string>(allDates[0]);
-
-  const [to, setTo] = useState<string>(allDates[allDates.length - 1]);
+  const [stories, setStories] = useState<Array<KeyTicketTicket>>(allTickets);
 
   const columns: GridColDef[] = [
     {
@@ -133,11 +152,11 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Select labelId="label" label="From" id="select" value={from} onChange={(item) => setFrom(item.target.value)}>
-          {allDates.map(_ => <MenuItem value={_}>{_}</MenuItem>)}
+        <Select labelId="label" label="From" id="select" value={from} onChange={(item) => setFrom(Number(item.target.value))}>
+          {reports.map(_ => <MenuItem key={_.key} value={_.key}>{new Date(_.key).toLocaleDateString()}</MenuItem>)}
         </Select>
-        <Select labelId="label" label="To" id="select" value={to} onChange={(item) => setTo(item.target.value)}>
-          {allDates.map(_ => <MenuItem value={_}>{_}</MenuItem>)}
+        <Select labelId="label" label="To" id="select" value={to} onChange={(item) => setTo(Number(item.target.value))}>
+          {reports.map(_ => <MenuItem key={_.key} value={_.key}>{new Date(_.key).toLocaleDateString()}</MenuItem>)}
         </Select>
       </div>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>

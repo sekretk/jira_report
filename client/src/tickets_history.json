@@ -1,1303 +1,792 @@
-[
-  {
-    "day": 1651655974965,
-    "count": 36,
-    "eta": "49.8",
-    "logged": 11.7,
-    "stories": [
+{
+  "reports": [
+    [
+      1652918400000,
       {
-        "key": "DXTF-22992",
-        "points": 0.1,
-        "log": 0.6,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 6
-      },
+        "tickets": [
+          "DXTF-28722",
+          "DXTF-28718",
+          "DXTF-28717",
+          "DXTF-28715",
+          "DXTF-28710",
+          "DXTF-28703",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28648",
+          "DXTF-28645",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28582",
+          "DXTF-28578",
+          "DXTF-28495",
+          "DXTF-28423",
+          "DXTF-28367",
+          "DXTF-28339",
+          "DXTF-28338",
+          "DXTF-28060",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27967",
+          "DXTF-27931",
+          "DXTF-27672",
+          "DXTF-27420",
+          "DXTF-25812",
+          "DXTF-25178",
+          "DXTF-24692",
+          "DXTF-22992",
+          "DXTF-21976",
+          "DXTF-21888",
+          "DXTF-21811",
+          "DXTF-21587",
+          "DXTF-21088"
+        ],
+        "eta": 48.7,
+        "logged": 19.67
+      }
+    ],
+    [
+      1651622400000,
       {
-        "key": "DXTF-22986",
-        "points": 0.1,
-        "log": 0.3,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 3
-      },
+        "eta": 49.8,
+        "logged": 11.8,
+        "tickets": [
+          "DXTF-22992",
+          "DXTF-22986",
+          "DXTF-28273",
+          "DXTF-28343",
+          "DXTF-28631",
+          "DXTF-27420",
+          "DXTF-28060",
+          "DXTF-28338",
+          "DXTF-21976",
+          "DXTF-28645",
+          "DXTF-28667",
+          "DXTF-28629",
+          "DXTF-21811",
+          "DXTF-28495",
+          "DXTF-28583",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28641",
+          "DXTF-28582",
+          "DXTF-28578",
+          "DXTF-28423",
+          "DXTF-28392",
+          "DXTF-28385",
+          "DXTF-28367",
+          "DXTF-28339",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27967",
+          "DXTF-27931",
+          "DXTF-27672",
+          "DXTF-25812",
+          "DXTF-25178",
+          "DXTF-24692",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ]
+      }
+    ],
+    [
+      1651708800000,
       {
-        "key": "DXTF-28273",
-        "points": 0.5,
-        "log": 0.7,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 1.4
-      },
+        "eta": 49.3,
+        "logged": 12.5,
+        "tickets": [
+          "DXTF-22992",
+          "DXTF-22986",
+          "DXTF-28273",
+          "DXTF-28343",
+          "DXTF-27420",
+          "DXTF-28060",
+          "DXTF-28629",
+          "DXTF-28338",
+          "DXTF-21976",
+          "DXTF-28645",
+          "DXTF-28667",
+          "DXTF-21811",
+          "DXTF-28385",
+          "DXTF-28495",
+          "DXTF-28583",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28641",
+          "DXTF-28582",
+          "DXTF-28578",
+          "DXTF-28423",
+          "DXTF-28392",
+          "DXTF-28367",
+          "DXTF-28339",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27967",
+          "DXTF-27931",
+          "DXTF-27672",
+          "DXTF-25812",
+          "DXTF-25178",
+          "DXTF-24692",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ]
+      }
+    ],
+    [
+      1651795200000,
       {
-        "key": "DXTF-28343",
-        "points": 2,
-        "log": 2.4,
-        "status": "Waiting for review",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 1.2
-      },
+        "eta": 46.8,
+        "logged": 10.1,
+        "tickets": [
+          "DXTF-22992",
+          "DXTF-22986",
+          "DXTF-27420",
+          "DXTF-28060",
+          "DXTF-28629",
+          "DXTF-28645",
+          "DXTF-28338",
+          "DXTF-21976",
+          "DXTF-28667",
+          "DXTF-21811",
+          "DXTF-28385",
+          "DXTF-28495",
+          "DXTF-28583",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28641",
+          "DXTF-28582",
+          "DXTF-28578",
+          "DXTF-28423",
+          "DXTF-28392",
+          "DXTF-28367",
+          "DXTF-28339",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27967",
+          "DXTF-27931",
+          "DXTF-27672",
+          "DXTF-25812",
+          "DXTF-25178",
+          "DXTF-24692",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ]
+      }
+    ],
+    [
+      1652313600000,
       {
-        "key": "DXTF-28631",
-        "points": 0.5,
-        "log": 0.5,
-        "status": "Waiting for review",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 1
-      },
+        "eta": 52.2,
+        "logged": 13.1,
+        "tickets": [
+          "DXTF-22992",
+          "DXTF-28629",
+          "DXTF-28645",
+          "DXTF-27420",
+          "DXTF-28060",
+          "DXTF-28338",
+          "DXTF-21976",
+          "DXTF-28648",
+          "DXTF-21811",
+          "DXTF-28495",
+          "DXTF-28583",
+          "DXTF-28722",
+          "DXTF-28718",
+          "DXTF-28717",
+          "DXTF-28715",
+          "DXTF-28710",
+          "DXTF-28703",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28641",
+          "DXTF-28582",
+          "DXTF-28578",
+          "DXTF-28423",
+          "DXTF-28392",
+          "DXTF-28367",
+          "DXTF-28339",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27967",
+          "DXTF-27931",
+          "DXTF-27672",
+          "DXTF-25812",
+          "DXTF-25178",
+          "DXTF-24692",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ]
+      }
+    ],
+    [
+      1652400000000,
       {
-        "key": "DXTF-27420",
-        "points": 3,
-        "log": 2.3,
-        "status": "Waiting for review",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.77
-      },
+        "eta": 52.2,
+        "logged": 16.3,
+        "tickets": [
+          "DXTF-22992",
+          "DXTF-21811",
+          "DXTF-28629",
+          "DXTF-27420",
+          "DXTF-28645",
+          "DXTF-28060",
+          "DXTF-28338",
+          "DXTF-21976",
+          "DXTF-28648",
+          "DXTF-28583",
+          "DXTF-28578",
+          "DXTF-28495",
+          "DXTF-28722",
+          "DXTF-28718",
+          "DXTF-28717",
+          "DXTF-28715",
+          "DXTF-28710",
+          "DXTF-28703",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28641",
+          "DXTF-28582",
+          "DXTF-28423",
+          "DXTF-28392",
+          "DXTF-28367",
+          "DXTF-28339",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27967",
+          "DXTF-27931",
+          "DXTF-27672",
+          "DXTF-25812",
+          "DXTF-25178",
+          "DXTF-24692",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ]
+      }
+    ],
+    [
+      1652745600000,
       {
-        "key": "DXTF-28060",
-        "points": 2,
-        "log": 1.5,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0.75
-      },
+        "eta": 49.2,
+        "logged": 17.6,
+        "tickets": [
+          "DXTF-22992",
+          "DXTF-21811",
+          "DXTF-27420",
+          "DXTF-28645",
+          "DXTF-28392",
+          "DXTF-28060",
+          "DXTF-28641",
+          "DXTF-28578",
+          "DXTF-28338",
+          "DXTF-21976",
+          "DXTF-28648",
+          "DXTF-28583",
+          "DXTF-28495",
+          "DXTF-28722",
+          "DXTF-28718",
+          "DXTF-28717",
+          "DXTF-28715",
+          "DXTF-28710",
+          "DXTF-28703",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28582",
+          "DXTF-28423",
+          "DXTF-28367",
+          "DXTF-28339",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27967",
+          "DXTF-27931",
+          "DXTF-27672",
+          "DXTF-25812",
+          "DXTF-25178",
+          "DXTF-24692",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ]
+      }
+    ],
+    [
+      1652832000000,
       {
-        "key": "DXTF-28338",
-        "points": 3,
-        "log": 1,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0.33
-      },
-      {
-        "key": "DXTF-21976",
-        "points": 2,
-        "log": 0.5,
-        "status": "In development",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0.25
-      },
-      {
-        "key": "DXTF-28645",
-        "points": 4,
-        "log": 0.9,
-        "status": "Confirmed",
-        "priority": "Critical (6)",
-        "type": "Improvement",
-        "est": 0.23
-      },
-      {
-        "key": "DXTF-28667",
-        "points": 0.5,
-        "log": 0.1,
-        "status": "Waiting for review",
-        "priority": "Urgent (3)",
-        "type": "Change Request",
-        "est": 0.2
-      },
-      {
-        "key": "DXTF-28629",
-        "points": 3,
-        "log": 0.6,
-        "status": "In development",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.2
-      },
-      {
-        "key": "DXTF-21811",
-        "points": 0.5,
-        "log": 0.1,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0.2
-      },
-      {
-        "key": "DXTF-28495",
-        "points": 2,
-        "log": 0.2,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.1
-      },
-      {
-        "key": "DXTF-28583",
-        "points": 2,
-        "log": 0.1,
-        "status": "In development",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.05
-      },
-      {
-        "key": "DXTF-28668",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28665",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28641",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28582",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28578",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28423",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28392",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28385",
-        "points": 2,
-        "log": 0,
-        "status": "In development",
-        "priority": "Critical (6)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28367",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28339",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27976",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27973",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27967",
-        "points": 2,
-        "log": 0,
-        "status": "In development",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27931",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27672",
-        "points": 0.1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-25812",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-25178",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-24692",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-21888",
-        "points": 3,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Change Request",
-        "est": 0
-      },
-      {
-        "key": "DXTF-21587",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-21088",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
+        "eta": 48.7,
+        "logged": 19.2,
+        "tickets": [
+          "DXTF-22992",
+          "DXTF-21811",
+          "DXTF-27420",
+          "DXTF-28645",
+          "DXTF-28641",
+          "DXTF-28060",
+          "DXTF-28578",
+          "DXTF-28338",
+          "DXTF-21976",
+          "DXTF-28648",
+          "DXTF-28583",
+          "DXTF-28495",
+          "DXTF-28722",
+          "DXTF-28718",
+          "DXTF-28717",
+          "DXTF-28715",
+          "DXTF-28710",
+          "DXTF-28703",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28582",
+          "DXTF-28423",
+          "DXTF-28367",
+          "DXTF-28339",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27967",
+          "DXTF-27931",
+          "DXTF-27672",
+          "DXTF-25812",
+          "DXTF-25178",
+          "DXTF-24692",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ]
       }
     ]
-  },
-  {
-    "day": 1651733375042,
-    "count": 35,
-    "eta": "49.3",
-    "logged": 12.3,
-    "stories": [
+  ],
+  "tickets": [
+    [
+      "DXTF-28722",
       {
-        "key": "DXTF-22992",
-        "points": 0.1,
-        "log": 0.6,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 6
-      },
-      {
-        "key": "DXTF-22986",
-        "points": 0.1,
-        "log": 0.3,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 3
-      },
-      {
-        "key": "DXTF-28273",
-        "points": 0.5,
-        "log": 0.7,
-        "status": "Waiting for review",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 1.4
-      },
-      {
-        "key": "DXTF-28343",
-        "points": 2,
-        "log": 2.4,
-        "status": "Waiting for review",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 1.2
-      },
-      {
-        "key": "DXTF-27420",
-        "points": 3,
-        "log": 2.3,
-        "status": "Waiting for review",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.77
-      },
-      {
-        "key": "DXTF-28060",
-        "points": 2,
-        "log": 1.5,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0.75
-      },
-      {
-        "key": "DXTF-28629",
-        "points": 3,
-        "log": 1.5,
+        "eta": 2,
+        "assignee": "Egor Zholnin",
+        "logged": 0,
         "status": "In development",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.5
-      },
+        "summary": "[SpectraFX] ATM - If ipf service is down, an order is created for a hardcoded instrument"
+      }
+    ],
+    [
+      "DXTF-28718",
       {
-        "key": "DXTF-28338",
-        "points": 3,
-        "log": 1,
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
         "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0.33
-      },
+        "summary": "[SpectraFX] OE - round autohedge amount"
+      }
+    ],
+    [
+      "DXTF-28717",
       {
-        "key": "DXTF-21976",
-        "points": 2,
-        "log": 0.5,
-        "status": "In development",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0.25
-      },
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE - empty manual FwdRef in vanilla leg"
+      }
+    ],
+    [
+      "DXTF-28715",
       {
-        "key": "DXTF-28645",
-        "points": 4,
-        "log": 0.9,
-        "status": "In development",
-        "priority": "Critical (6)",
-        "type": "Improvement",
-        "est": 0.23
-      },
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE - empty amount for hedge leg"
+      }
+    ],
+    [
+      "DXTF-28710",
       {
-        "key": "DXTF-28667",
-        "points": 0.5,
-        "log": 0.1,
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE - spot refresh adjustments"
+      }
+    ],
+    [
+      "DXTF-28703",
+      {
+        "eta": 2,
+        "assignee": "Konstantin Sekret",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE - Forward delivery date selector"
+      }
+    ],
+    [
+      "DXTF-28668",
+      {
+        "eta": 1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE Keyboard Navigation - Place focus on first available field of new leg"
+      }
+    ],
+    [
+      "DXTF-28665",
+      {
+        "eta": 1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE Loading State Progress Bar"
+      }
+    ],
+    [
+      "DXTF-28648",
+      {
+        "eta": 2,
+        "assignee": "SpectraFX Developers",
+        "logged": 10200,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Errors & validation copying"
+      }
+    ],
+    [
+      "DXTF-28645",
+      {
+        "eta": 4,
+        "assignee": "Konstantin Sekret",
+        "logged": 156120,
         "status": "Waiting for review",
-        "priority": "Urgent (3)",
-        "type": "Change Request",
-        "est": 0.2
-      },
+        "summary": "[SpectraFX] Manual Date input control"
+      }
+    ],
+    [
+      "DXTF-28641",
       {
-        "key": "DXTF-21811",
-        "points": 0.5,
-        "log": 0.1,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0.2
-      },
+        "eta": 0.5,
+        "assignee": "Grigory Stukunov",
+        "logged": 13980,
+        "status": "In development",
+        "summary": "[SpectraFX] Option Expiry Tool - Size of error message balloons contradicts design"
+      }
+    ],
+    [
+      "DXTF-28583",
       {
-        "key": "DXTF-28385",
-        "points": 2,
-        "log": 0.3,
+        "eta": 2,
+        "assignee": "Aleksandr Krasovsky",
+        "logged": 12120,
         "status": "Waiting for review",
-        "priority": "Critical (6)",
-        "type": "Defect Report",
-        "est": 0.15
-      },
+        "summary": "[SpectraFX] OE Default Instrument"
+      }
+    ],
+    [
+      "DXTF-28582",
       {
-        "key": "DXTF-28495",
-        "points": 2,
-        "log": 0.2,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.1
-      },
-      {
-        "key": "DXTF-28583",
-        "points": 2,
-        "log": 0.1,
+        "eta": 0.5,
+        "assignee": "Ilya Erin",
+        "logged": 0,
         "status": "In development",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.05
-      },
+        "summary": "[SpectraFX] OE Loading width for loader"
+      }
+    ],
+    [
+      "DXTF-28578",
       {
-        "key": "DXTF-28668",
-        "points": 1,
-        "log": 0,
+        "eta": 2,
+        "assignee": "Ilya Erin",
+        "logged": 23400,
         "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Improvement",
-        "est": 0
-      },
+        "summary": "[SpectraFX] OE Loading - error presentation"
+      }
+    ],
+    [
+      "DXTF-28495",
       {
-        "key": "DXTF-28665",
-        "points": 1,
-        "log": 0,
+        "eta": 2,
+        "assignee": "SpectraFX Developers",
+        "logged": 5400,
         "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
+        "summary": "[SpectraFX] [OE] handle commission request loading/error"
+      }
+    ],
+    [
+      "DXTF-28423",
       {
-        "key": "DXTF-28641",
-        "points": 0.5,
-        "log": 0,
+        "eta": 2,
+        "assignee": "Konstantin Sekret",
+        "logged": 0,
         "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Improvement",
-        "est": 0
-      },
+        "summary": "[SpectraFX] DDL component with item template"
+      }
+    ],
+    [
+      "DXTF-28367",
       {
-        "key": "DXTF-28582",
-        "points": 0.5,
-        "log": 0,
+        "eta": 1,
+        "assignee": "Konstantin Sekret",
+        "logged": 0,
         "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
+        "summary": "[SpectraFX] Option Expiry Tool - Countdown Timer has a small delay between two widgets"
+      }
+    ],
+    [
+      "DXTF-28339",
       {
-        "key": "DXTF-28578",
-        "points": 2,
-        "log": 0,
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
         "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
+        "summary": "[SpectraFX] Order Entry - Popup movement at the moment of calculation end"
+      }
+    ],
+    [
+      "DXTF-28338",
       {
-        "key": "DXTF-28423",
-        "points": 2,
-        "log": 0,
+        "eta": 3,
+        "assignee": "SpectraFX Developers",
+        "logged": 28800,
         "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
+        "summary": "[SpectraFX] Order Entry - Keyboard navigation - Focus in leg type selector is absent after leg type choosing "
+      }
+    ],
+    [
+      "DXTF-28060",
       {
-        "key": "DXTF-28392",
-        "points": 0.5,
-        "log": 0,
+        "eta": 2,
+        "assignee": "Konstantin Sekret",
+        "logged": 43200,
         "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
+        "summary": "[SpectraFX] DS Confirmation Price Precision"
+      }
+    ],
+    [
+      "DXTF-27976",
       {
-        "key": "DXTF-28367",
-        "points": 1,
-        "log": 0,
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
         "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
+        "summary": "[SpectraFX] Dealing Screen - If triggered Cancel order button is not hidden after operations"
+      }
+    ],
+    [
+      "DXTF-27973",
       {
-        "key": "DXTF-28339",
-        "points": 0.5,
-        "log": 0,
+        "eta": 1,
+        "assignee": "Konstantin Sekret",
+        "logged": 0,
         "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
+        "summary": "[SpectraFX] DS calculated %vol not reseted"
+      }
+    ],
+    [
+      "DXTF-27967",
       {
-        "key": "DXTF-27976",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27973",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27967",
-        "points": 2,
-        "log": 0,
+        "eta": 2,
+        "assignee": "Konstantin Sekret",
+        "logged": 0,
         "status": "In development",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
+        "summary": "[SpectraFX] DS FFT validation glitches"
+      }
+    ],
+    [
+      "DXTF-27931",
       {
-        "key": "DXTF-27931",
-        "points": 2,
-        "log": 0,
+        "eta": 2,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
         "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
+        "summary": "[SpectraFX] ATM Straddles - Own order panel remains on single cancel operation"
+      }
+    ],
+    [
+      "DXTF-27672",
       {
-        "key": "DXTF-27672",
-        "points": 0.1,
-        "log": 0,
+        "eta": 0.1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
         "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
+        "summary": "[SpectraFX] OE Keyboard Navigation - Manual input into expiry date is not saved on tabbing"
+      }
+    ],
+    [
+      "DXTF-27420",
       {
-        "key": "DXTF-25812",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
+        "eta": 3,
+        "assignee": "Egor Zholnin",
+        "logged": 183459,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] DealScreen PriceInVol Calculation"
+      }
+    ],
+    [
+      "DXTF-25812",
       {
-        "key": "DXTF-25178",
-        "points": 0.5,
-        "log": 0,
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
         "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
+        "summary": "[SpectraFX] DS- FFT notification does not match the requirements"
+      }
+    ],
+    [
+      "DXTF-25178",
       {
-        "key": "DXTF-24692",
-        "points": 1,
-        "log": 0,
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
         "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
+        "summary": "[SpectraFX] Dealing Screen - FFT validation uses incorrect wording and no highlighting"
+      }
+    ],
+    [
+      "DXTF-24692",
       {
-        "key": "DXTF-21888",
-        "points": 3,
-        "log": 0,
+        "eta": 1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
         "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Change Request",
-        "est": 0
-      },
+        "summary": "[SpectraFX] ATM Straddles - Lone default notional triggers active state for \"Submit\" button"
+      }
+    ],
+    [
+      "DXTF-22992",
       {
-        "key": "DXTF-21587",
-        "points": 2,
-        "log": 0,
+        "eta": 0.1,
+        "assignee": "Ilya Erin",
+        "logged": 27000,
         "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
+        "summary": "[SpectraFX] Order Entry - Incorrect keyboard navigation in the calendar widget"
+      }
+    ],
+    [
+      "DXTF-21976",
       {
-        "key": "DXTF-21088",
-        "points": 1,
-        "log": 0,
+        "eta": 2,
+        "assignee": "SpectraFX Developers",
+        "logged": 14460,
+        "status": "In development",
+        "summary": "[SpectraFX] Option Expiry Tool - Small table glitches"
+      }
+    ],
+    [
+      "DXTF-21888",
+      {
+        "eta": 3,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
         "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
+        "summary": "[SpectraFX] OE Confirmation self-match Validation"
+      }
+    ],
+    [
+      "DXTF-21811",
+      {
+        "eta": 0.5,
+        "assignee": "Ilya Erin",
+        "logged": 48480,
+        "status": "In development",
+        "summary": "[SpectraFX] DS Confirmation Menu - Deleting value doesn't trigger validation"
+      }
+    ],
+    [
+      "DXTF-21587",
+      {
+        "eta": 2,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] DS Confirmation Menu - Add a IOC notification when notional > than available"
+      }
+    ],
+    [
+      "DXTF-21088",
+      {
+        "eta": 1,
+        "assignee": "SpectraFX Backlog",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Order Entry Confirmation - Tenor is missing from the Vanilla summary"
+      }
+    ],
+    [
+      "DXTF-22986",
+      {
+        "assignee": "",
+        "eta": 0.1,
+        "logged": 0.3,
+        "status": "Confirmed",
+        "summary": ""
+      }
+    ],
+    [
+      "DXTF-28273",
+      {
+        "assignee": "",
+        "eta": 0.5,
+        "logged": 0.7,
+        "status": "Waiting for review",
+        "summary": ""
+      }
+    ],
+    [
+      "DXTF-28343",
+      {
+        "assignee": "",
+        "eta": 2,
+        "logged": 2.4,
+        "status": "Waiting for review",
+        "summary": ""
+      }
+    ],
+    [
+      "DXTF-28631",
+      {
+        "assignee": "",
+        "eta": 0.5,
+        "logged": 0.5,
+        "status": "Waiting for review",
+        "summary": ""
+      }
+    ],
+    [
+      "DXTF-28667",
+      {
+        "assignee": "",
+        "eta": 0.5,
+        "logged": 0.1,
+        "status": "Waiting for review",
+        "summary": ""
+      }
+    ],
+    [
+      "DXTF-28629",
+      {
+        "assignee": "",
+        "eta": 3,
+        "logged": 3.4,
+        "status": "Waiting for review",
+        "summary": ""
+      }
+    ],
+    [
+      "DXTF-28392",
+      {
+        "assignee": "",
+        "eta": 0.5,
+        "logged": 0.4,
+        "status": "Waiting for review",
+        "summary": ""
+      }
+    ],
+    [
+      "DXTF-28385",
+      {
+        "assignee": "",
+        "eta": 2,
+        "logged": 0.3,
+        "status": "Waiting for review",
+        "summary": ""
       }
     ]
-  },
-  {
-    "day": 1651819941351,
-    "count": 33,
-    "eta": "46.8",
-    "logged": 9.9,
-    "stories": [
-      {
-        "key": "DXTF-22992",
-        "points": 0.1,
-        "log": 0.6,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 6
-      },
-      {
-        "key": "DXTF-22986",
-        "points": 0.1,
-        "log": 0.3,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 3
-      },
-      {
-        "key": "DXTF-27420",
-        "points": 3,
-        "log": 2.3,
-        "status": "Waiting for review",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.77
-      },
-      {
-        "key": "DXTF-28060",
-        "points": 2,
-        "log": 1.5,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0.75
-      },
-      {
-        "key": "DXTF-28629",
-        "points": 3,
-        "log": 1.5,
-        "status": "In development",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.5
-      },
-      {
-        "key": "DXTF-28645",
-        "points": 4,
-        "log": 1.6,
-        "status": "In development",
-        "priority": "Critical (6)",
-        "type": "Improvement",
-        "est": 0.4
-      },
-      {
-        "key": "DXTF-28338",
-        "points": 3,
-        "log": 1,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0.33
-      },
-      {
-        "key": "DXTF-21976",
-        "points": 2,
-        "log": 0.5,
-        "status": "In development",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0.25
-      },
-      {
-        "key": "DXTF-28667",
-        "points": 0.5,
-        "log": 0.1,
-        "status": "Waiting for review",
-        "priority": "Urgent (3)",
-        "type": "Change Request",
-        "est": 0.2
-      },
-      {
-        "key": "DXTF-21811",
-        "points": 0.5,
-        "log": 0.1,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0.2
-      },
-      {
-        "key": "DXTF-28385",
-        "points": 2,
-        "log": 0.3,
-        "status": "Waiting for review",
-        "priority": "Critical (6)",
-        "type": "Defect Report",
-        "est": 0.15
-      },
-      {
-        "key": "DXTF-28495",
-        "points": 2,
-        "log": 0.2,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.1
-      },
-      {
-        "key": "DXTF-28583",
-        "points": 2,
-        "log": 0.1,
-        "status": "In development",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.05
-      },
-      {
-        "key": "DXTF-28668",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28665",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28641",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28582",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28578",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28423",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28392",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28367",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28339",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27976",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27973",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27967",
-        "points": 2,
-        "log": 0,
-        "status": "In development",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27931",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27672",
-        "points": 0.1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-25812",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-25178",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-24692",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-21888",
-        "points": 3,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Change Request",
-        "est": 0
-      },
-      {
-        "key": "DXTF-21587",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-21088",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      }
-    ]
-  },
-  {
-    "day": 1652349063239,
-    "count": 37,
-    "eta": "52.2",
-    "logged": 13,
-    "stories": [
-      {
-        "key": "DXTF-22992",
-        "points": 0.1,
-        "log": 0.6,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 6
-      },
-      {
-        "key": "DXTF-28629",
-        "points": 3,
-        "log": 2.9,
-        "status": "Waiting for review",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.97
-      },
-      {
-        "key": "DXTF-28645",
-        "points": 4,
-        "log": 3.5,
-        "status": "In development",
-        "priority": "Critical (6)",
-        "type": "Improvement",
-        "est": 0.88
-      },
-      {
-        "key": "DXTF-27420",
-        "points": 3,
-        "log": 2.3,
-        "status": "Waiting for review",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.77
-      },
-      {
-        "key": "DXTF-28060",
-        "points": 2,
-        "log": 1.5,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0.75
-      },
-      {
-        "key": "DXTF-28338",
-        "points": 3,
-        "log": 1,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0.33
-      },
-      {
-        "key": "DXTF-21976",
-        "points": 2,
-        "log": 0.5,
-        "status": "In development",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0.25
-      },
-      {
-        "key": "DXTF-28648",
-        "points": 2,
-        "log": 0.4,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Change Request",
-        "est": 0.2
-      },
-      {
-        "key": "DXTF-21811",
-        "points": 0.5,
-        "log": 0.1,
-        "status": "In development",
-        "priority": "Critical (6)",
-        "type": "Defect Report",
-        "est": 0.2
-      },
-      {
-        "key": "DXTF-28495",
-        "points": 2,
-        "log": 0.2,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.1
-      },
-      {
-        "key": "DXTF-28583",
-        "points": 2,
-        "log": 0.1,
-        "status": "In development",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0.05
-      },
-      {
-        "key": "DXTF-28722",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Critical (6)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28718",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28717",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28715",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28710",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28703",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28668",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28665",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28641",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28582",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28578",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28423",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28392",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28367",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-28339",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27976",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27973",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27967",
-        "points": 2,
-        "log": 0,
-        "status": "In development",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27931",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-27672",
-        "points": 0.1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-25812",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-25178",
-        "points": 0.5,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Normal",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-24692",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      },
-      {
-        "key": "DXTF-21888",
-        "points": 3,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Change Request",
-        "est": 0
-      },
-      {
-        "key": "DXTF-21587",
-        "points": 2,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Improvement",
-        "est": 0
-      },
-      {
-        "key": "DXTF-21088",
-        "points": 1,
-        "log": 0,
-        "status": "Confirmed",
-        "priority": "Urgent (3)",
-        "type": "Defect Report",
-        "est": 0
-      }
-    ]
-  }
-]
+  ]
+}
