@@ -161,8 +161,8 @@ function App() {
       </div>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Table" />
           <Tab label="Chart" />
+          <Tab label="Table" />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
