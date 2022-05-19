@@ -501,9 +501,9 @@
       "DXTF-28495",
       {
         "eta": 2,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Egor Zholnin",
         "logged": 5400,
-        "status": "Confirmed",
+        "status": "In development",
         "summary": "[SpectraFX] [OE] handle commission request loading/error"
       }
     ],
