@@ -4,6 +4,7 @@
       1652918400000,
       {
         "tickets": [
+          "DXTF-28722",
           "DXTF-28718",
           "DXTF-28717",
           "DXTF-28715",
@@ -11,7 +12,6 @@
           "DXTF-28703",
           "DXTF-28668",
           "DXTF-28665",
-          "DXTF-28648",
           "DXTF-28645",
           "DXTF-28641",
           "DXTF-28583",
@@ -40,7 +40,7 @@
           "DXTF-21088"
         ],
         "eta": 46.7,
-        "logged": 19.67
+        "logged": 19.57
       }
     ],
     [
@@ -364,7 +364,13 @@
         "assignee": "Egor Zholnin",
         "logged": 0,
         "status": "In development",
-        "summary": "[SpectraFX] ATM - If ipf service is down, an order is created for a hardcoded instrument"
+        "summary": "[SpectraFX] ATM - If ipf service is down, an order is created for a hardcoded instrument",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
+          "name": "Critical (6)",
+          "id": "2"
+        }
       }
     ],
     [
@@ -374,7 +380,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] OE - round autohedge amount"
+        "summary": "[SpectraFX] OE - round autohedge amount",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -384,7 +396,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] OE - empty manual FwdRef in vanilla leg"
+        "summary": "[SpectraFX] OE - empty manual FwdRef in vanilla leg",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -394,7 +412,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] OE - empty amount for hedge leg"
+        "summary": "[SpectraFX] OE - empty amount for hedge leg",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -404,7 +428,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] OE - spot refresh adjustments"
+        "summary": "[SpectraFX] OE - spot refresh adjustments",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -414,7 +444,13 @@
         "assignee": "Konstantin Sekret",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] OE - Forward delivery date selector"
+        "summary": "[SpectraFX] OE - Forward delivery date selector",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -424,7 +460,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] OE Keyboard Navigation - Place focus on first available field of new leg"
+        "summary": "[SpectraFX] OE Keyboard Navigation - Place focus on first available field of new leg",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -434,7 +476,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] OE Loading State Progress Bar"
+        "summary": "[SpectraFX] OE Loading State Progress Bar",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -452,9 +500,15 @@
       {
         "eta": 4,
         "assignee": "Konstantin Sekret",
-        "logged": 156120,
+        "logged": 163320,
         "status": "Waiting for review",
-        "summary": "[SpectraFX] Manual Date input control"
+        "summary": "[SpectraFX] Manual Date input control",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
+          "name": "Critical (6)",
+          "id": "2"
+        }
       }
     ],
     [
@@ -464,7 +518,13 @@
         "assignee": "Grigory Stukunov",
         "logged": 13980,
         "status": "In development",
-        "summary": "[SpectraFX] Option Expiry Tool - Size of error message balloons contradicts design"
+        "summary": "[SpectraFX] Option Expiry Tool - Size of error message balloons contradicts design",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -474,7 +534,13 @@
         "assignee": "Aleksandr Krasovsky",
         "logged": 12120,
         "status": "Waiting for review",
-        "summary": "[SpectraFX] OE Default Instrument"
+        "summary": "[SpectraFX] OE Default Instrument",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -484,7 +550,13 @@
         "assignee": "Ilya Erin",
         "logged": 0,
         "status": "In development",
-        "summary": "[SpectraFX] OE Loading width for loader"
+        "summary": "[SpectraFX] OE Loading width for loader",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -494,7 +566,13 @@
         "assignee": "Ilya Erin",
         "logged": 23400,
         "status": "Confirmed",
-        "summary": "[SpectraFX] OE Loading - error presentation"
+        "summary": "[SpectraFX] OE Loading - error presentation",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -503,8 +581,14 @@
         "eta": 2,
         "assignee": "Egor Zholnin",
         "logged": 5400,
-        "status": "In development",
-        "summary": "[SpectraFX] [OE] handle commission request loading/error"
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] [OE] handle commission request loading/error",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -514,7 +598,13 @@
         "assignee": "Konstantin Sekret",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] DDL component with item template"
+        "summary": "[SpectraFX] DDL component with item template",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -524,7 +614,13 @@
         "assignee": "Konstantin Sekret",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] Option Expiry Tool - Countdown Timer has a small delay between two widgets"
+        "summary": "[SpectraFX] Option Expiry Tool - Countdown Timer has a small delay between two widgets",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -534,7 +630,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] Order Entry - Popup movement at the moment of calculation end"
+        "summary": "[SpectraFX] Order Entry - Popup movement at the moment of calculation end",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -544,7 +646,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 28800,
         "status": "Confirmed",
-        "summary": "[SpectraFX] Order Entry - Keyboard navigation - Focus in leg type selector is absent after leg type choosing "
+        "summary": "[SpectraFX] Order Entry - Keyboard navigation - Focus in leg type selector is absent after leg type choosing ",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -554,7 +662,13 @@
         "assignee": "Konstantin Sekret",
         "logged": 43200,
         "status": "Confirmed",
-        "summary": "[SpectraFX] DS Confirmation Price Precision"
+        "summary": "[SpectraFX] DS Confirmation Price Precision",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -564,7 +678,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] Dealing Screen - If triggered Cancel order button is not hidden after operations"
+        "summary": "[SpectraFX] Dealing Screen - If triggered Cancel order button is not hidden after operations",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -574,7 +694,13 @@
         "assignee": "Konstantin Sekret",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] DS calculated %vol not reseted"
+        "summary": "[SpectraFX] DS calculated %vol not reseted",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -584,7 +710,13 @@
         "assignee": "Konstantin Sekret",
         "logged": 0,
         "status": "In development",
-        "summary": "[SpectraFX] DS FFT validation glitches"
+        "summary": "[SpectraFX] DS FFT validation glitches",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -594,7 +726,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] ATM Straddles - Own order panel remains on single cancel operation"
+        "summary": "[SpectraFX] ATM Straddles - Own order panel remains on single cancel operation",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -604,7 +742,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] OE Keyboard Navigation - Manual input into expiry date is not saved on tabbing"
+        "summary": "[SpectraFX] OE Keyboard Navigation - Manual input into expiry date is not saved on tabbing",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
+          "name": "Critical (6)",
+          "id": "2"
+        }
       }
     ],
     [
@@ -614,7 +758,13 @@
         "assignee": "Egor Zholnin",
         "logged": 183459,
         "status": "Waiting for review",
-        "summary": "[SpectraFX] DealScreen PriceInVol Calculation"
+        "summary": "[SpectraFX] DealScreen PriceInVol Calculation",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -624,7 +774,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] DS- FFT notification does not match the requirements"
+        "summary": "[SpectraFX] DS- FFT notification does not match the requirements",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -634,7 +790,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] Dealing Screen - FFT validation uses incorrect wording and no highlighting"
+        "summary": "[SpectraFX] Dealing Screen - FFT validation uses incorrect wording and no highlighting",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -644,7 +806,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] ATM Straddles - Lone default notional triggers active state for \"Submit\" button"
+        "summary": "[SpectraFX] ATM Straddles - Lone default notional triggers active state for \"Submit\" button",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -654,7 +822,13 @@
         "assignee": "Ilya Erin",
         "logged": 27000,
         "status": "Confirmed",
-        "summary": "[SpectraFX] Order Entry - Incorrect keyboard navigation in the calendar widget"
+        "summary": "[SpectraFX] Order Entry - Incorrect keyboard navigation in the calendar widget",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -664,7 +838,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 14460,
         "status": "In development",
-        "summary": "[SpectraFX] Option Expiry Tool - Small table glitches"
+        "summary": "[SpectraFX] Option Expiry Tool - Small table glitches",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
@@ -674,7 +854,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] OE Confirmation self-match Validation"
+        "summary": "[SpectraFX] OE Confirmation self-match Validation",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -683,8 +869,14 @@
         "eta": 0.5,
         "assignee": "Ilya Erin",
         "logged": 48480,
-        "status": "In development",
-        "summary": "[SpectraFX] DS Confirmation Menu - Deleting value doesn't trigger validation"
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] DS Confirmation Menu - Deleting value doesn't trigger validation",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
+          "name": "Critical (6)",
+          "id": "2"
+        }
       }
     ],
     [
@@ -694,7 +886,13 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] DS Confirmation Menu - Add a IOC notification when notional > than available"
+        "summary": "[SpectraFX] DS Confirmation Menu - Add a IOC notification when notional > than available",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
       }
     ],
     [
@@ -704,7 +902,13 @@
         "assignee": "SpectraFX Backlog",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] Order Entry Confirmation - Tenor is missing from the Vanilla summary"
+        "summary": "[SpectraFX] Order Entry Confirmation - Tenor is missing from the Vanilla summary",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ],
     [
