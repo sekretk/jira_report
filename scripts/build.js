@@ -22,6 +22,8 @@ run('npm run build');
 
 run('cp -r build/* /var/www/jira-report.boysthings.top/');
 
+chdir(path.join(__dirname, '..'));
+
 run('git add tickets_history.json client/src/tickets_history.json');
 
 run(`git commit -m"Jira grab for ${new Date().toLocaleDateString()}"`);
