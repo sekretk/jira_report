@@ -24,8 +24,14 @@ run('cp -r build/* /var/www/jira-report.boysthings.top/');
 
 chdir(path.join(__dirname, '..'));
 
-run('git add tickets_history.json client/src/tickets_history.json');
+if (execSync('git status --porcelain').toString('utf8').trim().length > 0) {
 
-run(`git commit -m"Jira grab for ${new Date().toLocaleDateString()}"`);
+    run('git add tickets_history.json client/src/tickets_history.json');
 
-run('git push');
+    run(`git commit -m"Jira grab for ${new Date().toLocaleDateString()}"`);
+
+    run('git push');
+} else {
+    console.log('No changes. Nothing to push')
+}
+   
