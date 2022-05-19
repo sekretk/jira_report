@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import './App.css';
 import data from './tickets_history.json'
 import { Box, MenuItem, Select, Tab, Tabs, Typography } from '@mui/material';
@@ -16,6 +16,7 @@ import {
 import { Line } from 'react-chartjs-2';
 import React from 'react';
 import { Report, Ticket } from '../../shared/dto';
+import Big from 'big.js';
 
 ChartJS.register(
   CategoryScale,
@@ -33,22 +34,19 @@ interface TabPanelProps {
   value: number;
 }
 
-type DaysReport = {key: number} & Report;
-type KeyTicketTicket = {key: string} & Ticket;
+type DaysReport = { key: number } & Report;
+type KeyTicketTicket = { key: string } & Ticket;
 
 const reports: Array<DaysReport> = (data.reports as Array<[number, Report]>)
-    .sort(([key1], [key2]) => key2 > key1 ? -1 : 1)
-    .map(([key, value]) => ({
-  ...value, 
-  key  
-}));
+  .sort(([key1], [key2]) => key2 > key1 ? -1 : 1)
+  .map(([key, value]) => ({
+    ...value,
+    key
+  }));
 
-const tickets: Map<string, Ticket> = new Map(data.tickets as Array<[string, Ticket]>);
-
-const allTickets: Array<KeyTicketTicket> = (data.tickets as Array<[string, Ticket]>).map(([key, value]) => ({
-  ...value, 
-  key  
-}));
+const db_tickets: Map<string, Ticket> = new Map(data.tickets as Array<[string, Ticket]>);
+const db_reports: Map<number, Report> = new Map(data.reports as Array<[number, Report]>);
+const findTicket = (key: string): KeyTicketTicket => ({ key, ...db_tickets.get(key) })
 
 function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
@@ -69,6 +67,8 @@ function TabPanel(props: TabPanelProps) {
     </div>
   );
 }
+
+const distinct = <T extends unknown>(value: T, index: number, self: Array<T>) => self.indexOf(value) === index;
 
 const charData = reports.map(report => ({
   day: new Date(report.key).toLocaleDateString(),
@@ -129,7 +129,39 @@ function App() {
 
   const [to, setTo] = useState<number>(reports[reports.length - 1].key);
 
-  const [stories, setStories] = useState<Array<KeyTicketTicket>>(allTickets);
+  const addedStories: Array<KeyTicketTicket> = useMemo(() => reports.reduce((acc, cur) => {
+    if (cur.key < from || cur.key > to) {
+      return acc;
+    }
+
+    const fromTickets = db_reports.get(from).tickets;
+
+    cur.tickets.forEach(ticket => {
+      !fromTickets.includes(ticket) && acc.push(ticket)
+    })
+
+    return acc;
+  }, new Array<string>()).filter(distinct).map(findTicket)
+    , [from, to])
+
+  const removedStories: Array<KeyTicketTicket> = useMemo(() => {
+
+    const allTicketsInRange = Array.from((reports.reduce((acc, cur) => {
+      if (cur.key < from || cur.key > to) {
+        return acc;
+      }
+
+      cur.tickets.forEach(ticket => acc.add(ticket));
+      return acc;
+    }, new Set<string>())));
+
+    return allTicketsInRange.filter(ticket => !db_reports.get(to).tickets.includes(ticket)).map(findTicket);
+
+  }, [from, to])
+
+  const lastStories: Array<KeyTicketTicket> = useMemo(() => db_reports.get(to).tickets.map(findTicket), [to])
+
+  console.log(lastStories);
 
   const columns: GridColDef[] = [
     {
@@ -138,9 +170,11 @@ function App() {
         <a href={`https://jira.in.devexperts.com/browse/${params.value}`}>{params.value}</a>
       ),
     },
-    { field: 'points', headerName: 'ETA', width: 60 },
-    { field: 'priority', headerName: 'Priority', width: 130 },
-    { field: 'type', headerName: 'Type', width: 150 },
+    { field: 'eta', headerName: 'ETA', width: 60 },
+    { field: 'priority', headerName: 'Priority', width: 130, valueFormatter: (params) => params.value.name },
+    { field: 'status', headerName: 'Status', width: 150 },
+    { field: 'logged', headerName: 'Logged', width: 150, valueFormatter: (params) => Big(params.value).div(3600).div(8).round(2).toNumber() },
+    { field: 'assignee', headerName: 'Assignee', width: 150 },
   ];
 
   const [value, setValue] = React.useState(0);
@@ -151,14 +185,6 @@ function App() {
 
   return (
     <div className="App">
-      <div>
-        <Select labelId="label" label="From" id="select" value={from} onChange={(item) => setFrom(Number(item.target.value))}>
-          {reports.map(_ => <MenuItem key={_.key} value={_.key}>{new Date(_.key).toLocaleDateString()}</MenuItem>)}
-        </Select>
-        <Select labelId="label" label="To" id="select" value={to} onChange={(item) => setTo(Number(item.target.value))}>
-          {reports.map(_ => <MenuItem key={_.key} value={_.key}>{new Date(_.key).toLocaleDateString()}</MenuItem>)}
-        </Select>
-      </div>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="Chart" />
@@ -166,12 +192,36 @@ function App() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <div className="grid">
-          <DataGrid
-            rows={stories}
-            columns={columns}
-            getRowId={item => item.key}
-          />
+        <div>
+          <div>
+            <Select labelId="label" label="From" id="select" value={from} onChange={(item) => setFrom(Number(item.target.value))}>
+              {reports.map(_ => <MenuItem key={_.key} value={_.key}>{new Date(_.key).toLocaleDateString()}</MenuItem>)}
+            </Select>
+            <Select labelId="label" label="To" id="select" value={to} onChange={(item) => setTo(Number(item.target.value))}>
+              {reports.map(_ => <MenuItem key={_.key} value={_.key}>{new Date(_.key).toLocaleDateString()}</MenuItem>)}
+            </Select>
+          </div>
+          <div className="grid">
+            On {new Date(to).toLocaleDateString()}
+            <DataGrid
+              rows={lastStories}
+              columns={columns}
+              getRowId={item => item.key}
+            />
+            Added
+            <DataGrid
+              rows={addedStories}
+              columns={columns}
+              getRowId={item => item.key}
+            />
+            Removed
+            <DataGrid
+              rows={removedStories}
+              columns={columns}
+              getRowId={item => item.key}
+            />
+
+          </div>
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>

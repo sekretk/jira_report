@@ -17,4 +17,8 @@ export type Ticket = {
 	eta: number,
 	logged: number,
 	status: IssuerStatus,
+	priority: {
+		name: string;
+		id: number;
+	}
 }

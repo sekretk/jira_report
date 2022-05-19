@@ -108,7 +108,8 @@ const addReport = (db_state: DB, res: ResType) => {
 			assignee: issue.fields.assignee.displayName,
 			logged: issue.fields.progress.total,
 			status: issue.fields.status.name,
-			summary: issue.fields.summary
+			summary: issue.fields.summary,
+			priority: issue.fields.priority
 		})
 	})
 
