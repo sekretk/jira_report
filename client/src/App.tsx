@@ -191,7 +191,7 @@ function App() {
           <Tab label="Table" />
         </Tabs>
       </Box>
-      <TabPanel value={value} index={0}>
+      <TabPanel value={value} index={1}>
         <div>
           <div>
             <Select labelId="label" label="From" id="select" value={from} onChange={(item) => setFrom(Number(item.target.value))}>
@@ -224,7 +224,7 @@ function App() {
           </div>
         </div>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={0}>
         <Line options={options} data={cData} />
       </TabPanel>
 
