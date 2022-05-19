@@ -1,33 +1,6 @@
 const { execSync } = require("child_process");
 const { chdir } = require("process");
 const path = require('path');
-const https = require('https')
-const querystring = require('querystring');
-
-const sendNotification = (message) => {
-
-    const options = {
-        hostname: 'api.telegram.org',
-        port: 443,
-        path: encodeURI(`/${process.env.BOT_TOCKEN}/sendMessage?chat_id=${process.env.NOTIFY_CHAT}&text=${message}`),
-        method: 'GET'
-      }
-      
-      const req = https.request(options, res => {
-          console.log(`statusCode: ${res.statusCode}`)
-        
-          res.on('data', d => {
-            process.stdout.write(d)
-          })
-        })
-        
-        req.on('error', error => {
-          console.error(error)
-        })
-        
-        req.end()
-}
-
 
 const run = (command) => {
 console.log('RUN', command);
@@ -49,4 +22,8 @@ run('npm run build');
 
 run('cp -r build/* /var/www/jira-report.boysthings.top/');
 
-sendNotification(`Got new JIRA report`)
+run('git add tickets_history.json client/src/tickets_history.json');
+
+run(`git commit -m"Jira grab for ${new Date().toLocaleDateString()}"`);
+
+run('git push');

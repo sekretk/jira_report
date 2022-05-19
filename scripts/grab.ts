@@ -1,4 +1,5 @@
 import { writeFileSync, readFileSync } from 'fs';
+const https = require('https')
 
 import Big from 'big.js';
 import fetch from 'cross-fetch';
@@ -13,6 +14,32 @@ const riskThreshold = 0.3;
 
 type IssuerStatus = 'Reported' | 'Confirmed' | 'Waiting for review' | 'Resolved' | 'In development' | 'Aborted';
 
+type StatusCategory = 'In Progress' | 'Done';
+
+const sendNotification = (message) => {
+
+    const options = {
+        hostname: 'api.telegram.org',
+        port: 443,
+        path: encodeURI(`/${process.env.BOT_TOCKEN}/sendMessage?chat_id=${process.env.NOTIFY_CHAT}&text=${message}`),
+        method: 'GET'
+      }
+      
+      const req = https.request(options, res => {
+          console.log(`statusCode: ${res.statusCode}`)
+        
+          res.on('data', d => {
+            process.stdout.write(d)
+          })
+        })
+        
+        req.on('error', error => {
+          console.error(error)
+        })
+        
+        req.end()
+}
+
 type ResType = {
 	total: number;
 	maxResult: number;
@@ -20,6 +47,7 @@ type ResType = {
 		key: string;
 		fields: {
 			customfield_10811: number;
+			summary: string;
 			progress: {
 				total: number;
 			};
@@ -28,6 +56,9 @@ type ResType = {
 			};
 			status: {
 				name: IssuerStatus;
+				statusCategory: {
+					name: StatusCategory;
+				}
 			};
 			priority: {
 				name: string;
@@ -40,7 +71,134 @@ type ResType = {
 	}>;
 };
 
+type DB = {
+	tickets: Map<string, Ticket>,
+	reports: Map<number, Report>
+}
+
+type Report = {
+	logged: number, 
+	eta: number,
+	tickets: Array<string>,
+}
+
+type Ticket = {
+	summary: string,
+	assignee: string,
+	eta: number,
+	logged: number,
+	status: IssuerStatus,
+}
+
+const getToday = (): number => Date.UTC(new Date().getUTCFullYear(), new Date().getUTCMonth(), new Date().getUTCDate());
+
+const readDb = (): DB => {
+	const raw_db = JSON.parse(readFileSync(db, { encoding: 'utf8' }));
+
+	return {
+		reports: new Map(raw_db.reports??[]),
+		tickets: new Map(raw_db.tickets??[])	
+	}
+}
+
+const saveDb = (db_state: DB) => {
+
+	const raw_db = {
+		reports: Array.from(db_state.reports.entries()),
+		tickets: Array.from(db_state.tickets.entries())
+	}
+
+	writeFileSync(db, JSON.stringify(raw_db, null, 2), { encoding: 'utf8' });
+}
+
+const addReport = (db_state: DB, res: ResType) => {
+
+	const report: Report = {
+		tickets: res.issues.map(_ => _.key),
+		eta: res.issues.map(_ => _.fields.customfield_10811).reduce((acc, cur) => acc + cur, 0),
+		logged: res.issues.map(_ => _.fields.progress.total).reduce((acc, cur) => acc + cur, 0),
+	}
+
+	db_state.reports.set(getToday(), report);
+
+	res.issues.forEach(issue => {
+		db_state.tickets.set(issue.key, {
+			eta: issue.fields.customfield_10811,
+			assignee: issue.fields.assignee.displayName,
+			logged: issue.fields.progress.total,
+			status: issue.fields.status.name,
+			summary: issue.fields.summary
+		})
+	})
+
+
+	// const totallyLoggedDays = Big(res.issues.map((_) => _.fields.progress.total).reduce((acc, cur) => acc + cur, 0))
+	// 	.div(3600)
+	// 	.div(8)
+	// 	.round(1)
+	// 	.toNumber();
+
+	// const stories = res.issues
+	// 	.map((_) => ({
+	// 		key: _.key,
+	// 		points: _.fields.customfield_10811,
+	// 		log: Big(_.fields.progress.total).div(3600).div(8).round(1).toNumber(),
+	// 		status: _.fields.status.name,
+	// 		priority: _.fields.priority.name,
+	// 		type: _.fields.issuetype.name,
+	// 	}))
+	// 	.map((_) => ({
+	// 		..._,
+	// 		est: Big(_.log).div(_.points).round(2).toNumber(),
+	// 	}))
+	// 	.sort((a, b) => (a.est > b.est ? -1 : 1));
+
+	// const total = {
+	// 	day: getToday(),
+	// 	count: res.total,
+	// 	eta: res.issues
+	// 		.map((_) => _.fields.customfield_10811)
+	// 		.reduce((acc, cur) => acc + cur, 0)
+	// 		.toFixed(1),
+	// 	logged: totallyLoggedDays,
+	// 	stories,
+	// };
+}
+
+/*
+ * Migration
+ */
+const migration = () => {
+
+	const db_state = readDb();
+
+	const snapshot = JSON.parse(readFileSync('tickets_1905_snapshot.json', { encoding: 'utf8' }));
+
+	snapshot.forEach(item => {
+		const day = Date.UTC(new Date(item.day).getUTCFullYear(), new Date(item.day).getUTCMonth(), new Date(item.day).getUTCDate());
+
+		db_state.reports.set(day, {
+			eta: item.stories.map(_ => _.points).reduce((acc, cur) => acc + cur, 0),
+			logged: item.stories.map(_ => _.log).reduce((acc, cur) => acc + cur, 0),
+			tickets: item.stories.map(_ => _.key)
+		});
+
+		item.stories.forEach(story => {
+			db_state.tickets.set(story.key, {
+				assignee: '',
+				eta: story.points,
+				logged: story.log,
+				status: story.status,
+				summary: ''
+			})
+		});
+	})
+
+	saveDb(db_state);
+}
+
 const run = async () => {
+
 	const res: ResType = await fetch(
 		`https://jira.in.devexperts.com/rest/api/latest/search?jql=filter=${filterID}&issueLimit=1000`,
 		{
@@ -52,45 +210,15 @@ const run = async () => {
 		},
 	).then((_) => _.json());
 
-	const totallyLoggedDays = Big(res.issues.map((_) => _.fields.progress.total).reduce((acc, cur) => acc + cur, 0))
-		.div(3600)
-		.div(8)
-		.round(1)
-		.toNumber();
+	const db_state = readDb();
 
-	const stories = res.issues
-		.map((_) => ({
-			key: _.key,
-			points: _.fields.customfield_10811,
-			log: Big(_.fields.progress.total).div(3600).div(8).round(1).toNumber(),
-			status: _.fields.status.name,
-			priority: _.fields.priority.name,
-			type: _.fields.issuetype.name,
-		}))
-		.map((_) => ({
-			..._,
-			est: Big(_.log).div(_.points).round(2).toNumber(),
-		}))
-		.sort((a, b) => (a.est > b.est ? -1 : 1));
+	addReport(db_state, res)
 
-	const total = {
-		day: Number(new Date()),
-		count: res.total,
-		eta: res.issues
-			.map((_) => _.fields.customfield_10811)
-			.reduce((acc, cur) => acc + cur, 0)
-			.toFixed(1),
-		logged: totallyLoggedDays,
-		stories,
-	};
+	saveDb(db_state);
 
-	const db_state: Array<any> = JSON.parse(readFileSync(db, { encoding: 'utf8' }));
+	//console.log(total);
 
-	db_state.push(total);
-
-	writeFileSync(db, JSON.stringify(db_state, null, 2), { encoding: 'utf8' });
-
-	console.log(total);
+	sendNotification(`Got new JIRA report, Count: ${res.issues.length}, ETA: ${res.issues.map(_ => _.fields.customfield_10811).reduce((acc, cur) => acc + cur, 0)}`)
 };
 
 run();
