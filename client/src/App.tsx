@@ -171,7 +171,7 @@ function App() {
       ),
     },
     { field: 'eta', headerName: 'ETA', width: 60 },
-    { field: 'priority', headerName: 'Priority', width: 130, valueFormatter: (params) => params.value.name },
+    { field: 'priority', headerName: 'Priority', width: 130, valueFormatter: (params) => params.value?.name },
     { field: 'status', headerName: 'Status', width: 150 },
     { field: 'logged', headerName: 'Logged', width: 150, valueFormatter: (params) => Big(params.value).div(3600).div(8).round(2).toNumber() },
     { field: 'assignee', headerName: 'Assignee', width: 150 },
