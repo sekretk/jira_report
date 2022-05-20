@@ -364,10 +364,8 @@
           "DXTF-28717",
           "DXTF-28715",
           "DXTF-28710",
-          "DXTF-28703",
           "DXTF-28668",
           "DXTF-28665",
-          "DXTF-28645",
           "DXTF-28641",
           "DXTF-28583",
           "DXTF-28582",
@@ -382,7 +380,6 @@
           "DXTF-27973",
           "DXTF-27967",
           "DXTF-27931",
-          "DXTF-27672",
           "DXTF-27420",
           "DXTF-25812",
           "DXTF-25178",
@@ -394,8 +391,8 @@
           "DXTF-21587",
           "DXTF-21088"
         ],
-        "eta": 46.7,
-        "logged": 20.67
+        "eta": 40.6,
+        "logged": 15
       }
     ]
   ],
@@ -436,15 +433,15 @@
       "DXTF-28717",
       {
         "eta": 0.5,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Konstantin Sekret",
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] OE - empty manual FwdRef in vanilla leg",
         "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
         }
       }
     ],
@@ -563,10 +560,10 @@
         "status": "In development",
         "summary": "[SpectraFX] Option Expiry Tool - Size of error message balloons contradicts design",
         "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/5",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/trivial.svg",
+          "name": "Low priority",
+          "id": "5"
         }
       }
     ],
@@ -702,7 +699,7 @@
       "DXTF-28060",
       {
         "eta": 2,
-        "assignee": "Konstantin Sekret",
+        "assignee": "SpectraFX Developers",
         "logged": 43200,
         "status": "Confirmed",
         "summary": "[SpectraFX] DS Confirmation Price Precision",
@@ -734,7 +731,7 @@
       "DXTF-27973",
       {
         "eta": 1,
-        "assignee": "Konstantin Sekret",
+        "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] DS calculated %vol not reseted",
@@ -926,9 +923,9 @@
       "DXTF-21587",
       {
         "eta": 2,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Ilya Erin",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "In development",
         "summary": "[SpectraFX] DS Confirmation Menu - Add a IOC notification when notional > than available",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
