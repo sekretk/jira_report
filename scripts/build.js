@@ -10,6 +10,8 @@ console.log('RUN', command);
 
 chdir(path.join(__dirname, '..'));
 
+run('git push');
+
 run('npm run grab');
 
 run(`cp tickets_history.json client/src/tickets_history.json`)
