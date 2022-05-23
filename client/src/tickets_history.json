@@ -514,7 +514,7 @@
           "DXTF-21088"
         ],
         "eta": 41.7,
-        "logged": 15.96
+        "logged": 16.63
       }
     ]
   ],
@@ -1030,7 +1030,7 @@
       {
         "eta": 0.5,
         "assignee": "Ilya Erin",
-        "logged": 48480,
+        "logged": 55680,
         "status": "Waiting for review",
         "summary": "[SpectraFX] DS Confirmation Menu - Deleting value doesn't trigger validation",
         "priority": {
@@ -1158,8 +1158,8 @@
       {
         "eta": 0.1,
         "assignee": "Grigory Stukunov",
-        "logged": 0,
-        "status": "In development",
+        "logged": 12300,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] BB filter titles",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
@@ -1191,7 +1191,7 @@
         "eta": 0.5,
         "assignee": "Egor Zholnin",
         "logged": 0,
-        "status": "In development",
+        "status": "Waiting for review",
         "summary": "[SpectraFX] Order Entry - Manual date doesn't allow shift by tens",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
