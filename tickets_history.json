@@ -474,6 +474,48 @@
         "eta": 40.6,
         "logged": 15.96
       }
+    ],
+    [
+      1653264000000,
+      {
+        "tickets": [
+          "DXTF-28814",
+          "DXTF-28805",
+          "DXTF-28801",
+          "DXTF-28722",
+          "DXTF-28718",
+          "DXTF-28717",
+          "DXTF-28715",
+          "DXTF-28710",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28578",
+          "DXTF-28495",
+          "DXTF-28423",
+          "DXTF-28367",
+          "DXTF-28339",
+          "DXTF-28338",
+          "DXTF-28060",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27967",
+          "DXTF-27931",
+          "DXTF-27420",
+          "DXTF-25812",
+          "DXTF-25178",
+          "DXTF-24692",
+          "DXTF-22992",
+          "DXTF-21976",
+          "DXTF-21888",
+          "DXTF-21811",
+          "DXTF-21587",
+          "DXTF-21088"
+        ],
+        "eta": 41.7,
+        "logged": 15.96
+      }
     ]
   ],
   "tickets": [
@@ -593,7 +635,7 @@
       "DXTF-28665",
       {
         "eta": 1,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Ilya Erin",
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] OE Loading State Progress Bar",
@@ -635,9 +677,9 @@
       "DXTF-28641",
       {
         "eta": 0.5,
-        "assignee": "Grigory Stukunov",
+        "assignee": "SpectraFX Developers",
         "logged": 36120,
-        "status": "In development",
+        "status": "Confirmed",
         "summary": "[SpectraFX] Option Expiry Tool - Size of error message balloons contradicts design",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/5",
@@ -747,9 +789,9 @@
       "DXTF-28339",
       {
         "eta": 0.5,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Egor Zholnin",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "Waiting for review",
         "summary": "[SpectraFX] Order Entry - Popup movement at the moment of calculation end",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
@@ -779,7 +821,7 @@
       "DXTF-28060",
       {
         "eta": 2,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Ilya Erin",
         "logged": 43200,
         "status": "Confirmed",
         "summary": "[SpectraFX] DS Confirmation Price Precision",
@@ -923,7 +965,7 @@
       "DXTF-24692",
       {
         "eta": 1,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Ilya Erin",
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] ATM Straddles - Lone default notional triggers active state for \"Submit\" button",
@@ -1109,6 +1151,54 @@
         "logged": 0.3,
         "status": "Waiting for review",
         "summary": ""
+      }
+    ],
+    [
+      "DXTF-28814",
+      {
+        "eta": 0.1,
+        "assignee": "Grigory Stukunov",
+        "logged": 0,
+        "status": "In development",
+        "summary": "[SpectraFX] BB filter titles",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
+      }
+    ],
+    [
+      "DXTF-28805",
+      {
+        "eta": 1,
+        "assignee": "Ilya Erin",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Order Entry - Tabbing off Calendar widget closed Calendar",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
+      }
+    ],
+    [
+      "DXTF-28801",
+      {
+        "eta": 0.5,
+        "assignee": "Egor Zholnin",
+        "logged": 0,
+        "status": "In development",
+        "summary": "[SpectraFX] Order Entry - Manual date doesn't allow shift by tens",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
       }
     ]
   ]
