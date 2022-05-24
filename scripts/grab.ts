@@ -193,13 +193,23 @@ const run = async () => {
 
 	const db_state = readDb();
 
+	const lastReport = Math.max(...Array.from(db_state.reports.keys()));
+
+	const lastReportTickets = db_state.reports.get(lastReport).tickets;
+	const newTickets = res.issues.map(_ => _.key);
+
 	addReport(db_state, res)
 
 	saveDb(db_state);
 
-	//console.log(total);
 
-	sendNotification(`Got new JIRA report, Count: ${res.issues.length}, ETA: ${res.issues.map(_ => _.fields.customfield_10811).reduce((acc, cur) => acc + cur, 0)}`)
+	const addedTickets = newTickets.filter(resTicket => !lastReportTickets.includes(resTicket));
+	const deletedTickets = lastReportTickets.filter(lastTicket => !newTickets.includes(lastTicket));
+
+	sendNotification(`Got new JIRA report, Count: ${res.issues.length}, ${''
+		}ETA: ${res.issues.map(_ => _.fields.customfield_10811).reduce((acc, cur) => acc + cur, 0)}${''
+		}, Added: ${addedTickets.length > 0 ? addedTickets.join('-') : 'none'}, ${''
+		}, Removed: ${deletedTickets.length > 0 ? deletedTickets.join('-') : 'none'}`)
 };
 
 run();
