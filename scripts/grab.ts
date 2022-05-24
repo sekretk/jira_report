@@ -202,14 +202,13 @@ const run = async () => {
 
 	saveDb(db_state);
 
-
 	const addedTickets = newTickets.filter(resTicket => !lastReportTickets.includes(resTicket));
 	const deletedTickets = lastReportTickets.filter(lastTicket => !newTickets.includes(lastTicket));
 
-	sendNotification(`Got new JIRA report, Count: ${res.issues.length}, ${''
+	sendNotification(`Got new JIRA report for ${new Date(getToday()).toLocaleDateString()}, Count: ${res.issues.length}, ${''
 		}ETA: ${res.issues.map(_ => _.fields.customfield_10811).reduce((acc, cur) => acc + cur, 0)}${''
-		}, Added: ${addedTickets.length > 0 ? addedTickets.join('-') : 'none'}, ${''
-		}, Removed: ${deletedTickets.length > 0 ? deletedTickets.join('-') : 'none'}`)
+		}. Changes from ${new Date(lastReport).toLocaleDateString()} : added: ${addedTickets.length > 0 ? addedTickets.join('-') : 'none'}, ${''
+		}, removed: ${deletedTickets.length > 0 ? deletedTickets.join('-') : 'none'}`)
 };
 
 run();
