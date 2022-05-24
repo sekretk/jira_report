@@ -516,6 +516,48 @@
         "eta": 41.7,
         "logged": 16.63
       }
+    ],
+    [
+      1653350400000,
+      {
+        "tickets": [
+          "DXTF-28814",
+          "DXTF-28805",
+          "DXTF-28801",
+          "DXTF-28722",
+          "DXTF-28718",
+          "DXTF-28717",
+          "DXTF-28715",
+          "DXTF-28710",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28578",
+          "DXTF-28495",
+          "DXTF-28423",
+          "DXTF-28367",
+          "DXTF-28339",
+          "DXTF-28338",
+          "DXTF-28060",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27967",
+          "DXTF-27931",
+          "DXTF-27420",
+          "DXTF-25812",
+          "DXTF-25178",
+          "DXTF-24692",
+          "DXTF-22992",
+          "DXTF-21976",
+          "DXTF-21888",
+          "DXTF-21811",
+          "DXTF-21587",
+          "DXTF-21088"
+        ],
+        "eta": 41.7,
+        "logged": 21.4
+      }
     ]
   ],
   "tickets": [
@@ -524,7 +566,7 @@
       {
         "eta": 2,
         "assignee": "Egor Zholnin",
-        "logged": 22380,
+        "logged": 23400,
         "status": "In development",
         "summary": "[SpectraFX] ATM - If ipf service is down, an order is created for a hardcoded instrument",
         "priority": {
@@ -636,7 +678,7 @@
       {
         "eta": 1,
         "assignee": "Ilya Erin",
-        "logged": 0,
+        "logged": 16200,
         "status": "Confirmed",
         "summary": "[SpectraFX] OE Loading State Progress Bar",
         "priority": {
@@ -742,7 +784,7 @@
       {
         "eta": 2,
         "assignee": "Egor Zholnin",
-        "logged": 5400,
+        "logged": 9720,
         "status": "Waiting for review",
         "summary": "[SpectraFX] [OE] handle commission request loading/error",
         "priority": {
@@ -790,7 +832,7 @@
       {
         "eta": 0.5,
         "assignee": "Egor Zholnin",
-        "logged": 0,
+        "logged": 3480,
         "status": "Waiting for review",
         "summary": "[SpectraFX] Order Entry - Popup movement at the moment of calculation end",
         "priority": {
@@ -822,7 +864,7 @@
       {
         "eta": 2,
         "assignee": "Ilya Erin",
-        "logged": 43200,
+        "logged": 64800,
         "status": "Confirmed",
         "summary": "[SpectraFX] DS Confirmation Price Precision",
         "priority": {
@@ -870,7 +912,7 @@
       {
         "eta": 2,
         "assignee": "Konstantin Sekret",
-        "logged": 7200,
+        "logged": 14400,
         "status": "In development",
         "summary": "[SpectraFX] DS FFT validation glitches",
         "priority": {
@@ -918,7 +960,7 @@
       {
         "eta": 3,
         "assignee": "Egor Zholnin",
-        "logged": 190959,
+        "logged": 193419,
         "status": "Waiting for review",
         "summary": "[SpectraFX] DealScreen PriceInVol Calculation",
         "priority": {
@@ -966,7 +1008,7 @@
       {
         "eta": 1,
         "assignee": "Ilya Erin",
-        "logged": 0,
+        "logged": 36000,
         "status": "Confirmed",
         "summary": "[SpectraFX] ATM Straddles - Lone default notional triggers active state for \"Submit\" button",
         "priority": {
@@ -1046,7 +1088,7 @@
       {
         "eta": 2,
         "assignee": "Ilya Erin",
-        "logged": 0,
+        "logged": 27000,
         "status": "In development",
         "summary": "[SpectraFX] DS Confirmation Menu - Add a IOC notification when notional > than available",
         "priority": {
@@ -1174,7 +1216,7 @@
       {
         "eta": 1,
         "assignee": "Ilya Erin",
-        "logged": 0,
+        "logged": 9000,
         "status": "Confirmed",
         "summary": "[SpectraFX] Order Entry - Tabbing off Calendar widget closed Calendar",
         "priority": {
@@ -1190,7 +1232,7 @@
       {
         "eta": 0.5,
         "assignee": "Egor Zholnin",
-        "logged": 0,
+        "logged": 9060,
         "status": "Waiting for review",
         "summary": "[SpectraFX] Order Entry - Manual date doesn't allow shift by tens",
         "priority": {
