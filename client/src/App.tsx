@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import './App.css';
 import data from './tickets_history.json'
-import { Box, MenuItem, Select, Tab, Tabs, Typography } from '@mui/material';
+import { Box, MenuItem, Select, Tab, Tabs } from '@mui/material';
 import { DataGrid, GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
 import {
   Chart as ChartJS,
@@ -80,6 +80,11 @@ const charData = reports.map(report => ({
 
 const options = {
   responsive: true,
+  scales: {
+    y: {
+      beginAtZero: true
+    }
+  },
   plugins: {
     legend: {
       position: 'top' as const,
@@ -90,8 +95,6 @@ const options = {
     },
   },
 };
-
-console.log(charData.map(_ => _.day))
 
 const cData = {
   labels: charData.map(_ => _.day),
@@ -203,7 +206,7 @@ function App() {
             </Select>
           </div>
           <div className="grid">
-          Added
+            Added
             <DataGrid
               rows={addedStories}
               columns={columns}
