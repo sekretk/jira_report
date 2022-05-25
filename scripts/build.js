@@ -10,7 +10,7 @@ console.log('RUN', command);
 
 chdir(path.join(__dirname, '..'));
 
-run('git push');
+run('git pull');
 
 run('npm run grab');
 
