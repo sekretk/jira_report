@@ -207,8 +207,8 @@ const run = async () => {
 
 	sendNotification(`Got new JIRA report for ${new Date(getToday()).toLocaleDateString()}, Count: ${res.issues.length}, ${''
 		}ETA: ${res.issues.map(_ => _.fields.customfield_10811).reduce((acc, cur) => acc + cur, 0)}${''
-		}. Changes from ${new Date(lastReport).toLocaleDateString()} : added: ${addedTickets.length > 0 ? addedTickets.join('-') : 'none'}, ${''
-		}, removed: ${deletedTickets.length > 0 ? deletedTickets.join('-') : 'none'}`)
+		}. Changes from ${new Date(lastReport).toLocaleDateString()} : added: ${addedTickets.length > 0 ? addedTickets.join('; ') : 'none'}, ${''
+		}, removed: ${deletedTickets.length > 0 ? deletedTickets.join('; ') : 'none'}`)
 };
 
 run();
