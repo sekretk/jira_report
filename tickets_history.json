@@ -598,6 +598,45 @@
         "eta": 40.7,
         "logged": 22.23
       }
+    ],
+    [
+      1653609600000,
+      {
+        "tickets": [
+          "DXTF-28888",
+          "DXTF-28854",
+          "DXTF-28816",
+          "DXTF-28808",
+          "DXTF-28805",
+          "DXTF-28792",
+          "DXTF-28788",
+          "DXTF-28722",
+          "DXTF-28717",
+          "DXTF-28715",
+          "DXTF-28710",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28578",
+          "DXTF-28423",
+          "DXTF-28367",
+          "DXTF-28338",
+          "DXTF-28060",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27931",
+          "DXTF-27420",
+          "DXTF-24692",
+          "DXTF-21976",
+          "DXTF-21888",
+          "DXTF-21811",
+          "DXTF-21587",
+          "DXTF-21088"
+        ],
+        "eta": 38.7,
+        "logged": 19.32
+      }
     ]
   ],
   "tickets": [
@@ -809,7 +848,7 @@
         "eta": 2,
         "assignee": "Ilya Erin",
         "logged": 23400,
-        "status": "Confirmed",
+        "status": "Waiting for review",
         "summary": "[SpectraFX] OE Loading - error presentation",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
@@ -840,14 +879,14 @@
       {
         "eta": 2,
         "assignee": "Konstantin Sekret",
-        "logged": 0,
-        "status": "In development",
+        "logged": 7200,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] DDL component with item template",
         "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
+          "name": "Critical (6)",
+          "id": "2"
         }
       }
     ],
@@ -1280,6 +1319,102 @@
           "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
           "name": "Normal",
           "id": "4"
+        }
+      }
+    ],
+    [
+      "DXTF-28888",
+      {
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Specific Order Entry - delta must be displayed in the instrument's notional currency",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
+          "name": "Critical (6)",
+          "id": "2"
+        }
+      }
+    ],
+    [
+      "DXTF-28854",
+      {
+        "eta": 0.1,
+        "assignee": "Grigory Stukunov",
+        "logged": 5880,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] Order Entry - \"Leg Premium\" misses space before postfix",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
+      }
+    ],
+    [
+      "DXTF-28816",
+      {
+        "eta": 0.1,
+        "assignee": "SpectraFX Developers",
+        "logged": 2340,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] ATM confirmation fonts and text",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
+      }
+    ],
+    [
+      "DXTF-28808",
+      {
+        "eta": 0.5,
+        "assignee": "Grigory Stukunov",
+        "logged": 660,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] ATM Straddle alignment issues",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
+      }
+    ],
+    [
+      "DXTF-28792",
+      {
+        "eta": 2,
+        "assignee": "Konstantin Sekret",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE - remove strategy mutation delay",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
+          "name": "Critical (6)",
+          "id": "2"
+        }
+      }
+    ],
+    [
+      "DXTF-28788",
+      {
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Specifics Order Entry: Expiry & Delivery dates in edit mode should take US format: MM/DD/YYYY",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
         }
       }
     ]
