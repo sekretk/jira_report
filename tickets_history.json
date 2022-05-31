@@ -683,6 +683,48 @@
         "eta": 45.3,
         "logged": 22.29
       }
+    ],
+    [
+      1653955200000,
+      {
+        "tickets": [
+          "DXTF-28903",
+          "DXTF-28888",
+          "DXTF-28854",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28811",
+          "DXTF-28809",
+          "DXTF-28805",
+          "DXTF-28792",
+          "DXTF-28788",
+          "DXTF-28722",
+          "DXTF-28717",
+          "DXTF-28715",
+          "DXTF-28710",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28578",
+          "DXTF-28423",
+          "DXTF-28367",
+          "DXTF-28338",
+          "DXTF-28171",
+          "DXTF-28060",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27931",
+          "DXTF-24692",
+          "DXTF-21976",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ],
+        "eta": 41.2,
+        "logged": 14.88
+      }
     ]
   ],
   "tickets": [
@@ -691,8 +733,8 @@
       {
         "eta": 2,
         "assignee": "Egor Zholnin",
-        "logged": 58860,
-        "status": "In development",
+        "logged": 70440,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] ATM - If ipf service is down, an order is created for a hardcoded instrument",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
@@ -894,7 +936,7 @@
         "eta": 2,
         "assignee": "Ilya Erin",
         "logged": 24600,
-        "status": "Waiting for review",
+        "status": "In development",
         "summary": "[SpectraFX] OE Loading - error presentation",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
@@ -1212,7 +1254,7 @@
       "DXTF-21587",
       {
         "eta": 2,
-        "assignee": "Ilya Erin",
+        "assignee": "SpectraFX Developers",
         "logged": 27000,
         "status": "In development",
         "summary": "[SpectraFX] DS Confirmation Menu - Add a IOC notification when notional > than available",
@@ -1372,9 +1414,9 @@
       "DXTF-28888",
       {
         "eta": 0.5,
-        "assignee": "SpectraFX Developers",
-        "logged": 0,
-        "status": "Confirmed",
+        "assignee": "Grigory Stukunov",
+        "logged": 3900,
+        "status": "In development",
         "summary": "[SpectraFX] Specific Order Entry - delta must be displayed in the instrument's notional currency",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
@@ -1389,7 +1431,7 @@
       {
         "eta": 0.1,
         "assignee": "Grigory Stukunov",
-        "logged": 5880,
+        "logged": 7560,
         "status": "Waiting for review",
         "summary": "[SpectraFX] Order Entry - \"Leg Premium\" misses space before postfix",
         "priority": {
@@ -1533,7 +1575,7 @@
       {
         "eta": 0.5,
         "assignee": "SpectraFX Developers",
-        "logged": 0,
+        "logged": 7200,
         "status": "Confirmed",
         "summary": "[SpectraFX] OE - premium convention selection pips option",
         "priority": {
@@ -1565,7 +1607,7 @@
       {
         "eta": 2,
         "assignee": "Konstantin Sekret",
-        "logged": 10860,
+        "logged": 41460,
         "status": "In development",
         "summary": "[SpectraFX] Expiry Dropdown With inline Expiration",
         "priority": {
