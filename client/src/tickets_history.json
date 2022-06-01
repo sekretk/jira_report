@@ -725,6 +725,54 @@
         "eta": 41.2,
         "logged": 14.88
       }
+    ],
+    [
+      1654041600000,
+      {
+        "tickets": [
+          "DXTF-28931",
+          "DXTF-28922",
+          "DXTF-28916",
+          "DXTF-28915",
+          "DXTF-28888",
+          "DXTF-28854",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28815",
+          "DXTF-28813",
+          "DXTF-28811",
+          "DXTF-28809",
+          "DXTF-28805",
+          "DXTF-28804",
+          "DXTF-28803",
+          "DXTF-28792",
+          "DXTF-28788",
+          "DXTF-28722",
+          "DXTF-28717",
+          "DXTF-28715",
+          "DXTF-28710",
+          "DXTF-28668",
+          "DXTF-28665",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28578",
+          "DXTF-28367",
+          "DXTF-28338",
+          "DXTF-28171",
+          "DXTF-28060",
+          "DXTF-27976",
+          "DXTF-27973",
+          "DXTF-27931",
+          "DXTF-24692",
+          "DXTF-21976",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ],
+        "eta": 43,
+        "logged": 18.46
+      }
     ]
   ],
   "tickets": [
@@ -766,7 +814,7 @@
         "eta": 0.5,
         "assignee": "Konstantin Sekret",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "In development",
         "summary": "[SpectraFX] OE - empty manual FwdRef in vanilla leg",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
@@ -845,7 +893,7 @@
       {
         "eta": 1,
         "assignee": "Ilya Erin",
-        "logged": 16200,
+        "logged": 36000,
         "status": "Waiting for review",
         "summary": "[SpectraFX] OE Loading State Progress Bar",
         "priority": {
@@ -935,7 +983,7 @@
       {
         "eta": 2,
         "assignee": "Ilya Erin",
-        "logged": 24600,
+        "logged": 55200,
         "status": "In development",
         "summary": "[SpectraFX] OE Loading - error presentation",
         "priority": {
@@ -1031,7 +1079,7 @@
       {
         "eta": 2,
         "assignee": "SpectraFX Developers",
-        "logged": 64800,
+        "logged": 68400,
         "status": "Confirmed",
         "summary": "[SpectraFX] DS Confirmation Price Precision",
         "priority": {
@@ -1175,7 +1223,7 @@
       {
         "eta": 1,
         "assignee": "SpectraFX Developers",
-        "logged": 36000,
+        "logged": 39660,
         "status": "Confirmed",
         "summary": "[SpectraFX] ATM Straddles - Lone default notional triggers active state for \"Submit\" button",
         "priority": {
@@ -1255,7 +1303,7 @@
       {
         "eta": 2,
         "assignee": "SpectraFX Developers",
-        "logged": 27000,
+        "logged": 57600,
         "status": "In development",
         "summary": "[SpectraFX] DS Confirmation Menu - Add a IOC notification when notional > than available",
         "priority": {
@@ -1415,8 +1463,8 @@
       {
         "eta": 0.5,
         "assignee": "Grigory Stukunov",
-        "logged": 3900,
-        "status": "In development",
+        "logged": 18360,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] Specific Order Entry - delta must be displayed in the instrument's notional currency",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
@@ -1494,9 +1542,9 @@
       "DXTF-28788",
       {
         "eta": 0.5,
-        "assignee": "SpectraFX Developers",
-        "logged": 0,
-        "status": "Confirmed",
+        "assignee": "Egor Zholnin",
+        "logged": 10260,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] Specifics Order Entry: Expiry & Delivery dates in edit mode should take US format: MM/DD/YYYY",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
@@ -1607,9 +1655,137 @@
       {
         "eta": 2,
         "assignee": "Konstantin Sekret",
-        "logged": 41460,
-        "status": "In development",
+        "logged": 48660,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] Expiry Dropdown With inline Expiration",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
+          "name": "Critical (6)",
+          "id": "2"
+        }
+      }
+    ],
+    [
+      "DXTF-28931",
+      {
+        "eta": 0.1,
+        "assignee": "Konstantin Sekret",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE Loading width for loader 2",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
+      }
+    ],
+    [
+      "DXTF-28922",
+      {
+        "eta": 0.5,
+        "assignee": "Victor Malyushev",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Design: OE - premium convention selection pips option",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
+      }
+    ],
+    [
+      "DXTF-28916",
+      {
+        "eta": 2,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "OE Calendar - Weekends and NonMarket days",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
+      }
+    ],
+    [
+      "DXTF-28915",
+      {
+        "eta": 0.5,
+        "assignee": "Konstantin Sekret",
+        "logged": 0,
+        "status": "In development",
+        "summary": "Order Entry - Impossible to delete forward leg when all leg types are in strategy ",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
+          "name": "Urgent (3)",
+          "id": "3"
+        }
+      }
+    ],
+    [
+      "DXTF-28815",
+      {
+        "eta": 0.1,
+        "assignee": "Grigory Stukunov",
+        "logged": 4740,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] ATM confirmation titile",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
+      }
+    ],
+    [
+      "DXTF-28813",
+      {
+        "eta": 0.1,
+        "assignee": "Grigory Stukunov",
+        "logged": 1800,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] OE confirmation header",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
+      }
+    ],
+    [
+      "DXTF-28804",
+      {
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] DS tenor inverted",
+        "priority": {
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
+        }
+      }
+    ],
+    [
+      "DXTF-28803",
+      {
+        "eta": 1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE - date input select invalid value on focus",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
           "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
