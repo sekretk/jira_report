@@ -199,10 +199,10 @@ function App() {
         <div>
           <div>
             <Select labelId="label" label="From" id="select" value={from} onChange={(item) => setFrom(Number(item.target.value))}>
-              {reports.map(_ => <MenuItem key={_.key} value={_.key}>{new Date(_.key).toUTCString().split(' ').slice(4).join(' ')}</MenuItem>)}
+              {reports.map(_ => <MenuItem key={_.key} value={_.key}>{new Date(_.key).toUTCString().split(' ').slice(0, 4).join(' ')}</MenuItem>)}
             </Select>
             <Select labelId="label" label="To" id="select" value={to} onChange={(item) => setTo(Number(item.target.value))}>
-              {reports.map(_ => <MenuItem key={_.key} value={_.key}>{new Date(_.key).toUTCString().split(' ').slice(4).join(' ')}</MenuItem>)}
+              {reports.map(_ => <MenuItem key={_.key} value={_.key}>{new Date(_.key).toUTCString().split(' ').slice(0, 4).join(' ')}</MenuItem>)}
             </Select>
           </div>
           <div className="grid">
