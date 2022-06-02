@@ -206,13 +206,13 @@ function App() {
             </Select>
           </div>
           <div className="grid">
-            Added
+            Added ({addedStories.length})
             <DataGrid
               rows={addedStories}
               columns={columns}
               getRowId={item => item.key}
             />
-            Removed
+            Removed ({removedStories.length})
             <DataGrid
               rows={removedStories}
               columns={columns}
