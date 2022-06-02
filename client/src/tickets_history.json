@@ -778,7 +778,6 @@
       1654128000000,
       {
         "tickets": [
-          "DXTF-28931",
           "DXTF-28916",
           "DXTF-28839",
           "DXTF-28838",
@@ -804,7 +803,7 @@
           "DXTF-21587",
           "DXTF-21088"
         ],
-        "eta": 32.1,
+        "eta": 32,
         "logged": 9.8
       }
     ]
@@ -973,10 +972,10 @@
         "status": "Confirmed",
         "summary": "[SpectraFX] Option Expiry Tool - Size of error message balloons contradicts design",
         "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/5",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/trivial.svg",
-          "name": "Low priority",
-          "id": "5"
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
+          "name": "Normal",
+          "id": "4"
         }
       }
     ],
@@ -1464,15 +1463,15 @@
       "DXTF-28805",
       {
         "eta": 1,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Konstantin Sekret",
         "logged": 9000,
         "status": "Confirmed",
         "summary": "[SpectraFX] Order Entry - Tabbing off Calendar widget closed Calendar",
         "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
+          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
+          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
+          "name": "Critical (6)",
+          "id": "2"
         }
       }
     ],
@@ -1562,7 +1561,7 @@
         "eta": 2,
         "assignee": "Konstantin Sekret",
         "logged": 0,
-        "status": "In development",
+        "status": "Waiting for review",
         "summary": "[SpectraFX] OE - remove strategy mutation delay",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
@@ -1627,7 +1626,7 @@
         "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
-        "summary": "[SpectraFX] Dealing Screen - After changing of price-in-vol value there is no Replace button",
+        "summary": "[SpectraFX] DS - After changing of price-in-vol value there is no Replace button",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
           "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
