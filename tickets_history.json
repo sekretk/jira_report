@@ -773,6 +773,40 @@
         "eta": 43,
         "logged": 18.46
       }
+    ],
+    [
+      1654128000000,
+      {
+        "tickets": [
+          "DXTF-28931",
+          "DXTF-28916",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28811",
+          "DXTF-28805",
+          "DXTF-28804",
+          "DXTF-28803",
+          "DXTF-28792",
+          "DXTF-28715",
+          "DXTF-28710",
+          "DXTF-28668",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28367",
+          "DXTF-28338",
+          "DXTF-28060",
+          "DXTF-27976",
+          "DXTF-27931",
+          "DXTF-24692",
+          "DXTF-21976",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ],
+        "eta": 32.1,
+        "logged": 9.8
+      }
     ]
   ],
   "tickets": [
@@ -1142,9 +1176,9 @@
       "DXTF-27931",
       {
         "eta": 2,
-        "assignee": "SpectraFX Developers",
-        "logged": 0,
-        "status": "Confirmed",
+        "assignee": "Egor Zholnin",
+        "logged": 9000,
+        "status": "In development",
         "summary": "[SpectraFX] ATM Straddles - Own order panel remains on single cancel operation",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
@@ -1318,7 +1352,7 @@
       "DXTF-21088",
       {
         "eta": 1,
-        "assignee": "SpectraFX Backlog",
+        "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] Order Entry Confirmation - Tenor is missing from the Vanilla summary",
@@ -1430,7 +1464,7 @@
       "DXTF-28805",
       {
         "eta": 1,
-        "assignee": "Ilya Erin",
+        "assignee": "SpectraFX Developers",
         "logged": 9000,
         "status": "Confirmed",
         "summary": "[SpectraFX] Order Entry - Tabbing off Calendar widget closed Calendar",
@@ -1528,7 +1562,7 @@
         "eta": 2,
         "assignee": "Konstantin Sekret",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "In development",
         "summary": "[SpectraFX] OE - remove strategy mutation delay",
         "priority": {
           "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
