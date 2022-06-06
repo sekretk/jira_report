@@ -129,7 +129,7 @@ const updateTickets = async (db_state: DB) => {
 	console.log('setOfTickets', setOfTickets)
 
 	const ticketDetails = Array.from(setOfTickets.values())
-		//.filter((ticket) => !Boolean(db_state.tickets.get(ticket)?.resolution))
+		.filter((ticket) => !Boolean(db_state.tickets.get(ticket)?.resolution))
 		.map(key => fetch(
 			`https://jira.in.devexperts.com/rest/api/latest/issue/${key}`,
 			{
