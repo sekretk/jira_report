@@ -852,6 +852,7 @@
           "DXTF-28803",
           "DXTF-28715",
           "DXTF-28710",
+          "DXTF-28671",
           "DXTF-28668",
           "DXTF-28641",
           "DXTF-28583",
@@ -865,8 +866,8 @@
           "DXTF-21587",
           "DXTF-21088"
         ],
-        "eta": 28,
-        "logged": 11.55
+        "eta": 28.5,
+        "logged": 11.8
       }
     ]
   ],
@@ -1686,6 +1687,18 @@
         "priority": "Urgent (3)",
         "resolution": null
       }
+    ],
+    [
+      "DXTF-28671",
+      {
+        "eta": 0.5,
+        "assignee": "Egor Zholnin",
+        "logged": 19140,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] Specific Order Entry - midMarketPrice not getting in context",
+        "priority": "Urgent (3)",
+        "resolution": null
+      }
     ]
   ],
   "weekly": [
@@ -1942,10 +1955,12 @@
     [
       1654376400000,
       {
-        "count": 21,
-        "eta": 28,
-        "logged": 337740,
-        "added": [],
+        "count": 22,
+        "eta": 28.5,
+        "logged": 356880,
+        "added": [
+          "DXTF-28671"
+        ],
         "removed": [
           "DXTF-28811",
           "DXTF-28805"
@@ -1960,6 +1975,7 @@
           "DXTF-28803",
           "DXTF-28715",
           "DXTF-28710",
+          "DXTF-28671",
           "DXTF-28668",
           "DXTF-28641",
           "DXTF-28583",
