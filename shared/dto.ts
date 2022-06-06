@@ -16,7 +16,7 @@ export type WeeklyReport = {
 	logged: number, 
 	eta: number,
 	count: number,
-	tickets: Array<string>,
+	current: Array<string>,
 	added: Array<string>,
 	removed: Array<string>
 }
@@ -28,8 +28,5 @@ export type Ticket = {
 	logged: number,
 	status: IssuerStatus,
 	resolution: string | null,
-	priority: {
-		name: string;
-		id: number;
-	}
+	priority: string
 }

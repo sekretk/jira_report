@@ -875,48 +875,36 @@
       "DXTF-28722",
       {
         "eta": 2,
-        "assignee": "Egor Zholnin",
-        "logged": 70440,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 65280,
+        "status": "Resolved",
         "summary": "[SpectraFX] ATM - If ipf service is down, an order is created for a hardcoded instrument",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28718",
       {
-        "eta": 0.5,
-        "assignee": "SpectraFX Developers",
+        "eta": 0,
+        "assignee": "SpectraFX Backlog",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "Aborted",
         "summary": "[SpectraFX] OE - round autohedge amount",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Aborted"
       }
     ],
     [
       "DXTF-28717",
       {
         "eta": 0.5,
-        "assignee": "Konstantin Sekret",
-        "logged": 0,
-        "status": "In development",
+        "assignee": "dxDemo QA",
+        "logged": 15840,
+        "status": "Resolved",
         "summary": "[SpectraFX] OE - empty manual FwdRef in vanilla leg",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
@@ -927,12 +915,8 @@
         "logged": 7200,
         "status": "Waiting for review",
         "summary": "[SpectraFX] OE - empty amount for hedge leg",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": null
       }
     ],
     [
@@ -943,28 +927,20 @@
         "logged": 0,
         "status": "In development",
         "summary": "[SpectraFX] OE - spot refresh adjustments",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": null
       }
     ],
     [
       "DXTF-28703",
       {
         "eta": 2,
-        "assignee": "Konstantin Sekret",
+        "assignee": "dxDemo QA",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "Resolved",
         "summary": "[SpectraFX] OE - Forward delivery date selector",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
@@ -975,28 +951,20 @@
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] OE Keyboard Navigation - Place focus on first available field of new leg",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
       "DXTF-28665",
       {
         "eta": 1,
-        "assignee": "Ilya Erin",
+        "assignee": "dxDemo QA",
         "logged": 36000,
-        "status": "Waiting for review",
+        "status": "Resolved",
         "summary": "[SpectraFX] OE Loading State Progress Bar",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
@@ -1006,23 +974,21 @@
         "assignee": "SpectraFX Developers",
         "logged": 10200,
         "status": "Confirmed",
-        "summary": "[SpectraFX] Errors & validation copying"
+        "summary": "[SpectraFX] Errors & validation copying",
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
       "DXTF-28645",
       {
         "eta": 4,
-        "assignee": "Konstantin Sekret",
+        "assignee": "SpectraFX Backlog",
         "logged": 163320,
-        "status": "Waiting for review",
+        "status": "Resolved",
         "summary": "[SpectraFX] Manual Date input control",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": "Fixed"
       }
     ],
     [
@@ -1033,12 +999,8 @@
         "logged": 36120,
         "status": "Confirmed",
         "summary": "[SpectraFX] Option Expiry Tool - Size of error message balloons contradicts design",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
@@ -1049,108 +1011,80 @@
         "logged": 12120,
         "status": "Waiting for review",
         "summary": "[SpectraFX] OE Default Instrument",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": null
       }
     ],
     [
       "DXTF-28582",
       {
         "eta": 0.5,
-        "assignee": "Ilya Erin",
+        "assignee": "dxDemo QA",
         "logged": 0,
-        "status": "Waiting for review",
+        "status": "Not fixed",
         "summary": "[SpectraFX] OE Loading width for loader",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": "Not fixed"
       }
     ],
     [
       "DXTF-28578",
       {
         "eta": 2,
-        "assignee": "Ilya Erin",
+        "assignee": "dxDemo QA",
         "logged": 55200,
-        "status": "In development",
+        "status": "Waiting for test",
         "summary": "[SpectraFX] OE Loading - error presentation",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": "Waiting for test"
       }
     ],
     [
       "DXTF-28495",
       {
         "eta": 2,
-        "assignee": "Egor Zholnin",
-        "logged": 9720,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 40560,
+        "status": "Resolved",
         "summary": "[SpectraFX] [OE] handle commission request loading/error",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28423",
       {
         "eta": 2,
-        "assignee": "Konstantin Sekret",
-        "logged": 23700,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 21720,
+        "status": "Resolved",
         "summary": "[SpectraFX] DDL component with item template",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28367",
       {
         "eta": 1,
-        "assignee": "Konstantin Sekret",
+        "assignee": "SpectraFX Backlog",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "Resolved",
         "summary": "[SpectraFX] Option Expiry Tool - Countdown Timer has a small delay between two widgets",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28339",
       {
         "eta": 0.5,
-        "assignee": "Egor Zholnin",
-        "logged": 3480,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 4680,
+        "status": "Resolved",
         "summary": "[SpectraFX] Order Entry - Popup movement at the moment of calculation end",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
@@ -1161,12 +1095,8 @@
         "logged": 28800,
         "status": "Confirmed",
         "summary": "[SpectraFX] Order Entry - Keyboard navigation - Focus in leg type selector is absent after leg type choosing ",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
@@ -1177,12 +1107,8 @@
         "logged": 68400,
         "status": "Confirmed",
         "summary": "[SpectraFX] DS Confirmation Price Precision",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": null
       }
     ],
     [
@@ -1193,44 +1119,32 @@
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] Dealing Screen - If triggered Cancel order button is not hidden after operations",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
       "DXTF-27973",
       {
         "eta": 1,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Ilya Kalpahchiyan",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "Waiting for clarification",
         "summary": "[SpectraFX] DS calculated %vol not reseted",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": null
       }
     ],
     [
       "DXTF-27967",
       {
         "eta": 2,
-        "assignee": "Konstantin Sekret",
+        "assignee": "dxDemo QA",
         "logged": 28800,
-        "status": "Waiting for review",
+        "status": "Resolved",
         "summary": "[SpectraFX] DS FFT validation glitches",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
@@ -1241,76 +1155,56 @@
         "logged": 42420,
         "status": "Waiting for review",
         "summary": "[SpectraFX] ATM Straddles - Own order panel remains on single cancel operation",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": null
       }
     ],
     [
       "DXTF-27672",
       {
-        "eta": 0.1,
-        "assignee": "SpectraFX Developers",
+        "eta": 0,
+        "assignee": "Anton Rodzevich",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "Aborted",
         "summary": "[SpectraFX] OE Keyboard Navigation - Manual input into expiry date is not saved on tabbing",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": "Aborted"
       }
     ],
     [
       "DXTF-27420",
       {
         "eta": 3,
-        "assignee": "Egor Zholnin",
-        "logged": 201939,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 195279,
+        "status": "Resolved",
         "summary": "[SpectraFX] DealScreen PriceInVol Calculation",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-25812",
       {
         "eta": 0.5,
-        "assignee": "SpectraFX Developers",
+        "assignee": "dxDemo QA",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "Resolved",
         "summary": "[SpectraFX] DS- FFT notification does not match the requirements",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-25178",
       {
         "eta": 0.5,
-        "assignee": "SpectraFX Developers",
+        "assignee": "dxDemo QA",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "Resolved",
         "summary": "[SpectraFX] Dealing Screen - FFT validation uses incorrect wording and no highlighting",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
@@ -1321,28 +1215,20 @@
         "logged": 39660,
         "status": "Confirmed",
         "summary": "[SpectraFX] ATM Straddles - Lone default notional triggers active state for \"Submit\" button",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": null
       }
     ],
     [
       "DXTF-22992",
       {
         "eta": 0.1,
-        "assignee": "SpectraFX Developers",
+        "assignee": "dxDemo QA",
         "logged": 27000,
-        "status": "Confirmed",
+        "status": "Resolved",
         "summary": "[SpectraFX] Order Entry - Incorrect keyboard navigation in the calendar widget",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
@@ -1353,12 +1239,8 @@
         "logged": 14460,
         "status": "In development",
         "summary": "[SpectraFX] Option Expiry Tool - Small table glitches",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
@@ -1369,28 +1251,20 @@
         "logged": 0,
         "status": "In development",
         "summary": "[SpectraFX] OE Confirmation self-match Validation",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": null
       }
     ],
     [
       "DXTF-21811",
       {
         "eta": 0.5,
-        "assignee": "Ilya Erin",
-        "logged": 56880,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 69480,
+        "status": "Resolved",
         "summary": "[SpectraFX] DS Confirmation Menu - Deleting value doesn't trigger validation",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": "Fixed"
       }
     ],
     [
@@ -1401,12 +1275,8 @@
         "logged": 57600,
         "status": "In development",
         "summary": "[SpectraFX] DS Confirmation Menu - Add a IOC notification when notional > than available",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": null
       }
     ],
     [
@@ -1417,108 +1287,116 @@
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] Order Entry Confirmation - Tenor is missing from the Vanilla summary",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
       "DXTF-22986",
       {
-        "assignee": "",
         "eta": 0.1,
-        "logged": 0.3,
-        "status": "Confirmed",
-        "summary": ""
+        "assignee": "SpectraFX Backlog",
+        "logged": 25200,
+        "status": "Resolved",
+        "summary": "[SpectraFX] OE - Cut dropdown is not adjusted to the amount of options if < 2",
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28273",
       {
-        "assignee": "",
         "eta": 0.5,
-        "logged": 0.7,
-        "status": "Waiting for review",
-        "summary": ""
+        "assignee": "dxDemo QA",
+        "logged": 28800,
+        "status": "Resolved",
+        "summary": "[SpectraFX] Order Entry - Delivery date format isn't according to 'mm.dd.yy' format",
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28343",
       {
-        "assignee": "",
         "eta": 2,
-        "logged": 2.4,
-        "status": "Waiting for review",
-        "summary": ""
+        "assignee": "dxDemo QA",
+        "logged": 68400,
+        "status": "Resolved",
+        "summary": "[SpectraFX] OE Selected Symbol Loading State",
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28631",
       {
-        "assignee": "",
         "eta": 0.5,
-        "logged": 0.5,
-        "status": "Waiting for review",
-        "summary": ""
+        "assignee": "dxDemo QA",
+        "logged": 34200,
+        "status": "Resolved",
+        "summary": "[SpectraFX] OE - spot refresh button in not vertically aligned",
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28667",
       {
-        "assignee": "",
         "eta": 0.5,
-        "logged": 0.1,
-        "status": "Waiting for review",
-        "summary": ""
+        "assignee": "dxDemo QA",
+        "logged": 2700,
+        "status": "Not fixed",
+        "summary": "[SpectraFX] ATM Tile - Spot precision",
+        "priority": "Urgent (3)",
+        "resolution": "Not fixed"
       }
     ],
     [
       "DXTF-28629",
       {
-        "assignee": "",
         "eta": 3,
-        "logged": 3.4,
-        "status": "Waiting for review",
-        "summary": ""
+        "assignee": "SpectraFX Backlog",
+        "logged": 98040,
+        "status": "Resolved",
+        "summary": "[SpectraFX] OE mocked story",
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28392",
       {
-        "assignee": "",
         "eta": 0.5,
-        "logged": 0.4,
-        "status": "Waiting for review",
-        "summary": ""
+        "assignee": "SpectraFX Backlog",
+        "logged": 11220,
+        "status": "Resolved",
+        "summary": "[SpectraFX] Price Quality Filter - Moderate level price has no icon in filter line",
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28385",
       {
-        "assignee": "",
         "eta": 2,
-        "logged": 0.3,
-        "status": "Waiting for review",
-        "summary": ""
+        "assignee": "dxDemo QA",
+        "logged": 7200,
+        "status": "Resolved",
+        "summary": "[SpectraFX] Order Entry - Leg price is not recalculated for changed convention [2]",
+        "priority": "Critical (6)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28814",
       {
         "eta": 0.1,
-        "assignee": "Grigory Stukunov",
-        "logged": 21840,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 52980,
+        "status": "Resolved",
         "summary": "[SpectraFX] BB filter titles",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
@@ -1526,143 +1404,107 @@
       {
         "eta": 1,
         "assignee": "Konstantin Sekret",
-        "logged": 12600,
-        "status": "Waiting for review",
+        "logged": 16200,
+        "status": "Waiting for build",
         "summary": "[SpectraFX] Order Entry - Tabbing off Calendar widget closed Calendar",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": "Waiting for build"
       }
     ],
     [
       "DXTF-28801",
       {
         "eta": 0.5,
-        "assignee": "SpectraFX QA",
+        "assignee": "dxDemo QA",
         "logged": 9060,
-        "status": "Waiting for review",
+        "status": "Resolved",
         "summary": "[SpectraFX] Order Entry - Manual date doesn't allow shift by tens",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28888",
       {
         "eta": 0.5,
-        "assignee": "Grigory Stukunov",
+        "assignee": "dxDemo QA",
         "logged": 18360,
-        "status": "Waiting for review",
+        "status": "Resolved",
         "summary": "[SpectraFX] Specific Order Entry - delta must be displayed in the instrument's notional currency",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28854",
       {
         "eta": 0.1,
-        "assignee": "Grigory Stukunov",
+        "assignee": "dxDemo QA",
         "logged": 7560,
-        "status": "Waiting for review",
+        "status": "Resolved",
         "summary": "[SpectraFX] Order Entry - \"Leg Premium\" misses space before postfix",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28816",
       {
         "eta": 0.1,
-        "assignee": "Grigory Stukunov",
-        "logged": 7200,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 10980,
+        "status": "Resolved",
         "summary": "[SpectraFX] ATM confirmation fonts and text",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28808",
       {
         "eta": 0.5,
-        "assignee": "Grigory Stukunov",
-        "logged": 2280,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 3480,
+        "status": "Resolved",
         "summary": "[SpectraFX] ATM Straddle alignment issues",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28792",
       {
         "eta": 2,
-        "assignee": "Konstantin Sekret",
-        "logged": 0,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 7200,
+        "status": "Resolved",
         "summary": "[SpectraFX] OE - remove strategy mutation delay",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28788",
       {
         "eta": 0.5,
-        "assignee": "Egor Zholnin",
+        "assignee": "dxDemo QA",
         "logged": 10260,
-        "status": "Waiting for review",
+        "status": "Resolved",
         "summary": "[SpectraFX] Specifics Order Entry: Expiry & Delivery dates in edit mode should take US format: MM/DD/YYYY",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28903",
       {
         "eta": 1,
-        "assignee": "SpectraFX Developers",
-        "logged": 0,
-        "status": "Confirmed",
+        "assignee": "dxDemo QA",
+        "logged": 10980,
+        "status": "Resolved",
         "summary": "[SpectraFX] Order Entry - Impossible to open tenor dropdown using mouse when focusing on digit part of date ",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": "Fixed"
       }
     ],
     [
@@ -1673,12 +1515,8 @@
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] Dealing Screen - After deleting of price-in-vol replace button doesn't disappear",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
@@ -1689,12 +1527,8 @@
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] DS - After changing of price-in-vol value there is no Replace button",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
@@ -1705,92 +1539,68 @@
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] Dealing Screen - After reinput the same price value price-in-vol doesn't recalculate",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
       "DXTF-28811",
       {
-        "eta": 0.5,
+        "eta": 0,
         "assignee": "SpectraFX Developers",
         "logged": 7200,
-        "status": "Confirmed",
+        "status": "Aborted",
         "summary": "[SpectraFX] OE - premium convention selection pips option",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Aborted"
       }
     ],
     [
       "DXTF-28809",
       {
         "eta": 0.1,
-        "assignee": "Grigory Stukunov",
+        "assignee": "dxDemo QA",
         "logged": 5280,
-        "status": "Waiting for review",
+        "status": "Not fixed",
         "summary": "[SpectraFX] OE header to Specific Order",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Not fixed"
       }
     ],
     [
       "DXTF-28171",
       {
         "eta": 2,
-        "assignee": "Konstantin Sekret",
-        "logged": 48660,
-        "status": "Waiting for review",
+        "assignee": "SpectraFX Backlog",
+        "logged": 62280,
+        "status": "Resolved",
         "summary": "[SpectraFX] Expiry Dropdown With inline Expiration",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/2",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/critical.svg",
-          "name": "Critical (6)",
-          "id": "2"
-        }
+        "priority": "Critical (6)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28931",
       {
         "eta": 0.1,
-        "assignee": "Konstantin Sekret",
+        "assignee": "dxDemo QA",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "Resolved",
         "summary": "[SpectraFX] OE Loading width for loader 2",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28922",
       {
         "eta": 0.5,
-        "assignee": "Victor Malyushev",
-        "logged": 0,
-        "status": "Confirmed",
+        "assignee": "SpectraFX Developers",
+        "logged": 13260,
+        "status": "Reported",
         "summary": "[SpectraFX] Design: OE - premium convention selection pips option",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
@@ -1801,60 +1611,44 @@
         "logged": 10380,
         "status": "Waiting for review",
         "summary": "OE Calendar - Weekends and NonMarket days",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
       "DXTF-28915",
       {
         "eta": 0.5,
-        "assignee": "Konstantin Sekret",
-        "logged": 0,
-        "status": "In development",
+        "assignee": "dxDemo QA",
+        "logged": 9360,
+        "status": "Resolved",
         "summary": "Order Entry - Impossible to delete forward leg when all leg types are in strategy ",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28815",
       {
         "eta": 0.1,
-        "assignee": "Grigory Stukunov",
+        "assignee": "dxDemo QA",
         "logged": 4740,
-        "status": "Waiting for review",
-        "summary": "[SpectraFX] ATM confirmation titile",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "status": "Resolved",
+        "summary": "[SpectraFX] ATM confirmation title",
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
       "DXTF-28813",
       {
         "eta": 0.1,
-        "assignee": "Grigory Stukunov",
-        "logged": 1800,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 3720,
+        "status": "Resolved",
         "summary": "[SpectraFX] OE confirmation header",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": "Fixed"
       }
     ],
     [
@@ -1862,15 +1656,11 @@
       {
         "eta": 0.5,
         "assignee": "Grigory Stukunov",
-        "logged": 0,
+        "logged": 4980,
         "status": "In development",
         "summary": "[SpectraFX] DS tenor inverted",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
@@ -1881,12 +1671,8 @@
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] OE - date input select invalid value on focus",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/4",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/minor.svg",
-          "name": "Normal",
-          "id": "4"
-        }
+        "priority": "Normal",
+        "resolution": null
       }
     ],
     [
@@ -1897,22 +1683,18 @@
         "logged": 15600,
         "status": "Waiting for review",
         "summary": "[SpectraFX] [SpectraFX] ExpiryToolBar - tooltip for cuts",
-        "priority": {
-          "self": "https://jira.in.devexperts.com/rest/api/2/priority/3",
-          "iconUrl": "https://jira.in.devexperts.com/images/icons/priorities/major.svg",
-          "name": "Urgent (3)",
-          "id": "3"
-        }
+        "priority": "Urgent (3)",
+        "resolution": null
       }
     ]
   ],
   "weekly": [
     [
-      1652043600000,
+      1652130000000,
       {
         "count": 37,
-        "eta": 52.2,
-        "logged": 993462.8,
+        "eta": 51.6,
+        "logged": 1149399,
         "added": [
           "DXTF-28648",
           "DXTF-28722",
@@ -1972,12 +1754,16 @@
       }
     ],
     [
-      1652648400000,
+      1652734800000,
       {
-        "count": 36,
-        "eta": 49.2,
-        "logged": 993459.4,
-        "added": [],
+        "count": 39,
+        "eta": 50.2,
+        "logged": 1129599,
+        "added": [
+          "DXTF-28814",
+          "DXTF-28805",
+          "DXTF-28801"
+        ],
         "removed": [
           "DXTF-28629"
         ],
@@ -2017,26 +1803,33 @@
           "DXTF-21587",
           "DXTF-21088",
           "DXTF-28392",
-          "DXTF-28648"
+          "DXTF-28648",
+          "DXTF-28814",
+          "DXTF-28805",
+          "DXTF-28801"
         ]
       }
     ],
     [
-      1653253200000,
+      1653339600000,
       {
-        "count": 39,
-        "eta": 45.400000000000006,
-        "logged": 909099,
+        "count": 46,
+        "eta": 51.00000000000001,
+        "logged": 1088439,
         "added": [
-          "DXTF-28814",
-          "DXTF-28805",
-          "DXTF-28801",
           "DXTF-28888",
           "DXTF-28854",
           "DXTF-28816",
           "DXTF-28808",
           "DXTF-28792",
-          "DXTF-28788"
+          "DXTF-28788",
+          "DXTF-28903",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28811",
+          "DXTF-28809",
+          "DXTF-28171"
         ],
         "removed": [
           "DXTF-28703",
@@ -2085,24 +1878,24 @@
           "DXTF-28816",
           "DXTF-28808",
           "DXTF-28792",
-          "DXTF-28788"
-        ]
-      }
-    ],
-    [
-      1653858000000,
-      {
-        "count": 46,
-        "eta": 50.6,
-        "logged": 902859,
-        "added": [
+          "DXTF-28788",
           "DXTF-28903",
           "DXTF-28839",
           "DXTF-28838",
           "DXTF-28836",
           "DXTF-28811",
           "DXTF-28809",
-          "DXTF-28171",
+          "DXTF-28171"
+        ]
+      }
+    ],
+    [
+      1653944400000,
+      {
+        "count": 42,
+        "eta": 46.00000000000001,
+        "logged": 708180,
+        "added": [
           "DXTF-28931",
           "DXTF-28922",
           "DXTF-28916",
@@ -2120,9 +1913,13 @@
           "DXTF-28495",
           "DXTF-28339",
           "DXTF-27967",
+          "DXTF-27420",
           "DXTF-25812",
           "DXTF-25178",
-          "DXTF-22992"
+          "DXTF-22992",
+          "DXTF-21811",
+          "DXTF-28816",
+          "DXTF-28808"
         ],
         "tickets": [
           "DXTF-28903",
@@ -2131,10 +1928,8 @@
           "DXTF-28839",
           "DXTF-28838",
           "DXTF-28836",
-          "DXTF-28816",
           "DXTF-28811",
           "DXTF-28809",
-          "DXTF-28808",
           "DXTF-28805",
           "DXTF-28792",
           "DXTF-28788",
@@ -2155,11 +1950,9 @@
           "DXTF-27976",
           "DXTF-27973",
           "DXTF-27931",
-          "DXTF-27420",
           "DXTF-24692",
           "DXTF-21976",
           "DXTF-21888",
-          "DXTF-21811",
           "DXTF-21587",
           "DXTF-21088",
           "DXTF-28931",
@@ -2171,65 +1964,6 @@
           "DXTF-28804",
           "DXTF-28803",
           "DXTF-28959"
-        ]
-      }
-    ],
-    [
-      1654462800000,
-      {
-        "count": 21,
-        "eta": 28,
-        "logged": 332760,
-        "added": [],
-        "removed": [
-          "DXTF-28903",
-          "DXTF-28888",
-          "DXTF-28854",
-          "DXTF-28816",
-          "DXTF-28811",
-          "DXTF-28809",
-          "DXTF-28808",
-          "DXTF-28805",
-          "DXTF-28792",
-          "DXTF-28788",
-          "DXTF-28722",
-          "DXTF-28717",
-          "DXTF-28665",
-          "DXTF-28578",
-          "DXTF-28423",
-          "DXTF-28367",
-          "DXTF-28171",
-          "DXTF-27973",
-          "DXTF-27420",
-          "DXTF-21811",
-          "DXTF-28931",
-          "DXTF-28922",
-          "DXTF-28915",
-          "DXTF-28815",
-          "DXTF-28813"
-        ],
-        "tickets": [
-          "DXTF-28959",
-          "DXTF-28916",
-          "DXTF-28839",
-          "DXTF-28838",
-          "DXTF-28836",
-          "DXTF-28804",
-          "DXTF-28803",
-          "DXTF-28715",
-          "DXTF-28710",
-          "DXTF-28668",
-          "DXTF-28641",
-          "DXTF-28583",
-          "DXTF-28338",
-          "DXTF-28060",
-          "DXTF-27976",
-          "DXTF-27931",
-          "DXTF-24692",
-          "DXTF-21976",
-          "DXTF-21888",
-          "DXTF-21587",
-          "DXTF-21088"
         ]
       }
     ]

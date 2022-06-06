@@ -19,6 +19,8 @@ const pairwise = <T>(arr: Array<T>): Array<[T, T]> =>
 		return [...acc, [current, arr[index - 1]]];
 	}, []);
 
+const distinct = <T extends unknown>(value: T, index: number, self: Array<T>) => self.indexOf(value) === index;
+
 const db = 'tickets_history.json';
 
 type StatusCategory = 'In Progress' | 'Done';
@@ -117,25 +119,27 @@ const addReport = (db_state: DB, res: ResType) => {
 
 const updateTickets = async (db_state: DB) => {
 
-	const setOfTickets =	Array.from(db_state.reports.entries())
-	.map(([key, report]) => report.tickets)
-	.reduce((acc, cur) => {
-		cur.forEach(ticket => acc.add(ticket));
-		return acc;
-	}, new Set<string>());
+	const setOfTickets = Array.from(db_state.reports.entries())
+		.map(([key, report]) => report.tickets)
+		.reduce((acc, cur) => {
+			cur.forEach(ticket => acc.add(ticket));
+			return acc;
+		}, new Set<string>());
+
+	console.log('setOfTickets', setOfTickets)
 
 	const ticketDetails = Array.from(setOfTickets.values())
-			.filter((ticket) => !Boolean(db_state.tickets.get(ticket)?.resolution))
-			.map(key => fetch(
-				`https://jira.in.devexperts.com/rest/api/latest/issue/${key}`,
-				{
-					method: 'GET',
-					headers: {
-						Authorization: 'Basic ' + token,
-						'Content-Type': 'application/json',
-					},
+		//.filter((ticket) => !Boolean(db_state.tickets.get(ticket)?.resolution))
+		.map(key => fetch(
+			`https://jira.in.devexperts.com/rest/api/latest/issue/${key}`,
+			{
+				method: 'GET',
+				headers: {
+					Authorization: 'Basic ' + token,
+					'Content-Type': 'application/json',
 				},
-			).then((_) => _.json() as unknown as ResType['issues'][number]));
+			},
+		).then((_) => _.json() as unknown as ResType['issues'][number]));
 
 	(await Promise.all(ticketDetails)).forEach(issue => db_state.tickets.set(issue.key, {
 		eta: issue.fields.customfield_10811,
@@ -143,7 +147,7 @@ const updateTickets = async (db_state: DB) => {
 		logged: issue.fields.progress.total,
 		status: issue.fields.status.name,
 		summary: issue.fields.summary,
-		priority: issue.fields.priority,
+		priority: issue.fields.priority?.name ?? '',
 		resolution: issue.fields.resolution?.name ?? null
 	}))
 }
@@ -152,16 +156,16 @@ const aggregate = (db_state: DB) => {
 
 	db_state.weekly.clear();
 
-	const weeksTickets = new Map<number, Set<string>>();
+	const weeksTickets = new Map<number, Array<{ day: number, report: Report }>>();
 
 	db_state.reports.forEach((rep, key) => {
 
-		const weekKey = startOfWeek(key, { weekStartsOn: 1 }).getTime();
+		const weekKey = startOfWeek(key, { weekStartsOn: 0 }).getTime();
 
 		if (weeksTickets.has(weekKey)) {
-			rep.tickets.forEach(ticket => weeksTickets.get(weekKey).add(ticket));
+			weeksTickets.get(weekKey).push({ day: key, report: rep });
 		} else {
-			weeksTickets.set(weekKey, new Set(rep.tickets));
+			weeksTickets.set(weekKey, [{ day: key, report: rep }]);
 		}
 	});
 
@@ -169,19 +173,44 @@ const aggregate = (db_state: DB) => {
 		.sort(([a], [b]) => a < b ? -1 : 1)
 		.map(([key, set]) => [key, Array.from(set.values())] as const);
 
-	sortedByWeeks.forEach(([key, tickets], index) => {
+	console.log(sortedByWeeks);
+
+	const weekReport: Array<{ key: number, all: Array<string>, end: Array<string> }> =
+		sortedByWeeks.map(([key, reports]) => {
+			const all = Array.from(
+				reports.reduce((acc, data) => {
+					data.report.tickets.forEach(_ => acc.add(_));
+					return acc;
+				}, new Set<string>()));
+
+			const end = reports.reduce((acc, cur) =>
+				acc === undefined
+					? cur
+					: acc.day < cur.day
+						? cur
+						: acc,
+				undefined)?.report?.tickets ?? [];
+
+			return {
+				key,
+				all,
+				end
+			}
+		})
+
+	weekReport.forEach(({ key, all, end }, index) => {
 
 		if (index === 0) return;
 
-		const [, prevTickets] = sortedByWeeks[index - 1];
+		const { key: prevKey, all: prevAll, end: prevEnd } = weekReport[index - 1];
 
 		db_state.weekly.set(key, {
-			count: tickets.length,
-			eta: tickets.map(ticket => db_state.tickets.get(ticket).eta).reduce((acc, cur) => acc + cur, 0),
-			logged: tickets.map(ticket => db_state.tickets.get(ticket).logged).reduce((acc, cur) => acc + cur, 0),
-			added: tickets.filter(ticket => !prevTickets.includes(ticket)),
-			removed: prevTickets.filter(ticket => !tickets.includes(ticket)),
-			tickets
+			count: all.length,
+			eta: all.map(ticket => db_state.tickets.get(ticket).eta).reduce((acc, cur) => acc + cur, 0),
+			logged: all.map(ticket => db_state.tickets.get(ticket).logged).reduce((acc, cur) => acc + cur, 0),
+			added: all.filter(ticket => !prevEnd.includes(ticket)),
+			removed: [...all, ...prevEnd].filter(distinct).filter(ticket => !end.includes(ticket)),
+			current: end
 		});
 	}, []);
 }
@@ -208,7 +237,7 @@ const run = async () => {
 
 	addReport(db_state, res);
 
-	updateTickets(db_state);
+	await updateTickets(db_state);
 
 	aggregate(db_state);
 

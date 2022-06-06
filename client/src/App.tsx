@@ -46,7 +46,7 @@ function App() {
     [selected]);
 
   const lastStories: Array<KeyTicketTicket> = useMemo(
-    () => db_weekly.get(selected).tickets.filter(distinct).map(findTicket),
+    () => db_weekly.get(selected).current.filter(distinct).map(findTicket),
     [selected]);
 
   console.log(lastStories);
