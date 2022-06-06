@@ -3,40 +3,48 @@ const https = require('https')
 
 import Big from 'big.js';
 import fetch from 'cross-fetch';
-import { IssuerStatus, DB, Report } from '../shared/dto';
+import { IssuerStatus, DB, Report, WeeklyReport } from '../shared/dto';
+import { startOfWeek } from 'date-fns';
 
 const filterID = 42978;
 
-const token = Buffer.from(`${process.env.LOGIN}:${process.env.PASSWORD}`).toString('base64').slice(0, -1);
+// const token = Buffer.from(`${process.env.LOGIN}:${process.env.PASSWORD}`).toString('base64').slice(0, -1);
+const token = Buffer.from(`ksekret:Grt9zCp*1785`).toString('base64').slice(0, -1);
+
+const pairwise = <T>(arr: Array<T>): Array<[T, T]> =>
+	arr.reduce((acc, current, index) => {
+
+		if (index === 0) return acc;
+
+		return [...acc, [current, arr[index - 1]]];
+	}, []);
 
 const db = 'tickets_history.json';
-
-const riskThreshold = 0.3;
 
 type StatusCategory = 'In Progress' | 'Done';
 
 const sendNotification = (message) => {
 
-    const options = {
-        hostname: 'api.telegram.org',
-        port: 443,
-        path: encodeURI(`/${process.env.BOT_TOCKEN}/sendMessage?chat_id=${process.env.NOTIFY_CHAT}&text=${message}`),
-        method: 'GET'
-      }
-      
-      const req = https.request(options, res => {
-          console.log(`statusCode: ${res.statusCode}`)
-        
-          res.on('data', d => {
-            process.stdout.write(d)
-          })
-        })
-        
-        req.on('error', error => {
-          console.error(error)
-        })
-        
-        req.end()
+	const options = {
+		hostname: 'api.telegram.org',
+		port: 443,
+		path: encodeURI(`/${process.env.BOT_TOCKEN}/sendMessage?chat_id=${process.env.NOTIFY_CHAT}&text=${message}`),
+		method: 'GET'
+	}
+
+	const req = https.request(options, res => {
+		console.log(`statusCode: ${res.statusCode}`)
+
+		res.on('data', d => {
+			process.stdout.write(d)
+		})
+	})
+
+	req.on('error', error => {
+		console.error(error)
+	})
+
+	req.end()
 }
 
 type ResType = {
@@ -66,6 +74,9 @@ type ResType = {
 			issuetype: {
 				name: string;
 			};
+			resolution: {
+				name: string
+			} | null,
 		};
 	}>;
 };
@@ -76,8 +87,9 @@ const readDb = (): DB => {
 	const raw_db = JSON.parse(readFileSync(db, { encoding: 'utf8' }));
 
 	return {
-		reports: new Map(raw_db.reports??[]),
-		tickets: new Map(raw_db.tickets??[])	
+		reports: new Map(raw_db.reports ?? []),
+		tickets: new Map(raw_db.tickets ?? []),
+		weekly: new Map(raw_db.weekly ?? [])
 	}
 }
 
@@ -85,7 +97,8 @@ const saveDb = (db_state: DB) => {
 
 	const raw_db = {
 		reports: Array.from(db_state.reports.entries()),
-		tickets: Array.from(db_state.tickets.entries())
+		tickets: Array.from(db_state.tickets.entries()),
+		weekly: Array.from(db_state.weekly.entries())
 	}
 
 	writeFileSync(db, JSON.stringify(raw_db, null, 2), { encoding: 'utf8' });
@@ -100,20 +113,78 @@ const addReport = (db_state: DB, res: ResType) => {
 	}
 
 	db_state.reports.set(getToday(), report);
+}
 
-	res.issues.forEach(issue => {
-		db_state.tickets.set(issue.key, {
-			eta: issue.fields.customfield_10811,
-			assignee: issue.fields.assignee.displayName,
-			logged: issue.fields.progress.total,
-			status: issue.fields.status.name,
-			summary: issue.fields.summary,
-			priority: issue.fields.priority
-		})
-	})
+const updateTickets = async (db_state: DB) => {
+
+	const setOfTickets =	Array.from(db_state.reports.entries())
+	.map(([key, report]) => report.tickets)
+	.reduce((acc, cur) => {
+		cur.forEach(ticket => acc.add(ticket));
+		return acc;
+	}, new Set<string>());
+
+	const ticketDetails = Array.from(setOfTickets.values())
+			.filter((ticket) => !Boolean(db_state.tickets.get(ticket)?.resolution))
+			.map(key => fetch(
+				`https://jira.in.devexperts.com/rest/api/latest/issue/${key}`,
+				{
+					method: 'GET',
+					headers: {
+						Authorization: 'Basic ' + token,
+						'Content-Type': 'application/json',
+					},
+				},
+			).then((_) => _.json() as unknown as ResType['issues'][number]));
+
+	(await Promise.all(ticketDetails)).forEach(issue => db_state.tickets.set(issue.key, {
+		eta: issue.fields.customfield_10811,
+		assignee: issue.fields.assignee.displayName,
+		logged: issue.fields.progress.total,
+		status: issue.fields.status.name,
+		summary: issue.fields.summary,
+		priority: issue.fields.priority,
+		resolution: issue.fields.resolution?.name ?? null
+	}))
+}
 
 const aggregate = (db_state: DB) => {
-}	
+
+	db_state.weekly.clear();
+
+	const weeksTickets = new Map<number, Set<string>>();
+
+	db_state.reports.forEach((rep, key) => {
+
+		const weekKey = startOfWeek(key, { weekStartsOn: 1 }).getTime();
+
+		if (weeksTickets.has(weekKey)) {
+			rep.tickets.forEach(ticket => weeksTickets.get(weekKey).add(ticket));
+		} else {
+			weeksTickets.set(weekKey, new Set(rep.tickets));
+		}
+	});
+
+	const sortedByWeeks = Array.from(weeksTickets.entries())
+		.sort(([a], [b]) => a < b ? -1 : 1)
+		.map(([key, set]) => [key, Array.from(set.values())] as const);
+
+	sortedByWeeks.forEach(([key, tickets], index) => {
+
+		if (index === 0) return;
+
+		const [, prevTickets] = sortedByWeeks[index - 1];
+
+		db_state.weekly.set(key, {
+			count: tickets.length,
+			eta: tickets.map(ticket => db_state.tickets.get(ticket).eta).reduce((acc, cur) => acc + cur, 0),
+			logged: tickets.map(ticket => db_state.tickets.get(ticket).logged).reduce((acc, cur) => acc + cur, 0),
+			added: tickets.filter(ticket => !prevTickets.includes(ticket)),
+			removed: prevTickets.filter(ticket => !tickets.includes(ticket)),
+			tickets
+		});
+	}, []);
+}
 
 const run = async () => {
 
@@ -135,7 +206,9 @@ const run = async () => {
 	const lastReportTickets = db_state.reports.get(lastReport).tickets;
 	const newTickets = res.issues.map(_ => _.key);
 
-	addReport(db_state, res)
+	addReport(db_state, res);
+
+	updateTickets(db_state);
 
 	aggregate(db_state);
 

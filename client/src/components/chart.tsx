@@ -1,3 +1,4 @@
+import Big from 'big.js';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -9,7 +10,7 @@ import {
     Legend,
   } from 'chart.js';
   import { Line } from 'react-chartjs-2';
-import { reports } from '../model';
+import { db_weekly } from '../model';
 
 ChartJS.register(
     CategoryScale,
@@ -39,12 +40,12 @@ ChartJS.register(
     },
   };
 
-  const charData = reports.map(report => ({
-    day: new Date(report.key).toLocaleDateString(),
-    count: report.tickets.length,
+  const charData = Array.from(db_weekly.entries()).map(([key, report]) => ({
+    day: new Date(key).toLocaleDateString(),
+    count: report.count,
     eta: report.eta,
-    live_est: report.eta - report.logged,
-    logged: report.logged
+    live_est: report.eta - Big(report.logged).div(3600).div(8).round(2).toNumber(),
+    logged: Big(report.logged).div(3600).div(8).round(2).toNumber(),
   }));
   
   const cData = {

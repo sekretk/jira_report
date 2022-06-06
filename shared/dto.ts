@@ -2,7 +2,8 @@ export type IssuerStatus = 'Reported' | 'Confirmed' | 'Waiting for review' | 'Re
 
 export type DB = {
 	tickets: Map<string, Ticket>,
-	reports: Map<number, Report>
+	reports: Map<number, Report>,
+	weekly: Map<number, WeeklyReport>
 }
 
 export type Report = {
@@ -11,12 +12,22 @@ export type Report = {
 	tickets: Array<string>,
 }
 
+export type WeeklyReport = {
+	logged: number, 
+	eta: number,
+	count: number,
+	tickets: Array<string>,
+	added: Array<string>,
+	removed: Array<string>
+}
+
 export type Ticket = {
 	summary: string,
 	assignee: string,
 	eta: number,
 	logged: number,
 	status: IssuerStatus,
+	resolution: string | null,
 	priority: {
 		name: string;
 		id: number;

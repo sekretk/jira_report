@@ -5,7 +5,7 @@ import { DataGrid, GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
 import React from 'react';
 import Big from 'big.js';
 import { Chart } from './components/chart';
-import { reports, KeyTicketTicket, db_reports, distinct, findTicket } from './model';
+import { KeyTicketTicket, distinct, findTicket, db_weekly } from './model';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -35,41 +35,19 @@ function TabPanel(props: TabPanelProps) {
 
 function App() {
 
-  const [from, setFrom] = useState<number>(reports[0].key);
+  const [selected, setSelected] = useState<number>(Array.from(db_weekly.keys())[db_weekly.size - 1]);
 
-  const [to, setTo] = useState<number>(reports[reports.length - 1].key);
+  const addedStories: Array<KeyTicketTicket> = useMemo(
+    () => db_weekly.get(selected).added.filter(distinct).map(findTicket),
+    [selected]);
 
-  const addedStories: Array<KeyTicketTicket> = useMemo(() => reports.reduce((acc, cur) => {
-    if (cur.key < from || cur.key > to) {
-      return acc;
-    }
+  const removedStories: Array<KeyTicketTicket> = useMemo(
+    () => db_weekly.get(selected).removed.filter(distinct).map(findTicket),
+    [selected]);
 
-    const fromTickets = db_reports.get(from).tickets;
-
-    cur.tickets.forEach(ticket => {
-      !fromTickets.includes(ticket) && acc.push(ticket)
-    })
-
-    return acc;
-  }, new Array<string>()).filter(distinct).map(findTicket)
-    , [from, to])
-
-  const removedStories: Array<KeyTicketTicket> = useMemo(() => {
-
-    const allTicketsInRange = Array.from((reports.reduce((acc, cur) => {
-      if (cur.key < from || cur.key > to) {
-        return acc;
-      }
-
-      cur.tickets.forEach(ticket => acc.add(ticket));
-      return acc;
-    }, new Set<string>())));
-
-    return allTicketsInRange.filter(ticket => !db_reports.get(to).tickets.includes(ticket)).map(findTicket);
-
-  }, [from, to])
-
-  const lastStories: Array<KeyTicketTicket> = useMemo(() => db_reports.get(to).tickets.map(findTicket), [to])
+  const lastStories: Array<KeyTicketTicket> = useMemo(
+    () => db_weekly.get(selected).tickets.filter(distinct).map(findTicket),
+    [selected]);
 
   console.log(lastStories);
 
@@ -84,7 +62,7 @@ function App() {
     { field: 'priority', headerName: 'Priority', width: 130, valueFormatter: (params) => params.value?.name },
     { field: 'status', headerName: 'Status', width: 150 },
     { field: 'logged', headerName: 'Logged', width: 150, valueFormatter: (params) => Big(params.value).div(3600).div(8).round(2).toNumber() },
-    { field: 'summary', headerName: 'Summary' },
+    { field: 'summary', headerName: 'Summary', flex: 1 },
     { field: 'assignee', headerName: 'Assignee', width: 150 },
   ];
 
@@ -105,11 +83,8 @@ function App() {
       <TabPanel value={value} index={1}>
         <div>
           <div>
-            <Select labelId="label" label="From" id="select" value={from} onChange={(item) => setFrom(Number(item.target.value))}>
-              {reports.map(_ => <MenuItem key={_.key} value={_.key}>{new Date(_.key).toUTCString().split(' ').slice(0, 4).join(' ')}</MenuItem>)}
-            </Select>
-            <Select labelId="label" label="To" id="select" value={to} onChange={(item) => setTo(Number(item.target.value))}>
-              {reports.map(_ => <MenuItem key={_.key} value={_.key}>{new Date(_.key).toUTCString().split(' ').slice(0, 4).join(' ')}</MenuItem>)}
+            <Select labelId="label" label="From" id="select" value={selected} onChange={(item) => setSelected(Number(item.target.value))}>
+              {Array.from(db_weekly.keys()).map(_ => <MenuItem key={_} value={_}>{new Date(_).toUTCString().split(' ').slice(0, 4).join(' ')}</MenuItem>)}
             </Select>
           </div>
           <div className="grid">
@@ -125,7 +100,7 @@ function App() {
               columns={columns}
               getRowId={item => item.key}
             />
-            On {new Date(to).toLocaleDateString()}
+            Items on end of week ({lastStories.length})
             <DataGrid
               rows={lastStories}
               columns={columns}
@@ -135,7 +110,7 @@ function App() {
         </div>
       </TabPanel>
       <TabPanel value={value} index={0}>
-        <Chart/>
+        <Chart />
       </TabPanel>
 
     </div>
