@@ -1,52 +1,17 @@
 import { useMemo, useState } from 'react';
 import './App.css';
-import data from './tickets_history.json'
 import { Box, MenuItem, Select, Tab, Tabs } from '@mui/material';
 import { DataGrid, GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
-import { Line } from 'react-chartjs-2';
 import React from 'react';
-import { Report, Ticket } from '../../shared/dto';
 import Big from 'big.js';
-
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
+import { Chart } from './components/chart';
+import { reports, KeyTicketTicket, db_reports, distinct, findTicket } from './model';
 
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
   value: number;
 }
-
-type DaysReport = { key: number } & Report;
-type KeyTicketTicket = { key: string } & Ticket;
-
-const reports: Array<DaysReport> = (data.reports as Array<[number, Report]>)
-  .sort(([key1], [key2]) => key2 > key1 ? -1 : 1)
-  .map(([key, value]) => ({
-    ...value,
-    key
-  }));
-
-const db_tickets: Map<string, Ticket> = new Map(data.tickets as Array<[string, Ticket]>);
-const db_reports: Map<number, Report> = new Map(data.reports as Array<[number, Report]>);
-const findTicket = (key: string): KeyTicketTicket => ({ key, ...db_tickets.get(key) })
 
 function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
@@ -67,64 +32,6 @@ function TabPanel(props: TabPanelProps) {
     </div>
   );
 }
-
-const distinct = <T extends unknown>(value: T, index: number, self: Array<T>) => self.indexOf(value) === index;
-
-const charData = reports.map(report => ({
-  day: new Date(report.key).toLocaleDateString(),
-  count: report.tickets.length,
-  eta: report.eta,
-  live_est: report.eta - report.logged,
-  logged: report.logged
-}));
-
-const options = {
-  responsive: true,
-  scales: {
-    y: {
-      beginAtZero: true
-    }
-  },
-  plugins: {
-    legend: {
-      position: 'top' as const,
-    },
-    title: {
-      display: true,
-      text: 'Estimation',
-    },
-  },
-};
-
-const cData = {
-  labels: charData.map(_ => _.day),
-  datasets: [
-    {
-      label: 'Count',
-      data: charData.map(_ => _.count),
-      borderColor: 'rgb(255, 0, 0)',
-      backgroundColor: 'rgba(255, 0, 0, 0.5)',
-    },
-    {
-      label: 'ETA',
-      data: charData.map(_ => Number(_.eta)),
-      borderColor: 'rgb(0, 255, 0)',
-      backgroundColor: 'rgba(0, 255, 0, 0.5)',
-    },
-    {
-      label: 'LiveETA',
-      data: charData.map(_ => Number(_.live_est)),
-      borderColor: 'rgb(0, 0, 255)',
-      backgroundColor: 'rgba(0, 0, 255, 0.5)',
-    },
-    {
-      label: 'Logged',
-      data: charData.map(_ => _.logged),
-      borderColor: 'rgb(50, 200, 200)',
-      backgroundColor: 'rgba(50, 200, 200, 0.5)',
-    },
-  ],
-};
 
 function App() {
 
@@ -191,8 +98,8 @@ function App() {
     <div className="App">
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Chart" />
-          <Tab label="Table" />
+          <Tab label="Overall" />
+          <Tab label="Detailed" />
         </Tabs>
       </Box>
       <TabPanel value={value} index={1}>
@@ -228,7 +135,7 @@ function App() {
         </div>
       </TabPanel>
       <TabPanel value={value} index={0}>
-        <Line options={options} data={cData} />
+        <Chart/>
       </TabPanel>
 
     </div>

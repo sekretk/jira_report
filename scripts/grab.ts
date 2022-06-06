@@ -112,71 +112,8 @@ const addReport = (db_state: DB, res: ResType) => {
 		})
 	})
 
-
-	// const totallyLoggedDays = Big(res.issues.map((_) => _.fields.progress.total).reduce((acc, cur) => acc + cur, 0))
-	// 	.div(3600)
-	// 	.div(8)
-	// 	.round(1)
-	// 	.toNumber();
-
-	// const stories = res.issues
-	// 	.map((_) => ({
-	// 		key: _.key,
-	// 		points: _.fields.customfield_10811,
-	// 		log: Big(_.fields.progress.total).div(3600).div(8).round(1).toNumber(),
-	// 		status: _.fields.status.name,
-	// 		priority: _.fields.priority.name,
-	// 		type: _.fields.issuetype.name,
-	// 	}))
-	// 	.map((_) => ({
-	// 		..._,
-	// 		est: Big(_.log).div(_.points).round(2).toNumber(),
-	// 	}))
-	// 	.sort((a, b) => (a.est > b.est ? -1 : 1));
-
-	// const total = {
-	// 	day: getToday(),
-	// 	count: res.total,
-	// 	eta: res.issues
-	// 		.map((_) => _.fields.customfield_10811)
-	// 		.reduce((acc, cur) => acc + cur, 0)
-	// 		.toFixed(1),
-	// 	logged: totallyLoggedDays,
-	// 	stories,
-	// };
-}
-
-/*
- * Migration
- */
-// const migration = () => {
-
-// 	const db_state = readDb();
-
-// 	const snapshot = JSON.parse(readFileSync('tickets_1905_snapshot.json', { encoding: 'utf8' }));
-
-// 	snapshot.forEach(item => {
-// 		const day = Date.UTC(new Date(item.day).getUTCFullYear(), new Date(item.day).getUTCMonth(), new Date(item.day).getUTCDate());
-
-// 		db_state.reports.set(day, {
-// 			eta: item.stories.map(_ => _.points).reduce((acc, cur) => acc.add(cur), Big(0)).toNumber(),
-// 			logged: item.stories.map(_ => _.log).reduce((acc, cur) => acc.add(cur), Big(0)).toNumber(),
-// 			tickets: item.stories.map(_ => _.key)
-// 		});
-
-// 		item.stories.forEach(story => {
-// 			db_state.tickets.set(story.key, {
-// 				assignee: '',
-// 				eta: story.points,
-// 				logged: story.log,
-// 				status: story.status,
-// 				summary: '',
-// 			})
-// 		});
-// 	})
-
-// 	saveDb(db_state);
-// }
+const aggregate = (db_state: DB) => {
+}	
 
 const run = async () => {
 
@@ -199,6 +136,8 @@ const run = async () => {
 	const newTickets = res.issues.map(_ => _.key);
 
 	addReport(db_state, res)
+
+	aggregate(db_state);
 
 	saveDb(db_state);
 
