@@ -5,7 +5,9 @@ import { DataGrid, GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
 import React from 'react';
 import Big from 'big.js';
 import { Chart } from './components/chart';
-import { KeyTicketTicket, distinct, findTicket, db_weekly } from './model';
+import { format } from 'date-fns';
+import { KeyTicketTicket, distinct, findTicket, db_weekly, overallProgress, 
+  overallEstimation, overallVelocity, lastScopeEstimationInDays, lastScopeEstimationInDaysWithLogged } from './model';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -72,8 +74,16 @@ function App() {
     setValue(newValue);
   };
 
+  const finishDateMs = Big(lastScopeEstimationInDays).mul(1000 * 60 * 60 * 24).plus(new Date().getTime()).round(0).toNumber();
+  const finishDateWithLoggedMs = Big(lastScopeEstimationInDaysWithLogged).mul(1000 * 60 * 60 * 24).plus(new Date().getTime()).round(0).toNumber();
+
   return (
     <div className="App">
+      <div>
+        <span>StoryBook weight ETA: {Big(overallProgress.eta).round(2).toNumber()}, Logged: {Big(overallProgress.logged).round(2).toNumber()} = {overallEstimation} </span><br />
+        <span>Velocity: {overallVelocity} storypoints per day</span><br />
+        <span>Finish date for currect scope {format(finishDateMs, 'dd-MMM')} ({format(finishDateWithLoggedMs, 'dd-MMM')})</span>
+      </div>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="Overall" />
