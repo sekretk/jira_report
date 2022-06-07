@@ -869,6 +869,35 @@
         "eta": 28.5,
         "logged": 11.8
       }
+    ],
+    [
+      1654560000000,
+      {
+        "tickets": [
+          "DXTF-28959",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28804",
+          "DXTF-28803",
+          "DXTF-28715",
+          "DXTF-28710",
+          "DXTF-28671",
+          "DXTF-28668",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28338",
+          "DXTF-28060",
+          "DXTF-27976",
+          "DXTF-24692",
+          "DXTF-21976",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ],
+        "eta": 24.5,
+        "logged": 10.75
+      }
     ]
   ],
   "tickets": [
@@ -925,7 +954,7 @@
       {
         "eta": 0.5,
         "assignee": "Konstantin Sekret",
-        "logged": 0,
+        "logged": 5400,
         "status": "In development",
         "summary": "[SpectraFX] OE - spot refresh adjustments",
         "priority": "Critical (6)",
@@ -1153,11 +1182,11 @@
       {
         "eta": 2,
         "assignee": "Egor Zholnin",
-        "logged": 42420,
-        "status": "Waiting for review",
+        "logged": 42060,
+        "status": "Waiting for build",
         "summary": "[SpectraFX] ATM Straddles - Own order panel remains on single cancel operation",
         "priority": "Urgent (3)",
-        "resolution": null
+        "resolution": "Waiting for build"
       }
     ],
     [
@@ -1610,10 +1639,10 @@
         "eta": 2,
         "assignee": "Grigory Stukunov",
         "logged": 10380,
-        "status": "Waiting for review",
+        "status": "Waiting for build",
         "summary": "OE Calendar - Weekends and NonMarket days",
         "priority": "Normal",
-        "resolution": null
+        "resolution": "Waiting for build"
       }
     ],
     [
@@ -1658,7 +1687,7 @@
         "eta": 0.5,
         "assignee": "Grigory Stukunov",
         "logged": 4980,
-        "status": "In development",
+        "status": "Waiting for review",
         "summary": "[SpectraFX] DS tenor inverted",
         "priority": "Normal",
         "resolution": null
@@ -1707,7 +1736,7 @@
       {
         "count": 37,
         "eta": 51.6,
-        "logged": 1149399,
+        "logged": 1154439,
         "added": [
           "DXTF-28648",
           "DXTF-28722",
@@ -1768,7 +1797,7 @@
       {
         "count": 36,
         "eta": 48.6,
-        "logged": 1051359,
+        "logged": 1056399,
         "added": [],
         "removed": [
           "DXTF-28703",
@@ -1818,7 +1847,7 @@
       {
         "count": 40,
         "eta": 45.400000000000006,
-        "logged": 1002699,
+        "logged": 1007739,
         "added": [
           "DXTF-28814",
           "DXTF-28805",
@@ -1881,7 +1910,7 @@
       {
         "count": 46,
         "eta": 50.1,
-        "logged": 987399,
+        "logged": 992439,
         "added": [
           "DXTF-28903",
           "DXTF-28839",
@@ -1957,17 +1986,18 @@
       {
         "count": 22,
         "eta": 28.5,
-        "logged": 356880,
+        "logged": 361920,
         "added": [
           "DXTF-28671"
         ],
         "removed": [
+          "DXTF-28916",
+          "DXTF-27931",
           "DXTF-28811",
           "DXTF-28805"
         ],
         "current": [
           "DXTF-28959",
-          "DXTF-28916",
           "DXTF-28839",
           "DXTF-28838",
           "DXTF-28836",
@@ -1982,7 +2012,6 @@
           "DXTF-28338",
           "DXTF-28060",
           "DXTF-27976",
-          "DXTF-27931",
           "DXTF-24692",
           "DXTF-21976",
           "DXTF-21888",
