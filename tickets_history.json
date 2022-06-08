@@ -898,6 +898,34 @@
         "eta": 24.5,
         "logged": 10.75
       }
+    ],
+    [
+      1654646400000,
+      {
+        "tickets": [
+          "DXTF-29030",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28804",
+          "DXTF-28803",
+          "DXTF-28710",
+          "DXTF-28671",
+          "DXTF-28668",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28521",
+          "DXTF-28338",
+          "DXTF-28060",
+          "DXTF-27976",
+          "DXTF-21976",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ],
+        "eta": 25.6,
+        "logged": 10.98
+      }
     ]
   ],
   "tickets": [
@@ -943,10 +971,10 @@
         "eta": 0.5,
         "assignee": "Konstantin Sekret",
         "logged": 7200,
-        "status": "Waiting for review",
+        "status": "Waiting for build",
         "summary": "[SpectraFX] OE - empty amount for hedge leg",
         "priority": "Critical (6)",
-        "resolution": null
+        "resolution": "Waiting for build"
       }
     ],
     [
@@ -954,8 +982,8 @@
       {
         "eta": 0.5,
         "assignee": "Konstantin Sekret",
-        "logged": 5400,
-        "status": "In development",
+        "logged": 16200,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] OE - spot refresh adjustments",
         "priority": "Critical (6)",
         "resolution": null
@@ -1135,7 +1163,7 @@
         "eta": 2,
         "assignee": "SpectraFX Developers",
         "logged": 68400,
-        "status": "Confirmed",
+        "status": "In development",
         "summary": "[SpectraFX] DS Confirmation Price Precision",
         "priority": "Urgent (3)",
         "resolution": null
@@ -1241,9 +1269,9 @@
       "DXTF-24692",
       {
         "eta": 1,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Valeriia Karabut",
         "logged": 39660,
-        "status": "Confirmed",
+        "status": "Waiting for clarification",
         "summary": "[SpectraFX] ATM Straddles - Lone default notional triggers active state for \"Submit\" button",
         "priority": "Urgent (3)",
         "resolution": null
@@ -1313,9 +1341,9 @@
       "DXTF-21088",
       {
         "eta": 1,
-        "assignee": "SpectraFX Developers",
-        "logged": 0,
-        "status": "Confirmed",
+        "assignee": "Grigory Stukunov",
+        "logged": 25140,
+        "status": "In development",
         "summary": "[SpectraFX] Order Entry Confirmation - Tenor is missing from the Vanilla summary",
         "priority": "Normal",
         "resolution": null
@@ -1685,8 +1713,8 @@
       "DXTF-28804",
       {
         "eta": 0.5,
-        "assignee": "Grigory Stukunov",
-        "logged": 4980,
+        "assignee": "SpectraFX QA",
+        "logged": 6960,
         "status": "Waiting for review",
         "summary": "[SpectraFX] DS tenor inverted",
         "priority": "Normal",
@@ -1710,11 +1738,11 @@
       {
         "eta": 0.5,
         "assignee": "Egor Zholnin",
-        "logged": 15600,
-        "status": "Waiting for review",
+        "logged": 13500,
+        "status": "Waiting for build",
         "summary": "[SpectraFX] [SpectraFX] ExpiryToolBar - tooltip for cuts",
         "priority": "Urgent (3)",
-        "resolution": null
+        "resolution": "Waiting for build"
       }
     ],
     [
@@ -1723,8 +1751,32 @@
         "eta": 0.5,
         "assignee": "Egor Zholnin",
         "logged": 19140,
-        "status": "Waiting for review",
+        "status": "In development",
         "summary": "[SpectraFX] Specific Order Entry - midMarketPrice not getting in context",
+        "priority": "Urgent (3)",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29030",
+      {
+        "eta": 0.1,
+        "assignee": "Konstantin Sekret",
+        "logged": 5400,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] Order Entry - calendar collapse on month or year select",
+        "priority": "ASAP (9)",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28521",
+      {
+        "eta": 3,
+        "assignee": "Konstantin Sekret",
+        "logged": 25800,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Expiry Tool: Decision protection confirmation",
         "priority": "Urgent (3)",
         "resolution": null
       }
@@ -1736,7 +1788,7 @@
       {
         "count": 37,
         "eta": 51.6,
-        "logged": 1154439,
+        "logged": 1190379,
         "added": [
           "DXTF-28648",
           "DXTF-28722",
@@ -1797,7 +1849,7 @@
       {
         "count": 36,
         "eta": 48.6,
-        "logged": 1056399,
+        "logged": 1092339,
         "added": [],
         "removed": [
           "DXTF-28703",
@@ -1847,7 +1899,7 @@
       {
         "count": 40,
         "eta": 45.400000000000006,
-        "logged": 1007739,
+        "logged": 1043679,
         "added": [
           "DXTF-28814",
           "DXTF-28805",
@@ -1910,7 +1962,7 @@
       {
         "count": 46,
         "eta": 50.1,
-        "logged": 992439,
+        "logged": 1028259,
         "added": [
           "DXTF-28903",
           "DXTF-28839",
@@ -1984,35 +2036,39 @@
     [
       1654376400000,
       {
-        "count": 22,
-        "eta": 28.5,
-        "logged": 361920,
+        "count": 24,
+        "eta": 31.6,
+        "logged": 428940,
         "added": [
-          "DXTF-28671"
+          "DXTF-28671",
+          "DXTF-29030",
+          "DXTF-28521"
         ],
         "removed": [
+          "DXTF-28959",
           "DXTF-28916",
+          "DXTF-28715",
           "DXTF-27931",
+          "DXTF-24692",
           "DXTF-28811",
           "DXTF-28805"
         ],
         "current": [
-          "DXTF-28959",
+          "DXTF-29030",
           "DXTF-28839",
           "DXTF-28838",
           "DXTF-28836",
           "DXTF-28804",
           "DXTF-28803",
-          "DXTF-28715",
           "DXTF-28710",
           "DXTF-28671",
           "DXTF-28668",
           "DXTF-28641",
           "DXTF-28583",
+          "DXTF-28521",
           "DXTF-28338",
           "DXTF-28060",
           "DXTF-27976",
-          "DXTF-24692",
           "DXTF-21976",
           "DXTF-21888",
           "DXTF-21587",
