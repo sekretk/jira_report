@@ -3,20 +3,18 @@ import {
     Chart as ChartJS,
     CategoryScale,
     LinearScale,
-    PointElement,
-    LineElement,
+    BarElement,
     Title,
     Tooltip,
     Legend,
   } from 'chart.js';
-  import { Line } from 'react-chartjs-2';
+  import { Bar } from 'react-chartjs-2';
 import { db_weekly } from '../model';
 
 ChartJS.register(
     CategoryScale,
     LinearScale,
-    PointElement,
-    LineElement,
+    BarElement,
     Title,
     Tooltip,
     Legend
@@ -54,30 +52,26 @@ ChartJS.register(
       {
         label: 'Count',
         data: charData.map(_ => _.count),
-        borderColor: 'rgb(255, 0, 0)',
-        backgroundColor: 'rgba(255, 0, 0, 0.5)',
+        backgroundColor: '#003f5c',
       },
       {
         label: 'ETA',
         data: charData.map(_ => Number(_.eta)),
-        borderColor: 'rgb(0, 255, 0)',
-        backgroundColor: 'rgba(0, 255, 0, 0.5)',
+        backgroundColor: '#58508d',
       },
       {
         label: 'LiveETA',
         data: charData.map(_ => Number(_.live_est)),
-        borderColor: 'rgb(0, 0, 255)',
-        backgroundColor: 'rgba(0, 0, 255, 0.5)',
+        backgroundColor: '#bc5090',
       },
       {
         label: 'Logged',
         data: charData.map(_ => _.logged),
-        borderColor: 'rgb(50, 200, 200)',
-        backgroundColor: 'rgba(50, 200, 200, 0.5)',
+        backgroundColor: '#ff6361',
       },
     ],
   };
 
 export const Chart = () => {
-    return <Line options={options} data={cData} />
+    return <Bar options={options} data={cData} />
 }

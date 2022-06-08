@@ -80,9 +80,9 @@ function App() {
   return (
     <div className="App">
       <div>
-        <span>StoryPoint weight ETA: {Big(overallProgress.eta).round(2).toNumber()}, Logged: {Big(overallProgress.logged).round(2).toNumber()} = {overallEstimation} </span><br />
+        <span>StoryPoint weight: {Big(overallProgress.eta).round(2).toNumber()}, Logged: {Big(overallProgress.logged).round(2).toNumber()} = {overallEstimation} </span><br />
         <span>Velocity: {overallVelocity} storypoints per day</span><br />
-        <span>Finish date for currect scope {format(finishDateMs, 'dd-MMM')} ({format(finishDateWithLoggedMs, 'dd-MMM')})</span>
+        <span>Finish date for current scope {format(finishDateMs, 'dd-MMM')} ({format(finishDateWithLoggedMs, 'dd-MMM')})</span>
       </div>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
