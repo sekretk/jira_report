@@ -903,13 +903,15 @@
       1654646400000,
       {
         "tickets": [
-          "DXTF-29030",
+          "DXTF-29025",
+          "DXTF-29018",
+          "DXTF-28947",
+          "DXTF-28922",
           "DXTF-28839",
           "DXTF-28838",
           "DXTF-28836",
-          "DXTF-28804",
           "DXTF-28803",
-          "DXTF-28710",
+          "DXTF-28674",
           "DXTF-28671",
           "DXTF-28668",
           "DXTF-28641",
@@ -923,8 +925,8 @@
           "DXTF-21587",
           "DXTF-21088"
         ],
-        "eta": 25.6,
-        "logged": 10.98
+        "eta": 31.6,
+        "logged": 11.13
       }
     ]
   ],
@@ -981,12 +983,12 @@
       "DXTF-28710",
       {
         "eta": 0.5,
-        "assignee": "Konstantin Sekret",
-        "logged": 16200,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 23400,
+        "status": "Waiting for test",
         "summary": "[SpectraFX] OE - spot refresh adjustments",
         "priority": "Critical (6)",
-        "resolution": null
+        "resolution": "Waiting for test"
       }
     ],
     [
@@ -1342,7 +1344,7 @@
       {
         "eta": 1,
         "assignee": "Grigory Stukunov",
-        "logged": 25140,
+        "logged": 24300,
         "status": "In development",
         "summary": "[SpectraFX] Order Entry Confirmation - Tenor is missing from the Vanilla summary",
         "priority": "Normal",
@@ -1652,12 +1654,12 @@
     [
       "DXTF-28922",
       {
-        "eta": 0.5,
+        "eta": 1,
         "assignee": "SpectraFX Developers",
         "logged": 13260,
-        "status": "Reported",
+        "status": "Confirmed",
         "summary": "[SpectraFX] Design: OE - premium convention selection pips option",
-        "priority": "Normal",
+        "priority": "Urgent (3)",
         "resolution": null
       }
     ],
@@ -1713,9 +1715,9 @@
       "DXTF-28804",
       {
         "eta": 0.5,
-        "assignee": "SpectraFX QA",
+        "assignee": "Konstantin Sekret",
         "logged": 6960,
-        "status": "Waiting for review",
+        "status": "Waiting for clarification",
         "summary": "[SpectraFX] DS tenor inverted",
         "priority": "Normal",
         "resolution": null
@@ -1750,8 +1752,8 @@
       {
         "eta": 0.5,
         "assignee": "Egor Zholnin",
-        "logged": 19140,
-        "status": "In development",
+        "logged": 33300,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] Specific Order Entry - midMarketPrice not getting in context",
         "priority": "Urgent (3)",
         "resolution": null
@@ -1773,10 +1775,58 @@
       "DXTF-28521",
       {
         "eta": 3,
-        "assignee": "Konstantin Sekret",
+        "assignee": "SpectraFX Developers",
         "logged": 25800,
         "status": "Confirmed",
         "summary": "[SpectraFX] Expiry Tool: Decision protection confirmation",
+        "priority": "Urgent (3)",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29025",
+      {
+        "eta": 2,
+        "assignee": "Konstantin Sekret",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Order Entry - Calendar - It should be closed after any keyboard navigation",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29018",
+      {
+        "eta": 0.1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE US as fallback locale for date input ",
+        "priority": "ASAP (9)",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28947",
+      {
+        "eta": 1,
+        "assignee": "SpectraFX Developers",
+        "logged": 5520,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE Confirmation side and layout ",
+        "priority": "Critical (6)",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28674",
+      {
+        "eta": 3,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "In development",
+        "summary": "[SpectraFX] UI - Inline confirmation",
         "priority": "Urgent (3)",
         "resolution": null
       }
@@ -1788,7 +1838,7 @@
       {
         "count": 37,
         "eta": 51.6,
-        "logged": 1190379,
+        "logged": 1196739,
         "added": [
           "DXTF-28648",
           "DXTF-28722",
@@ -1849,7 +1899,7 @@
       {
         "count": 36,
         "eta": 48.6,
-        "logged": 1092339,
+        "logged": 1098699,
         "added": [],
         "removed": [
           "DXTF-28703",
@@ -1899,7 +1949,7 @@
       {
         "count": 40,
         "eta": 45.400000000000006,
-        "logged": 1043679,
+        "logged": 1050039,
         "added": [
           "DXTF-28814",
           "DXTF-28805",
@@ -1961,8 +2011,8 @@
       1653771600000,
       {
         "count": 46,
-        "eta": 50.1,
-        "logged": 1028259,
+        "eta": 50.6,
+        "logged": 1034619,
         "added": [
           "DXTF-28903",
           "DXTF-28839",
@@ -2036,31 +2086,39 @@
     [
       1654376400000,
       {
-        "count": 24,
-        "eta": 31.6,
-        "logged": 428940,
+        "count": 28,
+        "eta": 38.6,
+        "logged": 462840,
         "added": [
           "DXTF-28671",
-          "DXTF-29030",
+          "DXTF-29025",
+          "DXTF-29018",
+          "DXTF-28947",
+          "DXTF-28922",
+          "DXTF-28674",
           "DXTF-28521"
         ],
         "removed": [
           "DXTF-28959",
           "DXTF-28916",
+          "DXTF-28804",
           "DXTF-28715",
+          "DXTF-28710",
           "DXTF-27931",
           "DXTF-24692",
           "DXTF-28811",
           "DXTF-28805"
         ],
         "current": [
-          "DXTF-29030",
+          "DXTF-29025",
+          "DXTF-29018",
+          "DXTF-28947",
+          "DXTF-28922",
           "DXTF-28839",
           "DXTF-28838",
           "DXTF-28836",
-          "DXTF-28804",
           "DXTF-28803",
-          "DXTF-28710",
+          "DXTF-28674",
           "DXTF-28671",
           "DXTF-28668",
           "DXTF-28641",
