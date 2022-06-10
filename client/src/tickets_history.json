@@ -958,6 +958,36 @@
         "eta": 31.6,
         "logged": 12.69
       }
+    ],
+    [
+      1654819200000,
+      {
+        "tickets": [
+          "DXTF-29057",
+          "DXTF-29025",
+          "DXTF-28947",
+          "DXTF-28922",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28803",
+          "DXTF-28674",
+          "DXTF-28671",
+          "DXTF-28668",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28521",
+          "DXTF-28338",
+          "DXTF-28060",
+          "DXTF-27976",
+          "DXTF-21976",
+          "DXTF-21888",
+          "DXTF-21587",
+          "DXTF-21088"
+        ],
+        "eta": 31.6,
+        "logged": 13.42
+      }
     ]
   ],
   "tickets": [
@@ -1374,7 +1404,7 @@
       {
         "eta": 1,
         "assignee": "Grigory Stukunov",
-        "logged": 24300,
+        "logged": 48000,
         "status": "In development",
         "summary": "[SpectraFX] Order Entry Confirmation - Tenor is missing from the Vanilla summary",
         "priority": "Normal",
@@ -1602,7 +1632,7 @@
       {
         "eta": 2,
         "assignee": "Egor Zholnin",
-        "logged": 11400,
+        "logged": 13140,
         "status": "In development",
         "summary": "[SpectraFX] Dealing Screen - After deleting of price-in-vol replace button doesn't disappear",
         "priority": "Normal",
@@ -1745,7 +1775,7 @@
       "DXTF-28804",
       {
         "eta": 0.5,
-        "assignee": "Konstantin Sekret",
+        "assignee": "Aleksandr Krasovsky",
         "logged": 6960,
         "status": "Waiting for clarification",
         "summary": "[SpectraFX] DS tenor inverted",
@@ -1805,9 +1835,9 @@
       "DXTF-28521",
       {
         "eta": 3,
-        "assignee": "Anastasiya Paulyk",
+        "assignee": "SpectraFX Developers",
         "logged": 25800,
-        "status": "In development",
+        "status": "Confirmed",
         "summary": "[SpectraFX] Expiry Tool: Decision protection confirmation",
         "priority": "Urgent (3)",
         "resolution": null
@@ -1829,12 +1859,12 @@
       "DXTF-29018",
       {
         "eta": 0.1,
-        "assignee": "Egor Zholnin",
+        "assignee": "dxDemo QA",
         "logged": 20619,
-        "status": "Waiting for review",
+        "status": "Resolved",
         "summary": "[SpectraFX] OE US as fallback locale for date input ",
         "priority": "ASAP (9)",
-        "resolution": null
+        "resolution": "Fixed"
       }
     ],
     [
@@ -1854,10 +1884,22 @@
       {
         "eta": 3,
         "assignee": "SpectraFX Developers",
-        "logged": 12600,
+        "logged": 21600,
         "status": "In development",
         "summary": "[SpectraFX] UI - Inline confirmation",
         "priority": "Urgent (3)",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29057",
+      {
+        "eta": 0.1,
+        "assignee": "Egor Zholnin",
+        "logged": 7200,
+        "status": "In development",
+        "summary": "[SpectraFX] Options Expiry Tool - Tooltip for cuts has wrong place",
+        "priority": "Normal",
         "resolution": null
       }
     ]
@@ -1868,7 +1910,7 @@
       {
         "count": 37,
         "eta": 51.6,
-        "logged": 1196739,
+        "logged": 1220439,
         "added": [
           "DXTF-28648",
           "DXTF-28722",
@@ -1929,7 +1971,7 @@
       {
         "count": 36,
         "eta": 48.6,
-        "logged": 1098699,
+        "logged": 1122399,
         "added": [],
         "removed": [
           "DXTF-28703",
@@ -1979,7 +2021,7 @@
       {
         "count": 40,
         "eta": 45.400000000000006,
-        "logged": 1050039,
+        "logged": 1073739,
         "added": [
           "DXTF-28814",
           "DXTF-28805",
@@ -2042,7 +2084,7 @@
       {
         "count": 46,
         "eta": 50.6,
-        "logged": 1046019,
+        "logged": 1071459,
         "added": [
           "DXTF-28903",
           "DXTF-28839",
@@ -2116,9 +2158,9 @@
     [
       1654376400000,
       {
-        "count": 28,
-        "eta": 38.6,
-        "logged": 508659,
+        "count": 29,
+        "eta": 38.7,
+        "logged": 550299,
         "added": [
           "DXTF-28671",
           "DXTF-29025",
@@ -2126,7 +2168,8 @@
           "DXTF-28947",
           "DXTF-28922",
           "DXTF-28674",
-          "DXTF-28521"
+          "DXTF-28521",
+          "DXTF-29057"
         ],
         "removed": [
           "DXTF-28959",
@@ -2136,12 +2179,13 @@
           "DXTF-28710",
           "DXTF-27931",
           "DXTF-24692",
+          "DXTF-29018",
           "DXTF-28811",
           "DXTF-28805"
         ],
         "current": [
+          "DXTF-29057",
           "DXTF-29025",
-          "DXTF-29018",
           "DXTF-28947",
           "DXTF-28922",
           "DXTF-28839",
