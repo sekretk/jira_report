@@ -8,7 +8,7 @@ import { startOfWeek } from 'date-fns';
 
 const filterID = 42978;
 
-const token = Buffer.from(`${process.env.LOGIN}:${process.env.PASSWORD}`).toString('base64').slice(0, -1);
+const token = Buffer.from(`${process.env.LOGIN}:${process.env.PASSWORD}`).toString('base64');
 
 const pairwise = <T>(arr: Array<T>): Array<[T, T]> =>
 	arr.reduce((acc, current, index) => {
