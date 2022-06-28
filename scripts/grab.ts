@@ -54,7 +54,7 @@ type ResType = {
 	issues: Array<{
 		key: string;
 		fields: {
-			customfield_10811: number;
+			customfield_10811: number | null;
 			summary: string;
 			progress: {
 				total: number;
@@ -107,11 +107,9 @@ const saveDb = (db_state: DB) => {
 
 const addReport = (db_state: DB, res: ResType) => {
 
-	console.log('XXX', res);
-
 	const report: Report = {
 		tickets: res.issues.map(_ => _.key),
-		eta: res.issues.map(_ => _.fields.customfield_10811).reduce((acc, cur) => acc.add(cur), Big(0)).toNumber(),
+		eta: res.issues.map(_ => _.fields.customfield_10811).reduce((acc, cur) => acc.add(Boolean(cur) ? cur : 0), Big(0)).toNumber(),
 		logged: res.issues.map(_ => _.fields.progress.total).reduce((acc, cur) => acc.add(cur), Big(0)).div(3600).div(8).round(2).toNumber(),
 	}
 
@@ -126,8 +124,6 @@ const updateTickets = async (db_state: DB) => {
 			cur.forEach(ticket => acc.add(ticket));
 			return acc;
 		}, new Set<string>());
-
-	console.log('setOfTickets', setOfTickets)
 
 	const ticketDetails = Array.from(setOfTickets.values())
 		.filter((ticket) => !Boolean(db_state.tickets.get(ticket)?.resolution))
@@ -173,8 +169,6 @@ const aggregate = (db_state: DB) => {
 	const sortedByWeeks = Array.from(weeksTickets.entries())
 		.sort(([a], [b]) => a < b ? -1 : 1)
 		.map(([key, set]) => [key, Array.from(set.values())] as const);
-
-	console.log(sortedByWeeks);
 
 	const weekReport: Array<{ key: number, all: Array<string>, end: Array<string> }> =
 		sortedByWeeks.map(([key, reports]) => {
