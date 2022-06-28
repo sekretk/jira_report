@@ -107,6 +107,8 @@ const saveDb = (db_state: DB) => {
 
 const addReport = (db_state: DB, res: ResType) => {
 
+	console.log('XXX', res);
+
 	const report: Report = {
 		tickets: res.issues.map(_ => _.key),
 		eta: res.issues.map(_ => _.fields.customfield_10811).reduce((acc, cur) => acc.add(cur), Big(0)).toNumber(),
