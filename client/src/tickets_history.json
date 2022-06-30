@@ -1105,6 +1105,124 @@
         "eta": 6.5,
         "logged": 2.45
       }
+    ],
+    [
+      1656374400000,
+      {
+        "tickets": [
+          "DXTF-29110",
+          "DXTF-29093",
+          "DXTF-29070",
+          "DXTF-29057",
+          "DXTF-29010",
+          "DXTF-29007",
+          "DXTF-29004",
+          "DXTF-29001",
+          "DXTF-28945",
+          "DXTF-28941",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28714",
+          "DXTF-28702",
+          "DXTF-28669",
+          "DXTF-28668",
+          "DXTF-28648",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28552",
+          "DXTF-28521",
+          "DXTF-28508",
+          "DXTF-28434",
+          "DXTF-28346",
+          "DXTF-28345",
+          "DXTF-28344",
+          "DXTF-28338",
+          "DXTF-28312",
+          "DXTF-28284",
+          "DXTF-28249",
+          "DXTF-28192",
+          "DXTF-28113",
+          "DXTF-28104",
+          "DXTF-28039",
+          "DXTF-27976",
+          "DXTF-27938",
+          "DXTF-27778",
+          "DXTF-27777",
+          "DXTF-27775",
+          "DXTF-27774",
+          "DXTF-27773",
+          "DXTF-27756",
+          "DXTF-27671",
+          "DXTF-27465",
+          "DXTF-27295",
+          "DXTF-27292",
+          "DXTF-26991",
+          "DXTF-25645",
+          "DXTF-25380"
+        ],
+        "eta": 49.7,
+        "logged": 34.3
+      }
+    ],
+    [
+      1656547200000,
+      {
+        "tickets": [
+          "DXTF-29201",
+          "DXTF-29157",
+          "DXTF-29154",
+          "DXTF-29130",
+          "DXTF-29125",
+          "DXTF-29110",
+          "DXTF-29093",
+          "DXTF-29070",
+          "DXTF-29057",
+          "DXTF-29050",
+          "DXTF-29010",
+          "DXTF-29007",
+          "DXTF-29004",
+          "DXTF-29001",
+          "DXTF-28945",
+          "DXTF-28941",
+          "DXTF-28911",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28714",
+          "DXTF-28702",
+          "DXTF-28669",
+          "DXTF-28668",
+          "DXTF-28648",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28552",
+          "DXTF-28521",
+          "DXTF-28508",
+          "DXTF-28434",
+          "DXTF-28346",
+          "DXTF-28345",
+          "DXTF-28344",
+          "DXTF-28338",
+          "DXTF-28312",
+          "DXTF-28284",
+          "DXTF-28249",
+          "DXTF-28192",
+          "DXTF-28113",
+          "DXTF-28104",
+          "DXTF-28039",
+          "DXTF-27976",
+          "DXTF-27938",
+          "DXTF-27778",
+          "DXTF-27777",
+          "DXTF-27775",
+          "DXTF-27774",
+          "DXTF-27773",
+          "DXTF-27756"
+        ],
+        "eta": 58.7,
+        "logged": 39.31
+      }
     ]
   ],
   "tickets": [
@@ -1212,7 +1330,7 @@
         "logged": 10200,
         "status": "Confirmed",
         "summary": "[SpectraFX] Errors & validation copying",
-        "priority": "Normal",
+        "priority": "Urgent (3)",
         "resolution": null
       }
     ],
@@ -1891,25 +2009,25 @@
     [
       "DXTF-28804",
       {
-        "eta": 0.5,
-        "assignee": "Dmitry Koltsov",
+        "eta": 0,
+        "assignee": "Alexander Ignatov",
         "logged": 6960,
-        "status": "Waiting for clarification",
+        "status": "Aborted",
         "summary": "[SpectraFX] DS tenor inverted",
         "priority": "Urgent (3)",
-        "resolution": null
+        "resolution": "Aborted"
       }
     ],
     [
       "DXTF-28803",
       {
         "eta": 1,
-        "assignee": "Grigory Stukunov",
-        "logged": 17520,
-        "status": "In development",
+        "assignee": "dxDemo QA",
+        "logged": 48120,
+        "status": "Resolved",
         "summary": "[SpectraFX] OE - date input select invalid value on focus",
         "priority": "Normal",
-        "resolution": null
+        "resolution": "Fixed"
       }
     ],
     [
@@ -1953,8 +2071,8 @@
       {
         "eta": 3,
         "assignee": "Konstantin Sekret",
-        "logged": 36600,
-        "status": "In development",
+        "logged": 70800,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] Expiry Tool: Decision protection confirmation",
         "priority": "Urgent (3)",
         "resolution": null
@@ -1964,12 +2082,12 @@
       "DXTF-29025",
       {
         "eta": 2,
-        "assignee": "Konstantin Sekret",
-        "logged": 0,
-        "status": "Confirmed",
+        "assignee": "dxDemo QA",
+        "logged": 57000,
+        "status": "Resolved",
         "summary": "[SpectraFX] Order Entry - Calendar - It should be closed after any keyboard navigation",
         "priority": "Normal",
-        "resolution": null
+        "resolution": "Fixed"
       }
     ],
     [
@@ -2012,11 +2130,11 @@
       "DXTF-29057",
       {
         "eta": 1,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Konstantin Sekret",
         "logged": 7200,
-        "status": "In development",
+        "status": "Confirmed",
         "summary": "[SpectraFX] Options Expiry Tool - Tooltip for cuts has wrong place",
-        "priority": "Normal",
+        "priority": "Urgent (3)",
         "resolution": null
       }
     ],
@@ -2024,11 +2142,11 @@
       "DXTF-29093",
       {
         "eta": 0.5,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Konstantin Sekret",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "In development",
         "summary": "[SpectraFX] Remove hasAction from Expiry",
-        "priority": "Urgent (3)",
+        "priority": "Normal",
         "resolution": null
       }
     ],
@@ -2060,12 +2178,12 @@
       "DXTF-28807",
       {
         "eta": 1,
-        "assignee": "Grigory Stukunov",
-        "logged": 21780,
-        "status": "Waiting for review",
+        "assignee": "dxDemo QA",
+        "logged": 34380,
+        "status": "Resolved",
         "summary": "[SpectraFX] Date input - on typing two chars move to next section",
         "priority": "Normal",
-        "resolution": null
+        "resolution": "Fixed"
       }
     ],
     [
@@ -2076,6 +2194,546 @@
         "logged": 0,
         "status": "Waiting for clarification",
         "summary": "[SpectraFX] Date Input - Manual date changes section when input goes over available range",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29110",
+      {
+        "eta": 2,
+        "assignee": "SpectraFX Developers",
+        "logged": 900,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] [OE API] Commission request",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29070",
+      {
+        "eta": 0.1,
+        "assignee": "Konstantin Sekret",
+        "logged": 3600,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] Dealing Screen - Volatility is displayed with 2 digits precision for maker",
+        "priority": "Urgent (3)",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29010",
+      {
+        "eta": 0.5,
+        "assignee": "Anastasiya Paulyk",
+        "logged": 26700,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] Update dropdown styles",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29007",
+      {
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Upper part of widgets is overlapped by the application header",
+        "priority": "Urgent (3)",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29004",
+      {
+        "eta": 1,
+        "assignee": "Anastasiya Paulyk",
+        "logged": 12600,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] [SpectraFX] Cancel All Orders aka \"Panic Button\": Confirmation",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29001",
+      {
+        "eta": 1,
+        "assignee": "Grigory Stukunov",
+        "logged": 10560,
+        "status": "In development",
+        "summary": "[SpectraFX] Order Entry - Simultaneous displaying initial warning and data download progress",
+        "priority": "Urgent (3)",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28945",
+      {
+        "eta": 0.1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Order Entry - Difference between fonts on the platform and design",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28941",
+      {
+        "eta": 1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] ATM Straddles - Keyboard navigation - Steppers don't support shift+up/down",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28714",
+      {
+        "eta": 1,
+        "assignee": "SpectraFX Backlog",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Incorrect hover area on error message for tooltip appearing",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28702",
+      {
+        "eta": null,
+        "assignee": "SpectraFX Backlog",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] [SpectraFX] [OE API Clearance] Price to Vol and Vol to Price Requests",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28669",
+      {
+        "eta": null,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] DS - Add \"Reset Draft\" to new tiles",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28552",
+      {
+        "eta": null,
+        "assignee": "Aleksei Nechaev",
+        "logged": 0,
+        "status": "In development",
+        "summary": "[SpectraFX] [OE API Clearance] PriceToVol request",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28508",
+      {
+        "eta": 5,
+        "assignee": "Anastasiya Paulyk",
+        "logged": 5400,
+        "status": "In development",
+        "summary": "[SpectraFX] Inline validation",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28434",
+      {
+        "eta": null,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Light Theme - Icons of editing are absent when focus on saved layout",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28346",
+      {
+        "eta": 5,
+        "assignee": "Victor Malyushev",
+        "logged": 503100,
+        "status": "In development",
+        "summary": "[SpectraFX] UI kit & Figma updates",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28345",
+      {
+        "eta": 2,
+        "assignee": "Anastasiya Paulyk",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE Selected Symbol Loading State + DS Loading State",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28344",
+      {
+        "eta": 3,
+        "assignee": "SpectraFX Developers",
+        "logged": 2580,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] [DS] Pending/Error states for inline order edit",
+        "priority": "Urgent (3)",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28312",
+      {
+        "eta": 2,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] [FE] Add Eslint rule for imports from another entity",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28284",
+      {
+        "eta": 2,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Symbol Suggest: Prevent selecting text in manual edit mode",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28249",
+      {
+        "eta": null,
+        "assignee": "Grigory Stukunov",
+        "logged": 3300,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] OE: Delta amount panel is not aligned with delta field",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28192",
+      {
+        "eta": null,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] ATM Straddles - Incorrect formatting of Notional in My Run mode",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28113",
+      {
+        "eta": null,
+        "assignee": "Ilya Kalpahchiyan",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Order Entry - Rounding of frames doesn't accord of design ",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28104",
+      {
+        "eta": 4,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "Keyboard navigation in DS",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28039",
+      {
+        "eta": null,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Lint Rule Import on each line",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-27938",
+      {
+        "eta": null,
+        "assignee": "Grigory Stukunov",
+        "logged": 16620,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] Symbol suggest handle empty response",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-27778",
+      {
+        "eta": 2,
+        "assignee": "Nikita Kolesnikov",
+        "logged": 201480,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] DXTRADE Header UI adjustments",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-27777",
+      {
+        "eta": null,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] [OE API Clearance] Commission request",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-27775",
+      {
+        "eta": null,
+        "assignee": "Aleksei Nechaev",
+        "logged": 17520,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] [OE API Clearance] VolToPrice request",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-27774",
+      {
+        "eta": null,
+        "assignee": "Aleksei Shmurak",
+        "logged": 73740,
+        "status": "In development",
+        "summary": "[SpectraFX] [OE API Clearance] Vanilla leg Market Data Request",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-27773",
+      {
+        "eta": null,
+        "assignee": "Nikita Kolesnikov",
+        "logged": 7980,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] [OE API Clearance] Tenors request",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-27756",
+      {
+        "eta": 1,
+        "assignee": "SpectraFX Developers",
+        "logged": 22740,
+        "status": "Confirmed",
+        "summary": "Combine Used Credit Limit (amount & %) in header",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-27671",
+      {
+        "eta": null,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE Keyboard Navigation - Glitch for field focus when selecting tenor",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-27465",
+      {
+        "eta": null,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE Keyboard Navigation - Pressing 'Enter' key leads to interact with field instead of moving focus to the next item",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-27295",
+      {
+        "eta": null,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Order Entry - Tabbing is inefficient, not looped",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-27292",
+      {
+        "eta": null,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE Keyboard Navigation - On select confirmation move focus to the next element",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-26991",
+      {
+        "eta": null,
+        "assignee": "SpectraFX Developers",
+        "logged": 5940,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Light Theme - Terminal does not close when the connection is broken",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-25645",
+      {
+        "eta": null,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Numeric Input Steppers - x10 logic disregards input value",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-25380",
+      {
+        "eta": null,
+        "assignee": "Konstantin Sekret",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] DS - Cancel button for strategies with negative prices",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29201",
+      {
+        "eta": 0.5,
+        "assignee": "Grigory Stukunov",
+        "logged": 48300,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] Order Entry - Focus moving order when date inputting contains 0",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29157",
+      {
+        "eta": 3,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] OE - Self-match validation fails",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29154",
+      {
+        "eta": 1,
+        "assignee": "Konstantin Sekret",
+        "logged": 3600,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] Dealing Screen - Confirmation Price uses wrong value to define precision",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29130",
+      {
+        "eta": 1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] DS Confirmation - notional increment validation",
+        "priority": "Urgent (3)",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29125",
+      {
+        "eta": 1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] ATM - Pending state into ATM tile when symbol is unavailable",
+        "priority": "Urgent (3)",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29050",
+      {
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 14400,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Order Entry - ON is default tenor when it's off in admin console",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-28911",
+      {
+        "eta": 2,
+        "assignee": "SpectraFX Developers",
+        "logged": 7200,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Dealing Screen - No validation when opposite side haven't TotB",
         "priority": "Normal",
         "resolution": null
       }
@@ -2260,8 +2918,8 @@
       1653771600000,
       {
         "count": 46,
-        "eta": 49.6,
-        "logged": 1209999,
+        "eta": 49.1,
+        "logged": 1240599,
         "added": [
           "DXTF-28903",
           "DXTF-28839",
@@ -2336,8 +2994,8 @@
       1654376400000,
       {
         "count": 29,
-        "eta": 39.6,
-        "logged": 727059,
+        "eta": 39.1,
+        "logged": 848859,
         "added": [
           "DXTF-28671",
           "DXTF-29025",
@@ -2390,7 +3048,7 @@
       {
         "count": 26,
         "eta": 34.7,
-        "logged": 587460,
+        "logged": 721860,
         "added": [
           "DXTF-29093",
           "DXTF-29071",
@@ -2427,6 +3085,132 @@
           "DXTF-28807",
           "DXTF-28583",
           "DXTF-28521"
+        ]
+      }
+    ],
+    [
+      1656190800000,
+      {
+        "count": 57,
+        "eta": 58.7,
+        "logged": 1166640,
+        "added": [
+          "DXTF-29110",
+          "DXTF-29070",
+          "DXTF-29057",
+          "DXTF-29010",
+          "DXTF-29007",
+          "DXTF-29004",
+          "DXTF-29001",
+          "DXTF-28945",
+          "DXTF-28941",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28714",
+          "DXTF-28702",
+          "DXTF-28669",
+          "DXTF-28668",
+          "DXTF-28648",
+          "DXTF-28641",
+          "DXTF-28552",
+          "DXTF-28508",
+          "DXTF-28434",
+          "DXTF-28346",
+          "DXTF-28345",
+          "DXTF-28344",
+          "DXTF-28338",
+          "DXTF-28312",
+          "DXTF-28284",
+          "DXTF-28249",
+          "DXTF-28192",
+          "DXTF-28113",
+          "DXTF-28104",
+          "DXTF-28039",
+          "DXTF-27976",
+          "DXTF-27938",
+          "DXTF-27778",
+          "DXTF-27777",
+          "DXTF-27775",
+          "DXTF-27774",
+          "DXTF-27773",
+          "DXTF-27756",
+          "DXTF-27671",
+          "DXTF-27465",
+          "DXTF-27295",
+          "DXTF-27292",
+          "DXTF-26991",
+          "DXTF-25645",
+          "DXTF-25380",
+          "DXTF-29201",
+          "DXTF-29157",
+          "DXTF-29154",
+          "DXTF-29130",
+          "DXTF-29125",
+          "DXTF-29050",
+          "DXTF-28911"
+        ],
+        "removed": [
+          "DXTF-27671",
+          "DXTF-27465",
+          "DXTF-27295",
+          "DXTF-27292",
+          "DXTF-26991",
+          "DXTF-25645",
+          "DXTF-25380",
+          "DXTF-28807"
+        ],
+        "current": [
+          "DXTF-29201",
+          "DXTF-29157",
+          "DXTF-29154",
+          "DXTF-29130",
+          "DXTF-29125",
+          "DXTF-29110",
+          "DXTF-29093",
+          "DXTF-29070",
+          "DXTF-29057",
+          "DXTF-29050",
+          "DXTF-29010",
+          "DXTF-29007",
+          "DXTF-29004",
+          "DXTF-29001",
+          "DXTF-28945",
+          "DXTF-28941",
+          "DXTF-28911",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28714",
+          "DXTF-28702",
+          "DXTF-28669",
+          "DXTF-28668",
+          "DXTF-28648",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28552",
+          "DXTF-28521",
+          "DXTF-28508",
+          "DXTF-28434",
+          "DXTF-28346",
+          "DXTF-28345",
+          "DXTF-28344",
+          "DXTF-28338",
+          "DXTF-28312",
+          "DXTF-28284",
+          "DXTF-28249",
+          "DXTF-28192",
+          "DXTF-28113",
+          "DXTF-28104",
+          "DXTF-28039",
+          "DXTF-27976",
+          "DXTF-27938",
+          "DXTF-27778",
+          "DXTF-27777",
+          "DXTF-27775",
+          "DXTF-27774",
+          "DXTF-27773",
+          "DXTF-27756"
         ]
       }
     ]
