@@ -1223,6 +1223,65 @@
         "eta": 58.7,
         "logged": 39.34
       }
+    ],
+    [
+      1656633600000,
+      {
+        "tickets": [
+          "DXTF-29201",
+          "DXTF-29157",
+          "DXTF-29154",
+          "DXTF-29130",
+          "DXTF-29128",
+          "DXTF-29125",
+          "DXTF-29110",
+          "DXTF-29093",
+          "DXTF-29070",
+          "DXTF-29057",
+          "DXTF-29050",
+          "DXTF-29010",
+          "DXTF-29007",
+          "DXTF-29004",
+          "DXTF-29001",
+          "DXTF-28945",
+          "DXTF-28941",
+          "DXTF-28911",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28714",
+          "DXTF-28702",
+          "DXTF-28669",
+          "DXTF-28668",
+          "DXTF-28648",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28552",
+          "DXTF-28521",
+          "DXTF-28508",
+          "DXTF-28434",
+          "DXTF-28346",
+          "DXTF-28345",
+          "DXTF-28344",
+          "DXTF-28338",
+          "DXTF-28312",
+          "DXTF-28284",
+          "DXTF-28249",
+          "DXTF-28192",
+          "DXTF-28113",
+          "DXTF-28104",
+          "DXTF-28039",
+          "DXTF-27976",
+          "DXTF-27938",
+          "DXTF-27778",
+          "DXTF-27777",
+          "DXTF-27775",
+          "DXTF-27774",
+          "DXTF-27773"
+        ],
+        "eta": 57.7,
+        "logged": 41.72
+      }
     ]
   ],
   "tickets": [
@@ -2071,7 +2130,7 @@
       {
         "eta": 3,
         "assignee": "Konstantin Sekret",
-        "logged": 80220,
+        "logged": 93420,
         "status": "Waiting for review",
         "summary": "[SpectraFX] Expiry Tool: Decision protection confirmation",
         "priority": "Urgent (3)",
@@ -2263,7 +2322,7 @@
       {
         "eta": 1,
         "assignee": "Grigory Stukunov",
-        "logged": 36540,
+        "logged": 62340,
         "status": "In development",
         "summary": "[SpectraFX] Order Entry - Simultaneous displaying initial warning and data download progress",
         "priority": "Urgent (3)",
@@ -2371,7 +2430,7 @@
       {
         "eta": 5,
         "assignee": "Victor Malyushev",
-        "logged": 503100,
+        "logged": 527940,
         "status": "In development",
         "summary": "[SpectraFX] UI kit & Figma updates",
         "priority": "Normal",
@@ -2707,7 +2766,7 @@
       {
         "eta": 1,
         "assignee": "SpectraFX Developers",
-        "logged": 10800,
+        "logged": 18000,
         "status": "In development",
         "summary": "[SpectraFX] ATM - Pending state into ATM tile when symbol is unavailable",
         "priority": "Urgent (3)",
@@ -2734,6 +2793,18 @@
         "logged": 7200,
         "status": "Confirmed",
         "summary": "[SpectraFX] Dealing Screen - No validation when opposite side haven't TotB",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29128",
+      {
+        "eta": null,
+        "assignee": "Egor Zholnin",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] ATM Straddles - Nothing happens when trying to input too much value",
         "priority": "Normal",
         "resolution": null
       }
@@ -2995,7 +3066,7 @@
       {
         "count": 29,
         "eta": 39.1,
-        "logged": 858279,
+        "logged": 871479,
         "added": [
           "DXTF-28671",
           "DXTF-29025",
@@ -3048,7 +3119,7 @@
       {
         "count": 26,
         "eta": 34.7,
-        "logged": 731280,
+        "logged": 744480,
         "added": [
           "DXTF-29093",
           "DXTF-29071",
@@ -3091,9 +3162,9 @@
     [
       1656190800000,
       {
-        "count": 57,
+        "count": 58,
         "eta": 58.7,
-        "logged": 1213440,
+        "logged": 1284480,
         "added": [
           "DXTF-29110",
           "DXTF-29070",
@@ -3148,9 +3219,11 @@
           "DXTF-29130",
           "DXTF-29125",
           "DXTF-29050",
-          "DXTF-28911"
+          "DXTF-28911",
+          "DXTF-29128"
         ],
         "removed": [
+          "DXTF-27756",
           "DXTF-27671",
           "DXTF-27465",
           "DXTF-27295",
@@ -3165,6 +3238,7 @@
           "DXTF-29157",
           "DXTF-29154",
           "DXTF-29130",
+          "DXTF-29128",
           "DXTF-29125",
           "DXTF-29110",
           "DXTF-29093",
@@ -3209,8 +3283,7 @@
           "DXTF-27777",
           "DXTF-27775",
           "DXTF-27774",
-          "DXTF-27773",
-          "DXTF-27756"
+          "DXTF-27773"
         ]
       }
     ]
