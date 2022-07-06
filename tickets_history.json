@@ -1400,6 +1400,65 @@
         "eta": 54.6,
         "logged": 43.25
       }
+    ],
+    [
+      1657065600000,
+      {
+        "tickets": [
+          "DXTF-29273",
+          "DXTF-29241",
+          "DXTF-29157",
+          "DXTF-29130",
+          "DXTF-29128",
+          "DXTF-29125",
+          "DXTF-29110",
+          "DXTF-29093",
+          "DXTF-29057",
+          "DXTF-29010",
+          "DXTF-29007",
+          "DXTF-28945",
+          "DXTF-28941",
+          "DXTF-28911",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28714",
+          "DXTF-28702",
+          "DXTF-28669",
+          "DXTF-28668",
+          "DXTF-28648",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28552",
+          "DXTF-28521",
+          "DXTF-28508",
+          "DXTF-28434",
+          "DXTF-28346",
+          "DXTF-28345",
+          "DXTF-28344",
+          "DXTF-28338",
+          "DXTF-28312",
+          "DXTF-28284",
+          "DXTF-28192",
+          "DXTF-28113",
+          "DXTF-28104",
+          "DXTF-28039",
+          "DXTF-27976",
+          "DXTF-27777",
+          "DXTF-27775",
+          "DXTF-27774",
+          "DXTF-27773",
+          "DXTF-27756",
+          "DXTF-27671",
+          "DXTF-27465",
+          "DXTF-27295",
+          "DXTF-27292",
+          "DXTF-26991",
+          "DXTF-25645"
+        ],
+        "eta": 54.6,
+        "logged": 38.24
+      }
     ]
   ],
   "tickets": [
@@ -2055,9 +2114,9 @@
       "DXTF-28838",
       {
         "eta": 0.5,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Egor Zholnin",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "In development",
         "summary": "[SpectraFX] DS - After changing of price-in-vol value there is no Replace button",
         "priority": "Urgent (3)",
         "resolution": null
@@ -2248,7 +2307,7 @@
       {
         "eta": 3,
         "assignee": "Konstantin Sekret",
-        "logged": 101340,
+        "logged": 116820,
         "status": "Waiting for review",
         "summary": "[SpectraFX] Expiry Tool: Decision protection confirmation",
         "priority": "Urgent (3)",
@@ -2548,7 +2607,7 @@
       {
         "eta": 5,
         "assignee": "Victor Malyushev",
-        "logged": 574920,
+        "logged": 609240,
         "status": "In development",
         "summary": "[SpectraFX] UI kit & Figma updates",
         "priority": "Normal",
@@ -2680,11 +2739,11 @@
       {
         "eta": 2,
         "assignee": "Nikita Kolesnikov",
-        "logged": 215340,
-        "status": "Waiting for review",
+        "logged": 217980,
+        "status": "Waiting for build",
         "summary": "[SpectraFX] DXTRADE Header UI adjustments",
         "priority": "Normal",
-        "resolution": null
+        "resolution": "Waiting for build"
       }
     ],
     [
@@ -2908,8 +2967,8 @@
       {
         "eta": 2,
         "assignee": "Grigory Stukunov",
-        "logged": 28800,
-        "status": "In development",
+        "logged": 57600,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] Dealing Screen - No validation when opposite side haven't TotB",
         "priority": "Normal",
         "resolution": null
@@ -2920,8 +2979,8 @@
       {
         "eta": null,
         "assignee": "Egor Zholnin",
-        "logged": 43020,
-        "status": "In development",
+        "logged": 56640,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] ATM Straddles - Nothing happens when trying to input too much value",
         "priority": "Normal",
         "resolution": null
@@ -2935,6 +2994,18 @@
         "logged": 0,
         "status": "Waiting for review",
         "summary": "[SpectraFX] Order Entry - Opened calendar is not closed by tabbing [2]",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29273",
+      {
+        "eta": 2,
+        "assignee": "Anastasiya Paulyk",
+        "logged": 0,
+        "status": "In development",
+        "summary": "[SpectraFX] New Specific Order matching validation",
         "priority": "Normal",
         "resolution": null
       }
@@ -3196,7 +3267,7 @@
       {
         "count": 29,
         "eta": 39.1,
-        "logged": 879399,
+        "logged": 894879,
         "added": [
           "DXTF-28671",
           "DXTF-29025",
@@ -3249,7 +3320,7 @@
       {
         "count": 26,
         "eta": 34.7,
-        "logged": 752400,
+        "logged": 767880,
         "added": [
           "DXTF-29093",
           "DXTF-29071",
@@ -3294,7 +3365,7 @@
       {
         "count": 58,
         "eta": 58.7,
-        "logged": 1455660,
+        "logged": 1550520,
         "added": [
           "DXTF-29110",
           "DXTF-29070",
@@ -3420,9 +3491,9 @@
     [
       1656795600000,
       {
-        "count": 55,
-        "eta": 57.7,
-        "logged": 1367400,
+        "count": 56,
+        "eta": 59.7,
+        "logged": 1462260,
         "added": [
           "DXTF-29241",
           "DXTF-27756",
@@ -3431,7 +3502,8 @@
           "DXTF-27295",
           "DXTF-27292",
           "DXTF-26991",
-          "DXTF-25645"
+          "DXTF-25645",
+          "DXTF-29273"
         ],
         "removed": [
           "DXTF-29201",
@@ -3439,11 +3511,13 @@
           "DXTF-29070",
           "DXTF-29050",
           "DXTF-29004",
+          "DXTF-27778",
           "DXTF-29001",
           "DXTF-28249",
           "DXTF-27938"
         ],
         "current": [
+          "DXTF-29273",
           "DXTF-29241",
           "DXTF-29157",
           "DXTF-29130",
@@ -3482,7 +3556,6 @@
           "DXTF-28104",
           "DXTF-28039",
           "DXTF-27976",
-          "DXTF-27778",
           "DXTF-27777",
           "DXTF-27775",
           "DXTF-27774",
