@@ -1577,6 +1577,65 @@
         "eta": 52.6,
         "logged": 32.6
       }
+    ],
+    [
+      1657497600000,
+      {
+        "tickets": [
+          "DXTF-29273",
+          "DXTF-29247",
+          "DXTF-29246",
+          "DXTF-29241",
+          "DXTF-29157",
+          "DXTF-29130",
+          "DXTF-29126",
+          "DXTF-29110",
+          "DXTF-29093",
+          "DXTF-29057",
+          "DXTF-29010",
+          "DXTF-28945",
+          "DXTF-28941",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28714",
+          "DXTF-28702",
+          "DXTF-28669",
+          "DXTF-28668",
+          "DXTF-28648",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28552",
+          "DXTF-28508",
+          "DXTF-28434",
+          "DXTF-28346",
+          "DXTF-28345",
+          "DXTF-28344",
+          "DXTF-28338",
+          "DXTF-28312",
+          "DXTF-28284",
+          "DXTF-28192",
+          "DXTF-28113",
+          "DXTF-28104",
+          "DXTF-28039",
+          "DXTF-27976",
+          "DXTF-27777",
+          "DXTF-27775",
+          "DXTF-27774",
+          "DXTF-27773",
+          "DXTF-27671",
+          "DXTF-27295",
+          "DXTF-27292",
+          "DXTF-26991",
+          "DXTF-25645",
+          "DXTF-25380",
+          "DXTF-23304",
+          "DXTF-22260",
+          "DXTF-21587"
+        ],
+        "eta": 54.6,
+        "logged": 37.27
+      }
     ]
   ],
   "tickets": [
@@ -1681,7 +1740,7 @@
       {
         "eta": 2,
         "assignee": "Grigory Stukunov",
-        "logged": 47460,
+        "logged": 74400,
         "status": "Waiting for review",
         "summary": "[SpectraFX] Errors & validation copying",
         "priority": "Urgent (3)",
@@ -2496,7 +2555,7 @@
       "DXTF-29093",
       {
         "eta": 0.5,
-        "assignee": "Konstantin Sekret",
+        "assignee": "SpectraFX Developers",
         "logged": 0,
         "status": "In development",
         "summary": "[SpectraFX] Remove hasAction from Expiry",
@@ -2652,9 +2711,9 @@
       "DXTF-28714",
       {
         "eta": 1,
-        "assignee": "SpectraFX Backlog",
+        "assignee": "Ilya Kalpahchiyan",
         "logged": 0,
-        "status": "Confirmed",
+        "status": "In development",
         "summary": "[SpectraFX] Incorrect hover area on error message for tooltip appearing",
         "priority": "Normal",
         "resolution": null
@@ -2772,9 +2831,9 @@
       "DXTF-28284",
       {
         "eta": 2,
-        "assignee": "SpectraFX Developers",
-        "logged": 0,
-        "status": "Confirmed",
+        "assignee": "Grigory Stukunov",
+        "logged": 16200,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] Symbol Suggest: Prevent selecting text in manual edit mode",
         "priority": "Normal",
         "resolution": null
@@ -2808,9 +2867,9 @@
       "DXTF-28113",
       {
         "eta": null,
-        "assignee": "Ilya Kalpahchiyan",
-        "logged": 0,
-        "status": "Confirmed",
+        "assignee": "Grigory Stukunov",
+        "logged": 12300,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] Order Entry - Rounding of frames doesn't accord of design ",
         "priority": "Normal",
         "resolution": null
@@ -2944,7 +3003,7 @@
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] OE Keyboard Navigation - Pressing 'Enter' key leads to interact with field instead of moving focus to the next item",
-        "priority": "Normal",
+        "priority": "Low priority",
         "resolution": null
       }
     ],
@@ -2988,7 +3047,7 @@
       "DXTF-25645",
       {
         "eta": null,
-        "assignee": "SpectraFX Developers",
+        "assignee": "Grigory Stukunov",
         "logged": 0,
         "status": "Confirmed",
         "summary": "[SpectraFX] Numeric Input Steppers - x10 logic disregards input value",
@@ -3121,7 +3180,7 @@
       {
         "eta": 2,
         "assignee": "Anastasiya Paulyk",
-        "logged": 0,
+        "logged": 3600,
         "status": "In development",
         "summary": "[SpectraFX] New Specific Order matching validation",
         "priority": "Normal",
@@ -3145,7 +3204,7 @@
       {
         "eta": 1,
         "assignee": "Egor Zholnin",
-        "logged": 7020,
+        "logged": 16920,
         "status": "In development",
         "summary": "[SpectraFX] ATM Straddle - Cards are not synchronized ",
         "priority": "Normal",
@@ -3195,7 +3254,7 @@
       {
         "count": 37,
         "eta": 50.6,
-        "logged": 1347399,
+        "logged": 1374339,
         "added": [
           "DXTF-28648",
           "DXTF-28722",
@@ -3256,7 +3315,7 @@
       {
         "count": 36,
         "eta": 47.6,
-        "logged": 1249359,
+        "logged": 1276299,
         "added": [],
         "removed": [
           "DXTF-28703",
@@ -3543,7 +3602,7 @@
       {
         "count": 58,
         "eta": 57.7,
-        "logged": 1543380,
+        "logged": 1598820,
         "added": [
           "DXTF-29110",
           "DXTF-29070",
@@ -3671,7 +3730,7 @@
       {
         "count": 62,
         "eta": 64.2,
-        "logged": 1462140,
+        "logged": 1531080,
         "added": [
           "DXTF-29241",
           "DXTF-27756",
@@ -3757,6 +3816,72 @@
           "DXTF-25380",
           "DXTF-23304",
           "DXTF-22260"
+        ]
+      }
+    ],
+    [
+      1657400400000,
+      {
+        "count": 50,
+        "eta": 54.6,
+        "logged": 1086900,
+        "added": [
+          "DXTF-21587"
+        ],
+        "removed": [
+          "DXTF-27465"
+        ],
+        "current": [
+          "DXTF-29273",
+          "DXTF-29247",
+          "DXTF-29246",
+          "DXTF-29241",
+          "DXTF-29157",
+          "DXTF-29130",
+          "DXTF-29126",
+          "DXTF-29110",
+          "DXTF-29093",
+          "DXTF-29057",
+          "DXTF-29010",
+          "DXTF-28945",
+          "DXTF-28941",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28714",
+          "DXTF-28702",
+          "DXTF-28669",
+          "DXTF-28668",
+          "DXTF-28648",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28552",
+          "DXTF-28508",
+          "DXTF-28434",
+          "DXTF-28346",
+          "DXTF-28345",
+          "DXTF-28344",
+          "DXTF-28338",
+          "DXTF-28312",
+          "DXTF-28284",
+          "DXTF-28192",
+          "DXTF-28113",
+          "DXTF-28104",
+          "DXTF-28039",
+          "DXTF-27976",
+          "DXTF-27777",
+          "DXTF-27775",
+          "DXTF-27774",
+          "DXTF-27773",
+          "DXTF-27671",
+          "DXTF-27295",
+          "DXTF-27292",
+          "DXTF-26991",
+          "DXTF-25645",
+          "DXTF-25380",
+          "DXTF-23304",
+          "DXTF-22260",
+          "DXTF-21587"
         ]
       }
     ]
