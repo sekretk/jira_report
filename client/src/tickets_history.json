@@ -1636,6 +1636,65 @@
         "eta": 54.6,
         "logged": 37.27
       }
+    ],
+    [
+      1657584000000,
+      {
+        "tickets": [
+          "DXTF-29319",
+          "DXTF-29316",
+          "DXTF-29315",
+          "DXTF-29314",
+          "DXTF-29300",
+          "DXTF-29299",
+          "DXTF-29247",
+          "DXTF-29246",
+          "DXTF-29241",
+          "DXTF-29157",
+          "DXTF-29130",
+          "DXTF-29126",
+          "DXTF-29114",
+          "DXTF-29110",
+          "DXTF-29093",
+          "DXTF-29057",
+          "DXTF-29010",
+          "DXTF-28945",
+          "DXTF-28941",
+          "DXTF-28839",
+          "DXTF-28838",
+          "DXTF-28836",
+          "DXTF-28714",
+          "DXTF-28702",
+          "DXTF-28669",
+          "DXTF-28668",
+          "DXTF-28648",
+          "DXTF-28641",
+          "DXTF-28583",
+          "DXTF-28552",
+          "DXTF-28508",
+          "DXTF-28434",
+          "DXTF-28346",
+          "DXTF-28345",
+          "DXTF-28344",
+          "DXTF-28338",
+          "DXTF-28312",
+          "DXTF-28284",
+          "DXTF-28192",
+          "DXTF-28113",
+          "DXTF-28104",
+          "DXTF-28039",
+          "DXTF-27976",
+          "DXTF-27777",
+          "DXTF-27775",
+          "DXTF-27774",
+          "DXTF-27773",
+          "DXTF-27671",
+          "DXTF-27295",
+          "DXTF-27292"
+        ],
+        "eta": 51.8,
+        "logged": 36.4
+      }
     ]
   ],
   "tickets": [
@@ -1740,7 +1799,7 @@
       {
         "eta": 2,
         "assignee": "Grigory Stukunov",
-        "logged": 74400,
+        "logged": 84840,
         "status": "Waiting for review",
         "summary": "[SpectraFX] Errors & validation copying",
         "priority": "Urgent (3)",
@@ -2544,8 +2603,8 @@
       {
         "eta": 1,
         "assignee": "Konstantin Sekret",
-        "logged": 7200,
-        "status": "Confirmed",
+        "logged": 21600,
+        "status": "Waiting for review",
         "summary": "[SpectraFX] Options Expiry Tool - Tooltip for cuts has wrong place",
         "priority": "Urgent (3)",
         "resolution": null
@@ -2602,13 +2661,13 @@
     [
       "DXTF-28806",
       {
-        "eta": 0.1,
-        "assignee": "Anton Rodzevich",
+        "eta": 0,
+        "assignee": "SpectraFX Backlog",
         "logged": 0,
-        "status": "Waiting for clarification",
+        "status": "Aborted",
         "summary": "[SpectraFX] Date Input - Manual date changes section when input goes over available range",
         "priority": "Normal",
-        "resolution": null
+        "resolution": "Aborted"
       }
     ],
     [
@@ -3048,7 +3107,7 @@
       {
         "eta": null,
         "assignee": "Grigory Stukunov",
-        "logged": 0,
+        "logged": 7500,
         "status": "Confirmed",
         "summary": "[SpectraFX] Numeric Input Steppers - x10 logic disregards input value",
         "priority": "Normal",
@@ -3178,10 +3237,10 @@
     [
       "DXTF-29273",
       {
-        "eta": 2,
-        "assignee": "Anastasiya Paulyk",
-        "logged": 3600,
-        "status": "In development",
+        "eta": null,
+        "assignee": "SpectraFX Developers",
+        "logged": 5400,
+        "status": "Reported",
         "summary": "[SpectraFX] New Specific Order matching validation",
         "priority": "Normal",
         "resolution": null
@@ -3204,7 +3263,7 @@
       {
         "eta": 1,
         "assignee": "Egor Zholnin",
-        "logged": 16920,
+        "logged": 34200,
         "status": "In development",
         "summary": "[SpectraFX] ATM Straddle - Cards are not synchronized ",
         "priority": "Normal",
@@ -3246,6 +3305,90 @@
         "priority": "Normal",
         "resolution": null
       }
+    ],
+    [
+      "DXTF-29319",
+      {
+        "eta": 0.5,
+        "assignee": "Konstantin Sekret",
+        "logged": 3600,
+        "status": "Waiting for review",
+        "summary": "[SpectraFX] Expiry Tool: Add tooltips for confirmation warnings",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29316",
+      {
+        "eta": 0.1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Light Theme - Cut selector is transparent",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29315",
+      {
+        "eta": 0.5,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Light Theme - Decision protection options are invisible",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29314",
+      {
+        "eta": 1,
+        "assignee": "Egor Zholnin",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] [SpectraFX] Highlight changes in ATM tile changes for My Run mode",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29300",
+      {
+        "eta": 0.1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] DS - Notional glitch when order has both of sides ",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29299",
+      {
+        "eta": 1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] Order Entry - Inactive field is taken to account when keyboard navigation",
+        "priority": "Normal",
+        "resolution": null
+      }
+    ],
+    [
+      "DXTF-29114",
+      {
+        "eta": 1,
+        "assignee": "SpectraFX Developers",
+        "logged": 0,
+        "status": "Confirmed",
+        "summary": "[SpectraFX] ATM Straddles - Incorrect behavior when placing and single canceling",
+        "priority": "Critical (6)",
+        "resolution": null
+      }
     ]
   ],
   "weekly": [
@@ -3254,7 +3397,7 @@
       {
         "count": 37,
         "eta": 50.6,
-        "logged": 1374339,
+        "logged": 1384779,
         "added": [
           "DXTF-28648",
           "DXTF-28722",
@@ -3315,7 +3458,7 @@
       {
         "count": 36,
         "eta": 47.6,
-        "logged": 1276299,
+        "logged": 1286739,
         "added": [],
         "removed": [
           "DXTF-28703",
@@ -3504,7 +3647,7 @@
       {
         "count": 29,
         "eta": 39.1,
-        "logged": 779379,
+        "logged": 793779,
         "added": [
           "DXTF-28671",
           "DXTF-29025",
@@ -3556,8 +3699,8 @@
       1654981200000,
       {
         "count": 26,
-        "eta": 34.7,
-        "logged": 652380,
+        "eta": 34.6,
+        "logged": 666780,
         "added": [
           "DXTF-29093",
           "DXTF-29071",
@@ -3602,7 +3745,7 @@
       {
         "count": 58,
         "eta": 57.7,
-        "logged": 1598820,
+        "logged": 1631160,
         "added": [
           "DXTF-29110",
           "DXTF-29070",
@@ -3729,8 +3872,8 @@
       1656795600000,
       {
         "count": 62,
-        "eta": 64.2,
-        "logged": 1531080,
+        "eta": 62.2,
+        "logged": 1582500,
         "added": [
           "DXTF-29241",
           "DXTF-27756",
@@ -3822,23 +3965,43 @@
     [
       1657400400000,
       {
-        "count": 50,
-        "eta": 54.6,
-        "logged": 1086900,
+        "count": 57,
+        "eta": 56.800000000000004,
+        "logged": 1141920,
         "added": [
-          "DXTF-21587"
+          "DXTF-21587",
+          "DXTF-29319",
+          "DXTF-29316",
+          "DXTF-29315",
+          "DXTF-29314",
+          "DXTF-29300",
+          "DXTF-29299",
+          "DXTF-29114"
         ],
         "removed": [
+          "DXTF-29273",
+          "DXTF-26991",
+          "DXTF-25645",
+          "DXTF-25380",
+          "DXTF-23304",
+          "DXTF-22260",
+          "DXTF-21587",
           "DXTF-27465"
         ],
         "current": [
-          "DXTF-29273",
+          "DXTF-29319",
+          "DXTF-29316",
+          "DXTF-29315",
+          "DXTF-29314",
+          "DXTF-29300",
+          "DXTF-29299",
           "DXTF-29247",
           "DXTF-29246",
           "DXTF-29241",
           "DXTF-29157",
           "DXTF-29130",
           "DXTF-29126",
+          "DXTF-29114",
           "DXTF-29110",
           "DXTF-29093",
           "DXTF-29057",
@@ -3875,13 +4038,7 @@
           "DXTF-27773",
           "DXTF-27671",
           "DXTF-27295",
-          "DXTF-27292",
-          "DXTF-26991",
-          "DXTF-25645",
-          "DXTF-25380",
-          "DXTF-23304",
-          "DXTF-22260",
-          "DXTF-21587"
+          "DXTF-27292"
         ]
       }
     ]
